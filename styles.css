@@ -1,3 +1,4 @@
+
 body {
 	background-color: black;
 	color: red;
@@ -6,4 +7,10 @@ body {
 }
 h1 {
 	color: white;
+}
+table, th, td {
+	border: 2px solid black;
+}
+th, td {
+	background-color: white;
 }
