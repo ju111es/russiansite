@@ -1,12 +1,31 @@
+:root {
+	--babypink: #ffd4e2
+}
+
 section {float: left;}
 aside {float: right;}
+div {float: left; margin: auto;}
 
-.home {background-color: pink; color: lightslategrey; font-family: sans-serif;}
+.home {background-color: var(--babypink); color: lightslategrey; font-family: sans-serif;}
 .home td {text-align: center;}
 
-.lesson {background-color: pink; color: lightslategrey; font-family: sans-serif;}
+.lesson {background-color: var(--babypink); color: lightslategrey; font-family: sans-serif;}
 .lesson th, td {background-color: white; 
-		border: 2px solid pink; border-radius: 10px;
+		border: 2px solid var(--babypink); border-radius: 10px;
 		padding: 10px; font-weight: normal; text-align: left;}
-.lesson div {float: left; margin: auto;}
 		
+.accordion {
+  background-color: #eee; color: #444; cursor: pointer; padding: 18px;
+  width: 100%; text-align: left; border: none; outline: none; transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px; background-color: white; float: auto; 
+  max-height: 0; overflow: hidden; transition: max-height 0.2s ease-out;
+} 
+/* this is pretty much directly from w3 schools
+also, the style is vaguely inspired by www.russianlessons.net */

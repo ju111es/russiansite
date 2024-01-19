@@ -6,22 +6,46 @@
 <link rel='stylesheet' href='home.css'>
 <link rel='icon' type='image/x-icon' href='flag.ico'>
 </head>
+
 <body class='home'>
 <h1>???????? ??????? ???? ?? ????!<br><i>Study Russian with Me!</i></h1>
 <!-- bruh -->
 
-<table>
-<tr>
-<th style='width:180px'>Basics</th>
-<th style='width:180px'>Cases</th>
-<th style='width:180px'>Vocabulary</th>
-</tr>
-<tr>
-<td><a href='alphabet.htm' target='_self'>Alphabet</a></td>
-<td></td>
-<td><a href='numbers.htm' target='_self'>Numbers</a></td>
-</tr>
-</table>
+<div style='width:15%;'>
+<button class='accordion'>Basics</button>
+	<div class='panel'><a href='alphabet.htm' target='self'>Alphabet</a></div>
+	<div class='panel'>meow meow</div>
+
+<button class='accordion'>Cases</button>
+
+<button class='accordion'>Vocabulary</button>
+<div class='panel'><a href='numbers.htm' target='_self'>Numbers</a></div>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script> <!-- all from w3 schools -->
+
+<div>
+<h2>About</h2>
+</div>
 
 </body>
 </html>
