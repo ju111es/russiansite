@@ -13,9 +13,28 @@
 <body class='lesson'>
 <h1>Nouns in Russian</h1>
 
-<nav>
-<a href='home.htm'>Home</a>
-</nav>
+<div class='navbar'>
+	<a href='home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
+		<div class='dpanel' id='navdrop1'>
+		<a href='alphabet.htm'>Alphabet</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		<a href='adjectives.htm'>Adjectives</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
+		<div class='dpanel' id='navdrop2'>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
+		<div class='dpanel' id='navdrop3'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
 
 <p>Like many languages, all Russian nouns have a gender: either feminine, 
 	masculine, or neuter.</p>
@@ -90,6 +109,49 @@
 	form used to define Russian words in dictionaries.
 </p>
 
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function dropdown1() {
+  document.getElementById("navdrop1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop1");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown2() {
+  document.getElementById("navdrop2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop2");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown3() {
+  document.getElementById("navdrop3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop3");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+</script> <!-- all from w3 schools -->
 
 </body>
 </html>

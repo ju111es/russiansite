@@ -6,9 +6,6 @@
 <link rel='stylesheet' href='home.css'>
 <link rel='icon' type='image/x-icon' href='flag.ico'>
 <style>
-div {background-color: white; border: 2px solid var(--background); 
-	border-radius: 10px; padding:1%; margin-bottom:.5%; width:98%;}
-	
 .table1 td:nth-of-type(even) {background-color: var(--background); 
 	border: 2px solid white; border-radius: 10px;}
 .table1 td:nth-of-type(odd) {background-color: white; border: none;}
@@ -24,9 +21,30 @@ div {background-color: white; border: 2px solid var(--background);
 <body class='lesson'>
 <h1>Pronouns in Russian</h1>
 
-<nav style='margin-bottom:1%;'><a href='home.htm'>Home</a></nav>
+<div class='navbar'>
+	<a href='home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
+		<div class='dpanel' id='navdrop1'>
+		<a href='alphabet.htm'>Alphabet</a>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='adjectives.htm'>Adjectives</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
+		<div class='dpanel' id='navdrop2'>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
+		<div class='dpanel' id='navdrop3'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
 
-<div>
+<div class='fill' style='width:98%;'>
 <p>Russian has the same basic pronouns as English:</p>
 <table class='table1'>
 <tr>
@@ -65,7 +83,7 @@ div {background-color: white; border: 2px solid var(--background);
 
 </div>
 
-<div>
+<div class='fill' style='width:98%;'>
 <p>These pronouns show ownership, and they change depending on
 	the gender of the following noun:</p>
 <table class='table2'>
@@ -135,7 +153,7 @@ div {background-color: white; border: 2px solid var(--background);
 </table>
 </div>
 
-<div>
+<div class='fill' style='width:98%;'>
 <p>These are demonstrative pronouns. They also change with the gender of the following noun:</p>
 <section style='width:69%;'>
 <table class='table2' style='width:100%;'>
@@ -217,6 +235,49 @@ div {background-color: white; border: 2px solid var(--background);
 	These pronouns are in the nominative/default case.</p>
 </div>
 
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function dropdown1() {
+  document.getElementById("navdrop1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop1");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown2() {
+  document.getElementById("navdrop2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop2");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown3() {
+  document.getElementById("navdrop3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop3");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+</script> <!-- all from w3 schools -->
 
 </body>
 </html>

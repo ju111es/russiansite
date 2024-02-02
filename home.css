@@ -34,22 +34,20 @@ div {
 	float: left; 
 	margin: auto;
 }
-h1, h2 {font-family: var(--heading), sans-serif;}
+h1, h2, h3 {font-family: var(--heading), sans-serif;}
+h3 {
+	font-size: 100%;
+	font-weight: normal;
+}
 p {font-family: var(--paragraph), sans-serif;}
 a, a:visited {color: var(--link);}
 a:hover {color: var(--link-active);}
 span {font-weight: bold;}
-nav {background-color: var(--lightbackground); 
-	width: 100%;
-	position: fixed; 
-	top: 0;
-	padding: 1.5%;
-	margin: -.5%;
-}
 
 .home {
 	background-color: var(--background); 
 	color: var(--text); 
+	overflow-x: hidden;
 }
 .home button, a {
 	font-family: var(--basictext), sans-serif;
@@ -64,7 +62,8 @@ nav {background-color: var(--lightbackground);
 	background-color: var(--background); 
 	color: var(--text); 
 	font-family: sans-serif;
-	}
+	overflow-x: hidden;
+}
 .lesson h1 {margin-top: 5%;}
 .lesson th, td {
 	border: 2px solid var(--background); 
@@ -87,33 +86,140 @@ nav {background-color: var(--lightbackground);
 .lesson .opposite th {background-color: white;}
 .lesson .opposite td {background-color: var(--background);}
 
+.fill {
+	background-color: white;
+	border: 2px solid var(--background); 
+	border-radius: 10px;
+	padding:1%; 
+	margin-bottom:.5%;
+}
+
 .accordion {
-  background-color: var(--background2); 
-  color: var(--text);
-  font-size: 20px;
-  cursor: pointer; 
-  padding: 18px;
-  width: 100%; 
-  text-align: left; 
-  border: none; 
-  outline: none; 
-  transition: 0.4s;
+	color: var(--text);
+	font-family: var(--basictext), sans-serif;
+	cursor: pointer; 
+	outline: none; 
+	transition: 0.4s;
+}	
+
+.home .accordion {
+	background-color: var(--background2);
+	font-size: 140%;
+	width: 100%; 
+	text-align: left; 
+	border: none;   
+	padding: 12%;
+}
+	
+.home .accordion:hover {
+	background-color: var(--background2hover);
 }
 
-.accordion:hover {
-  background-color: var(--background2hover);
+.apanel {
+	max-height: 0;
+	overflow: hidden; 
+	transition: max-height 0.2s ease-out;
+	border: none;
+	width: 100%;
+	padding-top: 0 20%;
+	font-size: 120%;
+	background-color: var(--background2child);
+	text-align: left;
+	color: var(--text);
 }
 
-.panel {
-  padding: 0 18px;
-  padding-top: 0 30px;
-  width: 81%;
-  font-size: 18px;
-  background-color: var(--background2child); 
-  float: auto; 
-  max-height: 0; 
-  overflow: hidden; 
-  transition: max-height 0.2s ease-out;
+.apanel a {
+	display: block;
+	float: none;
+	border: none;
+	text-decoration: none;
+	width: 100%;
+	overflow: hidden;
+	padding-left: 10%;
+	color: var(--text);
 } 
+
+.apanel a:hover {background-color: white; color: var(--text);}
+
+.navbar {
+	overflow: hidden;
+	background-color: var(--lightbackground);
+	font-family: var(--basictext), sans-serif;
+	position: fixed; 
+	top: 0;
+	margin: -.5%;
+	width: 100%;
+	text-align: center;
+}
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: var(--text);
+	text-align: center;
+	text-decoration: none;
+	width: 20%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	border-right: 1px solid var(--text);
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	width: 20%;
+}
+
+.dropdown .dropbtn {
+	cursor: pointer;
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: var(--text);
+	font-family: inherit;
+	margin: 0;
+	width: 100%;
+	background-color: var(--lightbackground);
+	border-right: 1px solid var(--text);
+}
+
+.dropbtn {
+	display: block;
+	padding-top: 7.5%;
+	padding-bottom: 7.5%;
+}
+
+.navbar a:hover, .dropdown:hover, .dropbtn:hover {
+	background-color: var(--background);
+}
+
+.dpanel {
+	display: none;
+	position: fixed;
+	background-color: var(--lightbackground);
+	z-index: 1;
+	width: 20%;
+	border: none;
+}
+
+.dpanel a {
+	float: none;
+	color: var(--text);
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	border: none;
+}
+
+.dpanel a:hover {
+	background-color: white;
+}
+
+.show {
+	display: block;
+}
+	
 /* this is pretty much directly from w3 schools
 also, the style is vaguely inspired by www.russianlessons.net */

@@ -9,21 +9,40 @@
 table {font-size: 20px; padding-bottom: 1%;}
 table {width: 100%;}
 td {margin-right: 50%;}
-div {padding: 1%; width: 31%}
+.numbers {padding: 1%; width: 31%}
 span {font-family: var(--basictext);}
 </style>
 </head>
 <body class='lesson'>
 <h1>Numbers in Russian</h1>
-<nav>
-<a href='home.htm'>Home</a>
-</nav>
+
+<div class='navbar'>
+	<a href='home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
+		<div class='dpanel' id='navdrop1'>
+		<a href='alphabet.htm'>Alphabet</a>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
+		<div class='dpanel' id='navdrop2'>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
+		<div class='dpanel' id='navdrop3'>
+		</div>
+	</div>
+</div>
 
 <p>Russian uses the same numbers as English, but they have different names. 
 However, you'll notice that all numbers follow the pattern of the 
 numbers 1-10, just like English.</p>
 
-<div>
+<div class='numbers'>
 <table>
 <tr>
 <td><span>1</span> од<b>и</b>н</td>
@@ -64,7 +83,7 @@ numbers 1-10, just like English.</p>
 </table>
 </div>
 
-<div>
+<div class='numbers'>
 <table>
 <tr>
 <td><span>10</span> д<b>е</b>сять</td>
@@ -105,7 +124,7 @@ numbers 1-10, just like English.</p>
 </table>
 </div>
 
-<div>
+<div class='numbers'>
 <table>
 <tr>
 <td><span>1.000</span> тыс<b>я</b>ча</td>
@@ -204,6 +223,50 @@ you'll be used to.</p>
 change depending on the verb they modify and grammatical case. 
 With dates, the ending is always neutral.<p>
 </section>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function dropdown1() {
+  document.getElementById("navdrop1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop1");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown2() {
+  document.getElementById("navdrop2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop2");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown3() {
+  document.getElementById("navdrop3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop3");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+</script> <!-- all from w3 schools -->
 
 </body>
 </html>

@@ -15,9 +15,29 @@
 <body class='lesson'>
 
 <h1>The Russian Alphabet</h1>
-<nav>
-<a href='home.htm'>Home</a>
-</nav>
+
+<div class='navbar'>
+	<a href='home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
+		<div class='dpanel' id='navdrop1'>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
+		<div class='dpanel' id='navdrop2'>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
+		<div class='dpanel' id='navdrop3'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
+
 <p>The Russian alphabet contains 33 letters. 
 	Some of them look like the Latin letters you’re used to, 
 	some don’t, and some look the same as Latin letters but have 
@@ -93,6 +113,50 @@
 <div style='width:98%; background-color:var(--background2); padding:1%;'> 
 	<p><i>You'll learn more about the properties of Russian letters in the 
 	spelling rules lesson and throughout learning Russian!</i></p></div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function dropdown1() {
+  document.getElementById("navdrop1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop1");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown2() {
+  document.getElementById("navdrop2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop2");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown3() {
+  document.getElementById("navdrop3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop3");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+</script> <!-- all from w3 schools -->
 
 </body>
 </html>
