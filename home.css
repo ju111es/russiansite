@@ -2,13 +2,19 @@
 /* colors */
 	--background: #ffd4e2;
 	--lightbackground: #ffe8f0;
+	
 	--link: #ff91b5;
 	--link-active: #ff6195;
+	
 	--text: #778899;
 	--darktext: #56626e;
-	--background2: #c9ecff;
-	--background2hover: #9ed3f0;
-	--background2child: #e3f5ff;
+	
+	/*white: 255, 255, 255*/
+	--background2-1: rgba(230, 245, 255);
+	--background2-1-trans: rgba(230, 245, 255, 0.7);
+	--background2-2: rgba(205, 235, 254);
+	--background2-3: rgba(175, 225, 253);
+	--background2-4: rgba(150, 200, 252);
 /* fonts */
 	--heading: 'ps2p';
 	--basictext: 'pixelify';
@@ -88,7 +94,7 @@ a:hover {color: var(--link-active);}
 	padding: 10px; 
 	font-weight: normal; 
 	text-align: left;
-	}
+}
 	
 .lesson th {
 	background-color: var(--background);
@@ -100,17 +106,33 @@ a:hover {color: var(--link-active);}
 	font-family: var(--paragraph), sans-serif;
 }
 		
-.lesson .opposite th {background-color: white;}
-.lesson .opposite td {background-color: var(--background);}
+.lesson.opposite th {background-color: white;}
+.lesson.opposite td {background-color: var(--background);}
 
+.lesson.example th, td {text-align: center;}
 
 /***RESOURCE*****************************************/
 
 .resource {background-color: white;}
 
-.resource h1 {margin-top: 5%;}
+.resource h1 {
+	margin-top: 5%;
+	color: var(--text);
+}
 
-.resource table {width: 100%;}
+.resource nav {
+	display: block;
+	background-color: var(--background);
+	font-size: 100%;
+	color: var(--text);
+	padding: 1% 0 1% 0;
+	text-align: center;
+}
+
+.resource table {
+	width: 100%;
+	padding-bottom: 3%;
+}
 
 .resource th, td {
 	font-family: var(--paragraph), sans-serif; 
@@ -118,7 +140,7 @@ a:hover {color: var(--link-active);}
 	font-weight: normal;
 	border: none;
 	color: var(--text);
-	padding-right: 2%;
+	padding-right: 1%;
 	padding-bottom: 2%;
 	text-align: left;
 }
@@ -128,9 +150,14 @@ a:hover {color: var(--link-active);}
 }
 
 .resource td {
-	background-color: none;
+	background-color: var(--background);
+	border: none;
 }
 
+.resource .title {
+	background-color: var(--background2-2);
+	width: 16%;
+}
 
 /***ACCORDION*****************************************/
 
@@ -140,19 +167,21 @@ a:hover {color: var(--link-active);}
 	cursor: pointer; 
 	outline: none; 
 	transition: 0.4s;
-}	
-
-.home .accordion {
-	background-color: var(--background2);
 	font-size: 140%;
 	width: 100%; 
 	text-align: left; 
 	border: none;   
 	padding: 12%;
 }
-	
-.home .accordion:hover {
-	background-color: var(--background2hover);
+
+.accordion.lessons {background-color: var(--background2-2);}
+
+.accordion.lessons:hover {background-color: var(--background2-3);}
+
+.accordion.resources {background-color: var(--background2-1);}
+
+.accordion.resources:hover {
+	background-color: var(--background2-2);
 }
 
 .apanel {
@@ -163,7 +192,6 @@ a:hover {color: var(--link-active);}
 	width: 100%;
 	padding-top: 0 20%;
 	font-size: 120%;
-	background-color: var(--background2child);
 	text-align: left;
 	color: var(--text);
 }
@@ -179,8 +207,15 @@ a:hover {color: var(--link-active);}
 	color: var(--text);
 } 
 
-.apanel a:hover {background-color: white; color: var(--text);}
+.apanel. a:hover {color: var(--text);}
 
+.apanel.lessons {background-color: var(--background2-1-trans);}
+
+.apanel.lessons a:hover {background-color: var(--background2-1);}
+
+.apanel.resources {background-color: rgba(255, 255, 255, 0.5);}
+
+.apanel.resources a:hover {background-color: white;}
 
 /***NAVBAR*****************************************/
 
