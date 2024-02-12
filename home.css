@@ -51,8 +51,14 @@ h3 {
 p {font-family: var(--paragraph), sans-serif;}
 a, a:visited {color: var(--link);}
 a:hover {color: var(--link-active);}
-.underline span {text-decoration: underline;}
-.change span {color: var(--link);}
+.underline span {
+	text-decoration: underline;
+	color: var(--text);
+}
+.change span {
+	color: var(--link);
+	text-decoration: none;
+}
 .fill {
 	background-color: white;
 	border: 2px solid var(--background); 
@@ -106,10 +112,24 @@ a:hover {color: var(--link-active);}
 	font-family: var(--paragraph), sans-serif;
 }
 		
-.lesson.opposite th {background-color: white;}
-.lesson.opposite td {background-color: var(--background);}
+.opposite th {background-color: white;}
+.opposite td {background-color: var(--background);}
 
-.lesson.example th, td {text-align: center;}
+.example th, .example td {
+	text-align: center;
+	font-family: var(--paragraph), sans-serif;
+}
+
+.example th {
+	font-size: 110%;
+	background-color: white;
+}
+
+.example td, .example p {
+	font-size: 110%;
+	background-color: var(--background2-2);
+	padding: .75%;
+}
 
 /***RESOURCE*****************************************/
 
