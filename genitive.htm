@@ -8,6 +8,7 @@
 <style> 
 	th {width: 25%;} 
 	.example th {width: auto;}
+	.example {width: 90%;}
 </style>
 </head>
 
@@ -66,7 +67,7 @@
 <th>Replace <!--ffccccccccfgvt--> ь (masculine) with я</th>
 </tr>
 <tr>
-<td>зл<b>о</b>де<span>й</span> &rarr; зл<b>о</b>де<span>я</span></td>
+<td>злод<b>е</b><span>й</span> &rarr; злод<b>е</b><span>я</span></td>
 <td>зме<span><b>я</b></span> &rarr; зме<span><b>и</b></span></td>
 <td>м<b>о</b>р<span>е</span> &rarr; м<b>о</b>р<span>я</span></td>
 <td>слов<b>а</b>р<span>ь</span> &rarr; слов<b>а</b>р<span>я</span></td>
@@ -95,7 +96,7 @@
 <th>Replace ь (masculine) with ей</th>
 </tr>
 <tr>
-<td>зл<b>о</b>де<span>й</span> &rarr; зл<b>о</b>де<span>ев</span></td>
+<td>злод<b>е</b><span>й</span> &rarr; злод<b>е</b><span>ев</span></td>
 <td>зме<span><b>я</b></span> &rarr; зме<span>й</span></td>
 <td>м<b>о</b>р<span>е</span> &rarr; м<b>о</b>р<span>ей</span></td>
 <td>слов<b>а</b>р<span>ь</span> &rarr; слов<b>а</b>р<span>ей</span></td>
@@ -106,7 +107,7 @@
 <th>Replace ие with ий</th>
 </tr>
 <tr>
-<td>муж &rarr; м<b>у</b>ж<span>ей</span></td>
+<td>муж &rarr; муж<span><b>е</b>й</span></td>
 <td>к<b>у</b>хн<span>я</span> &rarr; к<b>у</b>хон<span>ь</span>*</td>
 <td>помиш<b>е</b>н<span>ие</span> &rarr; помиш<b>е</b>н<span>ий</span></td>
 </tr>
@@ -224,8 +225,6 @@
 </tr>
 </table>
 
-<p><i>*Last <b>e</b> is interchangeable with <b>ё</b>.</i></p>
-
 <h3>
 ЕГО
 </h3>
@@ -233,6 +232,32 @@
 	<span><b>г</b> sounds like <b>в</b></span> (a v sound instead of g). So, <i>его</i> is
 	pronounced <i>yevo</i>. This is mostly present in the genitive case, as well as the accusative case which uses some
 	genitive pronouns, and the masculine possessive pronoun ег<b>о</b> which is used in all cases.</p>
+
+<h2>Adjectives</h2>
+
+<table>
+<tr>
+<th>masculine</th>
+<th>feminine</th>
+<th>neuter</th>
+<th>plural</th>
+</tr>
+<tr>
+<td>-ого</td>
+<td>-ой</td>
+<td>-ого</td>
+<td>-ых</td>
+</tr>
+</table>
+<br>
+<table class='example change'>
+<tr>
+<th>ч<b>ё</b>рн<span>ого</span></th>
+<th>ч<b>ё</b>рн<span>ой</span></th>
+<th>ч<b>ё</b>рн<span>ого</span></th>
+<th>ч<b>ё</b>рн<span>ых</span></th>
+</tr>
+</table>
 
 <h2>Uses</h2>
 <p>There are a few prepositions which indicate that the corresponding noun
@@ -284,16 +309,14 @@
 </table>
 
 <p>The genitive case is also used with more general amounts like мн<b>о</b>го
-	<i>a lot,</i> н<b>е</b>много <i>a little,</i> etc.
+	<i>a lot,</i> немн<b>о</b>го <i>a little,</i> etc.
 
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
 function dropdown1() {
   document.getElementById("navdrop1").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+/* Close the dropdown if the user clicks outside of it */
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
   var navdrop = document.getElementById("navdrop1");

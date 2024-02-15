@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Learn Russian</title>
+<link rel='stylesheet' href='home.css'>
+<link rel='icon' type='image/x-icon' href='flag.ico'>
+<style> 
+	th {width: 25%;} 
+	.example th {width: auto;}
+</style>
+</head>
+
+<body class='lesson'>
+<h1>The Instrumental Case</h1>
+
+<div class='navbar'>
+	<a href='home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
+		<div class='dpanel' id='navdrop1'>
+		<a href='alphabet.htm'>Alphabet</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='adjectives.htm'>Adjectives</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
+		<div class='dpanel' id='navdrop2'>
+		<a href='genitive.htm'>Genitive</a>
+		<a href='accusative.htm'>Accusative</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
+		<div class='dpanel' id='navdrop3'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
+
+<p class='underline'>The instrumental case is mainly used to mean 
+	<span>by means of</span> or <span>with</span>- think of something that is
+	<span>instrumental</span> to an object or action.</p>
+	
+<table class='opposite change'>
+<tr>
+<th><i>Add</i> ом to a hard consonant</th>
+<th>Replace а with ой</th>
+<th>Replace о with ом</th>
+<th>Replace ь (feminine) with ью</th>
+</tr>
+<tr>
+<td>вопр<b>о</b>с &rarr; вопр<b>о</b>с<span>ом</span></td>
+<td>звезд<span><b>а</b></span> &rarr; звезд<span><b>о</b>й</span></td>
+<td><b>у</b>тр<span>о</span> &rarr; <b>у</b>тр<span>ом</span></td>
+<td>кров<span>ь</span> &rarr; кр<b>о</b>в<span>ью</span></td>
+</tr>
+<tr>
+<th>Replace й with ем</th>
+<th>Replace я with ей</th>
+<th>Replace е with ем</th>
+<th>Replace ь (masculine) with ем</th>
+</tr>
+<tr>
+<td>бо<span>й</span> &rarr; б<b>о</b><span>ем</span></td>
+<td><b>а</b>рми<span>я</span> &rarr; <b>а</b>рми<span>ей</span></td>
+<td>печ<b>е</b>нь<span>е</span> &rarr; печ<b>е</b>нь<span>ем</span></td>
+<td>рубл<span>ь</span> &rarr; рубл<span><b>е</b>м</span></td>
+</tr>
+</table>
+
+<p>The plural form also changes in the prepositional case:</p>
+
+<table class='opposite change'>
+<tr>
+<th>hard consonant, а, о &rarr; ами</th>
+<td style='width:5%;'></td>
+<th>ь, й, я, е &rarr; ями</th>
+</tr>
+<tr>
+<td>вопр<b>о</b>с &rarr; вопр<b>о</b>с<span>ами</span></td>
+<td></td>
+<td>кров<span>ь</span> &rarr; кр<b>о</b>в<span>ями</span></td>
+<td>бо<span>й</span> &rarr; б<b>о</b><span>ями</span></td>
+<td><b>а</b>рми<span>я</span> &rarr; <b>а</b>рми<span>ями</span></td>
+</tr>
+<tr>
+<td>звезд<span><b>а</b></span> &rarr; звезд<span><b>а</b>ми</span></td>
+<td></td>
+<td>печ<b>е</b>нь<span>е</span> &rarr; печ<b>е</b>нь<span>ями</span></td>
+<td>рубл<span>ь</span> &rarr; рубл<span><b>я</b>ми</span></td>
+</tr>
+<tr>
+<td><b>у</b>тр<span>о</span> &rarr; <b>у</b>тр<span>ами</span></td>
+</tr>
+</table>
+
+<h2>Pronouns</h2>
+
+<table style='width:40%;'>
+<tr>
+<th><i>Personal</i></th>
+<th>1st person</th>
+<th>2nd person</th>
+<th>3rd person</th>
+<th>Reflexive</th>
+</tr>
+<tr>
+<th>Singular</th>
+<td>мной</td>
+<td>тоб<b>о</b>й</td>
+<td>(н)им/(н)ей</td>
+<td rowspan='2'>себ<b>ой</b><br>&darr;</td>
+</tr>
+<tr>
+<th>Plural</th>
+<td>н<b>а</b>ми</td>
+<td>в<b>а</b>ми</td>
+<td>(н)<b>и</b>ми</td>
+</tr>
+</table>
+
+<table style='width:70%;'>
+<tr>
+	<th><i>Possessive</i></th>
+	<th>1st person singular</th>
+	<th>2nd person singular</th>
+	<th>3rd person</th>
+	<th>1st person plural</th>
+	<th>2nd person plural</th>
+	<th>Reflexive</th>
+</tr>
+<tr>
+	<th>masculine</th>
+	<td>мо<b>и</b>м</td>
+	<td>тво<b>и</b>м</td>
+	<td rowspan='4'>&uarr;<br>ег<b>о</b>/е<b>е</b>/их<br>&darr;</td>
+	<td>н<b>а</b>ши</td>
+	<td>в<b>а</b>шим</td>
+	<td>сво<b>и</b>м</td>
+</tr>
+<tr>
+	<th>feminine</th>
+	<td>мо<b>е</b>й</td>
+	<td>тво<b>е</b>й</td>
+	<td>н<b>а</b>шем</td>
+	<td>в<b>а</b>шей</td>
+	<td>сво<b>е</b>й</td>
+</tr>
+<tr>
+	<th>neuter</th>
+	<td>мо<b>и</b>м</td>
+	<td>тво<b>и</b>м</td>
+	<td>н<b>а</b>ши</td>
+	<td>в<b>а</b>шим</td>
+	<td>сво<b>и</b>м</td>
+</tr>
+<tr>
+	<th>plural</th>
+	<td>мо<b>и</b>ми</td>
+	<td>тво<b>и</b>ми</td>
+	<td>н<b>а</b>шими</td>
+	<td>в<b>а</b>шими</td>
+	<td>сво<b>и</b>ми</td>
+</tr>
+</table>
+
+<table style='width:70%;'>
+<tr>
+	<th><i>Demonstrative, Determinative, & Indicative</i></th>
+	<th>This</th>
+	<th>That</th>
+	<th>All</th>
+	<th>What</th>
+	<th>Who</th>
+</tr>
+<tr>
+	<th>masculine</th>
+	<td><b>э</b>тим</td>
+	<td>тем</td>
+	<td>всем</td>
+	<td rowspan='4'>&uarr;<br>чем<br>&darr;</td>
+	<td rowspan='4'>&uarr;<br>ком<br>&darr;</td>
+</tr>
+<tr>
+	<th>feminine</th>
+	<td><b>э</b>той</td>
+	<td>той</td>
+	<td>всей</td>
+</tr>
+<tr>
+	<th>neuter</th>
+	<td><b>э</b>тим</td>
+	<td>тем</td>
+	<td>всем</td>
+</tr>
+<tr>
+	<th>plural</th>
+	<td><b>э</b>тими</td>
+	<td>теми</td>
+	<td>всеми</td>
+</tr>
+</table>
+
+<h2>Adjectives</h2>
+
+<table>
+<tr>
+<th>masculine</th>
+<th>feminine</th>
+<th>neuter</th>
+<th>plural</th>
+</tr>
+<tr>
+<td>ым</td>
+<td>ой</td>
+<td>ым</td>
+<td>ыми</td>
+</tr>
+</table>
+<br>
+<table class='example change'>
+<tr>
+<th>ч<b>ё</b>рн<span>ым</span></th>
+<th>ч<b>ё</b>рн<span>ой</span></th>
+<th>ч<b>ё</b>рн<span>ым</span></th>
+<th>ч<b>ё</b>рн<span>ыми</span></th>
+</tr>
+</table>
+
+<h2>Uses</h2>
+
+<h3>By means of</h3>
+<p class='underline'>The instrumental case is used where in English we would use the words
+	<span><i>with, using, by means of</i></span>:</p>
+<table class='example change' style='width:60%;'>
+<tr>
+<td>я напис<b>а</b>ла письм<b>о</b> каранд<b>а</b>ш<span>ом</span></td>
+<td>ем<b>у</b> нр<b>а</b>вится есть макар<b>о</b>ны л<b>о</b>жк<span>ой</span></td>
+</tr> 
+</table>
+
+<h3>With</h3>
+<p class='underline'>The instrumental case is also used with the prepostion 
+	<span>с(о)</span> <i>with</i>:</p>
+<table class='example change' style='width:60%;'>
+<tr>
+<td>к<b>о</b>фе с молок<span><b>о</b>м</span></td>
+<td>е<b>е</b> разгов<b>а</b>ривает со <span>сво<b>е</b>й</span> м<b>а</b>т<span>ью</span></td>
+</tr> 
+</table>
+
+<h3>Seasons & times of day</h3>
+<p class='underline'>To communicate <i>in/during</i> a <span>season or time of day</span>, 
+	we use the instrumental case:</p>
+<table class='example change' style='width:60%;'>
+<tr>
+<td>мы ед<b>и</b>м з<b>а</b>втрак <b>у</b>тр<span>ом</span></td>
+<td><b>о</b>сен<span>ью</span> п<b>а</b>дают л<b>и</b>стья</td>
+</tr> 
+</table>
+
+<h3>Other prepositions</h3>
+<p class='underline'>Finally, the instrumental case is used with a few pronouns which one
+	might expect to be used with the prepositional case:</p>
+<table class='example change' style='width:100%;'>
+<tr>
+<th>п<b>е</b>ред <i>in front of, before</i></th>
+<th>за <i>behind</i></th>
+<th>над <i>over, above</i></th>
+<th>под <i>under, below</i></th>
+<th>м<b>е</b>жду <i>between</i></th>
+</tr>
+<tr>
+<td>знак п<b>е</b>ред шк<b>о</b>л<span>ой</span></td>
+<td>п<b>о</b>ле за дер<b>е</b>вн<span>ей</span></td>
+<td>лун<b>а</b> над г<b>о</b>род<span>ом</span></td>
+<td>к<b>о</b>шка под стол<span><b>о</b>м</span></td>
+<td>сид<b>и</b> м<b>е</b>жду <span><b>э</b>тими</span> люд<span>ьм<b>и</b></span></td>
+</tr>
+</table>
+
+<script>
+function dropdown1() {
+  document.getElementById("navdrop1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop1");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown2() {
+  document.getElementById("navdrop2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop2");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown3() {
+  document.getElementById("navdrop3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop3");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+</script> <!-- all from w3 schools -->
+
+</body>
+</html>

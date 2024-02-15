@@ -51,7 +51,7 @@ h3 {
 p {font-family: var(--paragraph), sans-serif;}
 a, a:visited {color: var(--link);}
 a:hover {color: var(--link-active);}
-.underline span {
+.underline span, #underline span {
 	text-decoration: underline;
 	color: var(--text);
 }
@@ -115,6 +115,8 @@ a:hover {color: var(--link-active);}
 .opposite th {background-color: white;}
 .opposite td {background-color: var(--background);}
 
+.example {width:60%;}
+
 .example th, .example td {
 	text-align: center;
 	font-family: var(--paragraph), sans-serif;
@@ -125,10 +127,11 @@ a:hover {color: var(--link-active);}
 	background-color: white;
 }
 
-.example td, .example p {
+.example td {
 	font-size: 110%;
 	background-color: var(--background2-2);
 	padding: .75%;
+	border: 2.5px solid var(--background); 
 }
 
 /***RESOURCE*****************************************/
@@ -177,6 +180,10 @@ a:hover {color: var(--link-active);}
 .resource .title {
 	background-color: var(--background2-2);
 	width: 16%;
+}
+
+.resource .blank td {
+	background: none;
 }
 
 /***ACCORDION*****************************************/
@@ -319,5 +326,4 @@ a:hover {color: var(--link-active);}
 	display: block;
 }
 	
-/* this is pretty much directly from w3 schools
-also, the style is vaguely inspired by www.russianlessons.net */
+/* this is pretty much directly from w3 schools */
