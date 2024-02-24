@@ -3,9 +3,9 @@
 <html>
 <head>
 <title>Learn Russian</title>
-<link rel='stylesheet' href='home.css'>
-<link rel='icon' type='image/x-icon' href='flag.ico'>
-<style> 
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<style>
 	th {width: 25%;} 
 </style>
 </head>
@@ -14,7 +14,7 @@
 <h1>Nouns in Russian</h1>
 
 <div class='navbar'>
-	<a href='home.htm'>Home</a>
+	<a href='../home.htm'>Home</a>
 	<div class='dropdown'>
 	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
 		<div class='dpanel' id='navdrop1'>
@@ -26,7 +26,7 @@
 	<div class='dropdown'>
 	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
 		<div class='dpanel' id='navdrop2'>
-		<a href='genitive.htm'>Genitive</a>
+		<a href='../cases/genitive.htm'>Genitive</a>
 		<a href='accusative.htm'>Accusative</a>
 		</div>
 	</div>
@@ -41,42 +41,34 @@
 <p>Like many languages, all Russian nouns have a gender: either feminine, 
 	masculine, or neuter.</p>
 
-<div style='width:75%;'>
+<div style='width:100%;'>
 <table class='opposite'>
 <tr>
 <th>Masculine nouns end in hard consonants or й.</th>
 <th>Feminine nouns end in the letters а or я.</th>
 <th>Neuter nouns end in the letters о or е.</th>
+<th>A soft sign (ь) can be either masculine or feminine:</th>
 </tr>
 <tr>
 <td>с<b>а</b>хар <i>sugar</i></td>
 <td>маш<b>и</b>на <i>car</i></td>
 <td>н<b>е</b>бо <i>sky</i></td>
+<td>кор<b>о</b>ль <i>king</i> masculine</td>
 </tr>
 <tr>
 <td>чай <i>tea</i></td>
 <td>земл<b>я</b> <i>world</i></td>
 <td>движ<b>е</b>ние <i>movement</i></td>
-</tr>
-</table>
-</div>
-<div style='position:absolute; width:25%; top:18%; left:75%;'>
-<table class='opposite'> 
-<tr>
-<th style='font-size:15px;'>A soft sign (ь) can denote either a masculine or feminine noun. 
-	There are some tricks to figuring out which, but they’ll mostly have 
-	to be memorized. Don’t worry, it’s easier than it sounds!</th>
-</tr> 
-<tr>
 <td>м<b>е</b>дведь <i>bear</i> feminine</td>
-</tr>
-<tr>
-<td>кор<b>о</b>ль <i>king</i> masculine</td>
 </tr>
 </table>
 </div>
 
-<p style='margin-top:15%;'>Nouns can also be plural:<p>
+<p><i>There are a few <a href='soft-sign-reference.htm'>tricks</a> to figuring out whether a
+	-ь noun is masculine or feminine, but they'll mostly have to be memorized. Don't
+	worry, this is easier than it sounds!</i></p><br>
+
+<p>Nouns can also be plural:<p>
 
 <table class='opposite change' style='width:100%;'>
 <tr>
@@ -89,13 +81,13 @@
 <td>с<b>а</b>хар<span>ы</span> <i>sugars</i></td>
 <td>маш<b>и</b>н<span>ы</span> <i>cars</i></td>
 <td>н<b>е</b>б<span>а</span> <i>skies</i></td>
-<td>м<b>е</b>двед<span>и</span> <i>bears</i></td>
+<td>кор<b>о</b>л<span>и</span> <i>kings</i></td>
 </tr>
 <tr>
 <th>Replace й with и.</th>
 <th>Replace я with и.</th>
 <th>Replace е with я.</th>
-<td>кор<b>о</b>л<span>и</span> <i>kings</i></td>
+<td>м<b>е</b>двед<span>и</span> <i>bears</i></td>
 </tr>
 <tr>
 <td>ча<span>и</span> <i>teas</i></td>
@@ -117,7 +109,7 @@ function dropdown1() {
   document.getElementById("navdrop1").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
   var navdrop = document.getElementById("navdrop1");

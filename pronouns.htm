@@ -3,18 +3,15 @@
 <html>
 <head>
 <title>Learn Russian</title>
-<link rel='stylesheet' href='home.css'>
-<link rel='icon' type='image/x-icon' href='flag.ico'>
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
 <style>
 .table1 td:nth-of-type(even) {background-color: var(--background); 
 	border: 2px solid white; border-radius: 10px;}
 .table1 td:nth-of-type(odd) {background-color: white; border: none;}
-
-.table2 th {font-weight: normal; font-family: var(--paragraph); 
-	background-color: white; font-size: 15px; border: none;}
-.table2 td {background-color: var(--background); border: 2px solid white; 
-	border-radius: 10px;}
 .100 table: {width: 100%;}
+.flex-container {flex-wrap: wrap;}
+
 </style>
 </head>
 
@@ -22,7 +19,7 @@
 <h1>Pronouns in Russian</h1>
 
 <div class='navbar'>
-	<a href='home.htm'>Home</a>
+	<a href='../home.htm'>Home</a>
 	<div class='dropdown'>
 	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
 		<div class='dpanel' id='navdrop1'>
@@ -44,7 +41,8 @@
 	</div>
 </div>
 
-<div class='fill' style='width:98%;'>
+<div class='flex-container'>
+<div class='fill' style='align-self:start;'>
 <p>Russian has the same basic pronouns as English:</p>
 <table class='table1'>
 <tr>
@@ -80,13 +78,12 @@
 	speak more formally to: an (adult) stranger; a teacher; a boss. 
 	<b>Ты</b> is used when speaking to someone you’re more familiar with, 
 	and only when addressing just one person.</p>
-
 </div>
 
-<div class='fill' style='width:98%;'>
+<div class='fill'>
 <p>These pronouns show ownership, and they change depending on
 	the gender of the following noun:</p>
-<table class='table2'>
+<table class='opposite'>
 <tr>
 <th></th>
 <th>My, mine</th>
@@ -113,11 +110,11 @@
 </tr>
 <tr>
 <th>neuter</th>
-<td>Мо<b>е</b>*</td>
-<td>Тво<b>е</b>*</td>
+<td>Мо<b>е</b></td>
+<td>Тво<b>е</b></td>
 <td>Н<b>а</b>ше</td>
 <td>В<b>а</b>ше</td>
-<td>Сво<b>е</b>*</td>
+<td>Сво<b>е</b></td>
 <tr>
 <th>plural</th>
 <td>Мо<b>и</b></td>
@@ -128,14 +125,15 @@
 </tr>
 </table>
 
-<p><i>Ег<b>о</b>, е<b>е</b>*, and их are the masculine/neuter, feminine, and plural
+<p><i>Ег<b>о</b> (yevo), е<b>е</b>, and их are the masculine/neuter, feminine, and plural
 	possessive pronouns, respectively. These aren't based on the gender of
 	the following object (the item being possessed); rather, they are based
 	on the gender of the noun they replace (the one possessing the object).</i></p>
-<p>*You'll see any of the starred * pronouns spelled with either <b>е</b> or
-	<b>ё</b> as the ending- these are interchangeable.</p>
 	
-<table class='table2' style='width:100%;'>
+<p>All multi-syllable pronouns with a stressed е take on the sound of ё, and you may see them spelled as such.
+	The pronounciation remains the same.</p>
+	
+<table class='example' style='width:100%;'>
 <tr>
 <th style='font-size:200%; width:5%; text-align: center;'>&rarr;</th>
 <td>мой велосип<b>е</b>д</td>
@@ -143,26 +141,17 @@
 <td>мо<b>е</b> лиц<b>о</b></td>
 <td>мо<b>и</b> д<b>е</b>ти</td>
 </tr>
-<tr><i>
-<th></th>
-<th>my bicycle</th>
-<th>my dog</th>
-<th>my face</th>
-<th>my children</th>
-</i></tr>
 </table>
 </div>
 
-<div class='fill' style='width:98%;'>
+<div class='fill'>
 <p>These are demonstrative pronouns. They also change with the gender of the following noun:</p>
-<section style='width:69%;'>
-<table class='table2' style='width:100%;'>
+<table class='opposite'>
 <tr>
 <th style='width:17%;'></th>
 <th>This</th>
 <th>That</th>
 <th>All</th>
-<th style='font-size:200%; width:17%; text-align: center;'>&rarr;</th>
 </tr>
 <tr>
 <th>masculine</th>
@@ -188,43 +177,36 @@
 <td>Все</td>
 </tr>
 </table>
+</div>
 
-<p>Это can also mean <i>this is.</i> With this meaning, 
-	it always uses the neuter form:</p>
+<div style='width:28%;'>
+<table class='example' style='width:100%; float:right;'>
+<tr><td><b>э</b>тот велосип<b>е</b>д</td></tr>
+<tr><td><b>э</b>та соб<b>а</b>ка</td></tr>
+<tr><td><b>э</b>то лиц<b>о</b></td></tr>
+<tr><td><b>э</b>ти д<b>е</b>ти</td></tr>
+</table>
 
-<table class='table2' style='width:80%;'>
+<table class='example' style='width:100%;'>
 <tr>
+<th>Это can also mean <i>this is.</i> With this meaning, 
+	it always uses the neuter form:</th>
+</tr>
 <td><b>э</b>то велосип<b>е</b>д</td>
+</tr>
+<tr>
 <td><b>э</b>то соб<b>а</b>ка</td>
 </tr>
 <tr>
-<th>this is a bicycle</th>
-<th>this is a dog</th>
+<td><b>э</b>то лиц<b>о</b></td>
 </tr>
 <tr>
-<td><b>э</b>то лиц<b>о</b></td>
 <td><b>э</b>то д<b>е</b>ти</td>
 </tr>
-<tr>
-<th>this is a face</th>
-<th>these are children</th>
-</tr>
 </table>
-</section>
-
-<aside style='width:31%;'>
-<table class='table2' style='width:100%; float:right;'>
-<tr><td><b>э</b>тот велосип<b>е</b>д</td></tr>
-<tr><th>this bicycle</th></tr>
-<tr><td><b>э</b>та соб<b>а</b>ка</td></tr>
-<tr><th>this dog</th></tr>
-<tr><td><b>э</b>то лиц<b>о</b></td></tr>
-<tr><th>this face</th></tr>
-<tr><td><b>э</b>ти д<b>е</b>ти</td></tr>
-<tr><th>these children</th></tr>
-</table>
-</aside>
 </div>
+
+</div> <!-- flex-container -->
 
 <div>
 <p>Finally there are the pronouns <b>что</b> and <b>кто</b>, meaning what and who. 
@@ -236,13 +218,10 @@
 </div>
 
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
 function dropdown1() {
   document.getElementById("navdrop1").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
   var navdrop = document.getElementById("navdrop1");
@@ -255,7 +234,6 @@ function dropdown2() {
   document.getElementById("navdrop2").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
   var navdrop = document.getElementById("navdrop2");
@@ -268,7 +246,6 @@ function dropdown3() {
   document.getElementById("navdrop3").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
   var navdrop = document.getElementById("navdrop3");

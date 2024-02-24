@@ -1,0 +1,117 @@
+<! DOCTYPE html>
+
+<html>
+
+<head>
+<title>Learn Russian</title>
+<link rel='icon' type='image/x-icon' href='flag.ico'>
+<link rel='stylesheet' href='home.css'>
+<style>
+.letters1 span, .letters2 span  {font-size:130%; border-radius:10px; padding:1%;}
+.letters1 span {background-color:white; border:1px solid var(--background);}
+.letters2 {background-color: white;}
+.letters2 span {background-color:var(--background); border:1px solid white;}
+table {width:100%;}
+td {width:50%; font-size:120%;}
+</style>
+</head>
+
+<body class='lesson'>
+
+<div class='navbar'>
+	<a href='home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
+		<div class='dpanel' id='navdrop1'>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
+		<div class='dpanel' id='navdrop2'>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
+		<div class='dpanel' id='navdrop3'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
+
+<h1>Spelling Rules</h1>
+
+<p>Russian has a few rules and conventions for which vowels can be used with certain consonants.</p>
+
+<table>
+<tr>
+<td class='letters1' style='background-color:var(--background);'><span>ы</span> cannot follow the consonants<br><br>
+	<span>г</span> <span>к</span> <span>х</span> <span>ж</span> <span>ч</span> <span>ш</span> <span>щ</span><br><br>
+	Instead, use <span>и</span><br><br>
+	<i>и is the soft counterpart of ы.</i></td>
+<td class='letters2'><span>я</span> cannot follow the consonants<br><br>
+	<span>г</span> <span>к</span> <span>х</span> <span>ж</span> <span>ч</span> <span>ш</span> <span>щ</span> <span>ц</span><br><br>
+	Instead, use <span>и</span><br><br>
+	<i>а is the hard counterpart of я.</i></td>
+</tr>
+<td class='letters2'><span>ю</span> cannot follow the consonants<br><br>
+	<span>г</span> <span>к</span> <span>х</span> <span>ж</span> <span>ч</span> <span>ш</span> <span>щ</span> <span>ц</span><br><br>
+	Instead, use <span>у</span><br><br>
+	<i>у is the hard counterpart of ю.</i></td>
+	<td class='letters1' style='background-color:var(--background);'><i>unstressed</i> <span>о</span> cannot follow the consonants<br><br>
+	<span>ж</span> <span>ч</span> <span>ш</span> <span>щ</span><br><br>
+	Instead, use <span>е</span><br><br>
+	<i>е is the soft counterpart of о.</i></td>
+</table>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function dropdown1() {
+  document.getElementById("navdrop1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop1");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown2() {
+  document.getElementById("navdrop2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop2");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown3() {
+  document.getElementById("navdrop3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop3");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+</script> <!-- all from w3 schools -->
+
+</body>
+
+</html>
+
+
+

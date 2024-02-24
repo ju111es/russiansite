@@ -3,21 +3,21 @@
 <html>
 <head>
 <title>Learn Russian</title>
-<link rel='icon' type='image/x-icon' href='flag.ico'>
-<link rel='stylesheet' href='home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<link rel='stylesheet' href='../home.css'>
 <style>
-table {font-size: 20px; padding-bottom: 1%;}
 table {width: 100%;}
-td {margin-right: 50%;}
-.numbers {padding: 1%; width: 31%}
+.numbers {padding: 1%; font-size: 20px;}
 span {font-family: var(--basictext);}
+
+.flex-container div {width:33%;}
 </style>
 </head>
 <body class='lesson'>
 <h1>Numbers in Russian</h1>
 
 <div class='navbar'>
-	<a href='home.htm'>Home</a>
+	<a href='../home.htm'>Home</a>
 	<div class='dropdown'>
 	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
 		<div class='dpanel' id='navdrop1'>
@@ -42,6 +42,7 @@ span {font-family: var(--basictext);}
 However, you'll notice that all numbers follow the pattern of the 
 numbers 1-10, just like English.</p>
 
+<div class='flex-container'>
 <div class='numbers'>
 <table>
 <tr>
@@ -160,22 +161,24 @@ numbers 1-10, just like English.</p>
 </table>
 </div>
 
+</div>
+
 <section>
 <h2>Compound Numbers</h2>
 <p>Compound numbers are numbers like 41, 87, 192, etc., and they're formed
 the same way in Russian in as in English: by simply putting them together.</p>
 
 <p><i>For example...</i></p>
-<table>
+<table class='opposite'>
 <tr>
-<td style='background-color:var(--background);'>
-	<span>37</span> тридцать семь</th>
-<td style='background-color:var(--background);'>
-	<span>183</span> сто восемьдесят три</th>
-<td style='background-color:var(--background);'>
-	<span>1020</span> тысяча двадцать</th>
-<td style='background-color:var(--background);'>
-	<span>11501</span> одиннадцать тысяч пятьсот один</th>
+<td>
+	<span>37</span> тридцать семь</td>
+<td>
+	<span>183</span> сто восемьдесят три</td>
+<td>
+	<span>1020</span> тысяча двадцать</td>
+<td>
+	<span>11501</span> одиннадцать тысяч пятьсот один</td>
 </tr>
 </table>
 </section>
