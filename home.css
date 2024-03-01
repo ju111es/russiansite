@@ -143,6 +143,9 @@ a:hover {color: var(--link-active);}
 	padding: .75%;
 }
 
+.stem, .verbs span:nth-child(odd) {color: var(--background2-4);}
+.endings span:not(.stem), .verbs span:nth-child(even) {color: var(--link);}
+
 /***RESOURCE*****************************************/
 
 .resource {background-color: white;}
