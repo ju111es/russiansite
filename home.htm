@@ -5,6 +5,9 @@
 <title>Learn Russian</title>
 <link rel='stylesheet' href='home.css'>
 <link rel='icon' type='image/x-icon' href='flag.ico'>
+<style>
+.flex-container div {width: 50%;}
+</style>
 </head>
 
 <body class='home'>
@@ -31,6 +34,13 @@
 	<a href='cases/prepositional.htm'>Prepositional</a>
 	<a href='cases/dative.htm'>Dative</a>
 	<a href='cases/instrumental.htm'>Instrumental</a>
+	</div>
+
+<button class='accordion lessons'>Verbs</button>
+	<div class='apanel lessons'>
+	<a href='verbs/present.htm'>Present Tense</a>
+	<a href='verbs/past.htm'>Past Tense</a>
+	<a href='verbs/future.htm'>Future Tense</a>
 	</div>
 
 <button class='accordion lessons'>Vocabulary</button>
@@ -68,12 +78,32 @@ for (i = 0; i < acc.length; i++) {
 </script> <!-- all from w3 schools -->
 
 <div style='position: absolute; left:22%; top: 30%; width:75%;'>
+<div class='flex-container'>
+<div style='width:25%;'><h1><div class='tooltip'>Привет!<span class='tooltiptext' style='background-color: var(--tooltip2);'><b>Hello!</b> Hover over Russian text on this site to see it in English.</span></div></h1></div>
+<div><p><i>&larr; hover cursor here</i></p></div>
+</div>
+
 <h2>About</h2>
-<p style='padding:5px;'><b>Stress Marks</b><br>This site uses 
-<b>bold text</b> to indicate where stress falls in words. Stress is the part of
-the word pronounced the most- for example, the stress falls on the first <b>a</b>
-in the words B<b>a</b>sics, C<b>a</b>ses, and Voc<b>a</b>bulary. Stress always falls on a vowel
-and is very important in Russian grammar. Remember, ё is always stressed :)</p>
+<div class='flex-container'>
+	<div class='fill' style='height:50%;'>
+		<h3>Stress Marks</h3>
+		<p>This site uses 
+			<b>bold text</b> to indicate where stress falls in words. Stress is the part of
+			the word pronounced the most- for example, the stress falls on the first <b>a</b>
+			in the words B<b>a</b>sics, C<b>a</b>ses, and Voc<b>a</b>bulary. Stress always falls on a vowel
+			and is very important in Russian grammar. Remember, ё is always stressed :)</p>
+	</div>
+	<div class='fill'>
+		<h3>A note on gender</h3>
+		<p>Russian is a very gendered language, and it can be difficult to use for someone
+			who doesn't feel comfortable with gendered language. The creator of this site (me!!) is non-binary and uses they/them pronouns
+			in English and feminine grammar in Russian (I think they're the prettiest :P). I like to think that because every
+			Russian noun is gendered, it means less- is a couch or soup necessarily masculine, and is water or a star necessarily
+			feminine in any sense but grammatically? Of course not. Transgender and non-binary native Russian speakers of course exist; 
+			some choose to use the neuter grammar while some prefer to switch between masculine and feminine, especially since the 
+			neuter gender is generally for inanimate objects. However you choose to express yourself in Russian, this site
+			is for everyone &#10084;</p>
+	</div>
 </div>
 
 </body>

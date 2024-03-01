@@ -7,7 +7,7 @@
 <link rel='stylesheet' href='../home.css'>
 <link rel='icon' type='image/x-icon' href='../flag.ico'>
 <style>
-.example td {border: 5px solid white;}
+.example td, .example th {border: 5px solid white; width: 30%;}
 </style>
 </head>
 
@@ -67,16 +67,16 @@
 
 <table>
 <tr>
-<td>б<b>у</b>ду д<b>е</b>лать</td>
-<td>б<b>у</b>дем д<b>е</b>лать</td>
+<td><div class='tooltip'>б<b>у</b>ду д<b>е</b>лать<span class='tooltiptext'>(I) will do (it)</span></div></td>
+<td><div class='tooltip'>б<b>у</b>дем д<b>е</b>лать<span class='tooltiptext'>(we) will do (it)</span></div></td>
 </tr>
 <tr>
-<td>б<b>у</b>дешь д<b>е</b>лать</td>
-<td>б<b>у</b>дете д<b>е</b>лать</td>
+<td><div class='tooltip'>б<b>у</b>дешь д<b>е</b>лать<span class='tooltiptext'>(you) will do (it)</span></div></td>
+<td><div class='tooltip'>б<b>у</b>дете д<b>е</b>лать<span class='tooltiptext'>(you) will do (it)</span></div></td>
 </tr>
 <tr>
-<td>б<b>у</b>дет д<b>е</b>лать</td>
-<td>б<b>у</b>дут д<b>е</b>лать</td>
+<td><div class='tooltip'>б<b>у</b>дет д<b>е</b>лать<span class='tooltiptext'>(he/she/it) will do (it)</span></div></td>
+<td><div class='tooltip'>б<b>у</b>дут д<b>е</b>лать<span class='tooltiptext'>(they) will do (it)</span></div></td>
 </tr>
 </table>
 
@@ -88,11 +88,81 @@
 	
 <table class='example'>
 <tr>
-<td style='background-color: var(--background);'>я сд<b>е</b>лал</td>
-<th>я д<b>е</b>лаю</th>
-<td>я сд<b>е</b>лаю</td>
+<th style='background-color: var(--background);'><div class='tooltip'>я сд<b>е</b>лал<span class='tooltiptext'>I did (it)</span></div></th>
+<th><div class='tooltip'>я д<b>е</b>лаю<span class='tooltiptext'>I am doing (it)</span></div></th>
+<td><div class='tooltip'>я сд<b>е</b>лаю<span class='tooltiptext'>I will do (it)</span></div></td>
 </tr>
 </table>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function dropdown1() {
+  document.getElementById("navdrop1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop1");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown2() {
+  document.getElementById("navdrop2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop2");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown3() {
+  document.getElementById("navdrop3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop3");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown4() {
+  document.getElementById("navdrop4").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop4");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown5() {
+  document.getElementById("navdrop5").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop5");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+</script> <!-- all from w3 schools -->
 
 </body>
 

@@ -14,6 +14,10 @@ div {float: left;}
 .apanel table {width: 100%; padding:0; font-size:70%;}
 .apanel .65 {font-size:6%;}
 .accordion {font-family: var(--paragraph), sans-serif; padding:10%;}
+
+.tooltip .tooltiptext {
+	background-color: var(--tooltip3);
+}
 </style>
 </head>
 
@@ -27,7 +31,7 @@ div {float: left;}
 		<a href='../basics/alphabet.htm'>Alphabet</a>
 		<a href='../basics/spellingrules.htm'>Spelling Rules</a>
 		<a href='../basics/pronouns.htm'>Pronouns</a>
-		<a href='../basics/'nominative.htm'>Nouns</a>
+		<a href='../basics/nominative.htm'>Nouns</a>
 		<a href='../basics/adjectives.htm'>Adjectives</a>
 		<a href='../basics/consonantmutation.htm'>Consonant Mutation</a>
 		</div>
@@ -46,6 +50,20 @@ div {float: left;}
 	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
 		<div class='dpanel' id='navdrop3'>
 		<a href='../vocab/numbers.htm'>Numbers</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown4()'>Verbs</button>
+		<div class='dpanel' id='navdrop4'>
+		<a href='past.htm'>Past Tense</a>
+		</div>
+	</div>
+	<div class='dropdown resourcebtn'>
+	<button class='dropbtn' onclick='dropdown5()'>Resources</button>
+		<div class='dpanel' id='navdrop5'>
+		<a href='../resources/noun-table.htm'>Nouns</a>
+		<a href='../resources/pronoun-table.htm'>Pronouns</a>
+		<a href='../resources/adjective-table.htm'>Adjectives</a>
 		</div>
 	</div>
 </div>
@@ -193,7 +211,7 @@ div {float: left;}
 <h2>Examples</h2>
 <div class='flex-container verbs'>
 <div>
-<button class='accordion resource'><span>зн</span><span>а</span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>зн</span><span>а</span>ть<span class='tooltiptext'>to know</span></div></button>
 	<div class='apanel'>
 		<table>
 		<tr>
@@ -212,7 +230,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>гул</span><span><b>я</b></span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>гул</span><span><b>я</b></span>ть<span class='tooltiptext'>to stroll</span></div></button>
 	<div class='apanel'>
 		<table>
 		<tr>
@@ -231,7 +249,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>бол</span><span><b>е</b></span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>бол</span><span><b>е</b></span>ть<span class='tooltiptext'>to be/fall ill</span></div></button>
 	<div class='apanel'>
 		<table>
 		<tr>
@@ -250,7 +268,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>иск</span><span><b>а</b></span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>иск</span><span><b>а</b></span>ть<span class='tooltiptext'>to search (for)</span></div></button>
 	<div class='apanel'>
 		<table>
 		<tr>
@@ -269,7 +287,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>кол</span><span><b>о</b></span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>кол</span><span><b>о</b></span>ть<span class='tooltiptext'>to prick</span></div></button>
 	<div class='apanel'>
 		<table>
 		<tr>
@@ -288,7 +306,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>д</span><span>ав<b>а</b></span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>д</span><span>ав<b>а</b></span>ть<span class='tooltiptext'>to give</span></div></button>
 	<div class='apanel'>
 		<table>
 		<tr>
@@ -307,7 +325,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>цел</span><span>ов<b>а</b></span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>цел</span><span>ов<b>а</b></span>ть<span class='tooltiptext'>to kiss</span></div></button>
 	<div class='apanel'>
 		<table>
 		<tr>
@@ -328,7 +346,7 @@ div {float: left;}
 </div>
 <div class='flex-container verbs'>
 <div>
-<button class='accordion resource'><span>откр</span><span>ы</span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>откр</span><span>ы</span>ть<span class='tooltiptext'>to open</span></div></button>
 	<div class='apanel' style='font-size: 105%;'>
 		<table>
 		<tr>
@@ -347,7 +365,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>на</span><span>д<b>е</b></span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>на</span><span>д<b>е</b></span>ть<span class='tooltiptext'>to put on</span></div></button>
 	<div class='apanel'  style='font-size: 105%;'>
 		<table>
 		<tr>
@@ -366,7 +384,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>в</span><span>ста</span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>в</span><span>ста</span>ть<span class='tooltiptext'></span></div></button>
 	<div class='apanel' style='font-size: 105%;'>
 		<table>
 		<tr>
@@ -385,7 +403,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>при</span><span>н<b>я</b></span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>при</span><span>н<b>я</b></span>ть<span class='tooltiptext'></span></div></button>
 	<div class='apanel'>
 		<table>
 		<tr>
@@ -404,7 +422,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>по</span><span>н<b>я</b></span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>по</span><span>н<b>я</b></span>ть<span class='tooltiptext'>to understand</span></div></button>
 	<div class='apanel'>
 		<table>
 		<tr>
@@ -423,7 +441,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>под</span><span>н<b>я</b></span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>под</span><span>н<b>я</b></span>ть<span class='tooltiptext'>to increase</span></div></button>
 	<div class='apanel' style='font-size:92.5%;'>
 		<table>
 		<tr>
@@ -442,7 +460,7 @@ div {float: left;}
 	</div>
 </div>
 <div>
-<button class='accordion resource'><span>т</span><span><b>е</b>ре</span>ть</button>
+<button class='accordion resource'><div class='tooltip'><span>т</span><span><b>е</b>ре</span>ть<span class='tooltiptext'>to rub</span></div></button>
 	<div class='apanel'>
 		<table>
 		<tr>
@@ -655,6 +673,32 @@ function dropdown3() {
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
   var navdrop = document.getElementById("navdrop3");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown4() {
+  document.getElementById("navdrop4").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop4");
+    if (navdrop.classList.contains('show')) {
+      navdrop.classList.remove('show');
+    }
+  }
+}
+function dropdown5() {
+  document.getElementById("navdrop5").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var navdrop = document.getElementById("navdrop5");
     if (navdrop.classList.contains('show')) {
       navdrop.classList.remove('show');
     }
