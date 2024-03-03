@@ -16,9 +16,9 @@
 	--background2-3: rgba(175, 225, 253);
 	--background2-4: rgba(150, 200, 252);
 	
-	--tooltip1: rgba(205, 235, 254, 0.9); /* bg2-2 */
-	--tooltip2: rgba(255, 255, 255, 0.9); /* white */
-	--tooltip3: rgba(255, 232, 240, 0.9); /* lightbg */
+	--tooltip1: rgba(205, 235, 254, 0.8); /* bg2-2 */
+	--tooltip2: rgba(255, 255, 255, 0.8); /* white */
+	--tooltip3: rgba(255, 232, 240, 0.8); /* lightbg */
 /* fonts */
 	--heading: 'ps2p';
 	--basictext: 'pixelify';
@@ -41,6 +41,7 @@
 
 /***MAIN*****************************************/
 
+
 section {float: left;}
 aside {float: right;}
 h1, h2, h3 {font-family: var(--heading), sans-serif;}
@@ -48,12 +49,13 @@ h3 {
 	font-size: 100%;
 	font-weight: normal;
 }
-p {
+p, .pg {
 	font-family: var(--paragraph), sans-serif;
-	letter-spacing: 150%;
-	word-spacing: 150%;
-	line-height: 150%;
-}
+	letter-spacing: .05rem;
+	word-spacing: .1rem;
+	line-height: 175%;
+} /* the pg class is for instances of tooltips inside p elements- 
+	can't set letter- or word-spacing for a div + html gets confused with stuff between tooltips */
 a, a:visited {color: var(--link);}
 a:hover {color: var(--link-active);}
 .underline span, #underline span {
@@ -87,31 +89,33 @@ a:hover {color: var(--link-active);}
 }
 
 .tooltip {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
+	font-family: var(--paragraph), sans-serif;
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-  display: none;
-  color: var(--text);
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position:absolute;
-  top: 105%;
-  left: 0;
-  z-index: 1;
-  white-space: nowrap;
-  font-family: var(--paragraph), sans-serif;
-  font-size: 15px;
-  font-weight: normal;
+	display: none;
+	color: var(--text);
+	text-align: center;
+	padding: 5px;
+	border-radius: 6px;
+	position:absolute;
+	top: 105%;
+	left: 0;
+	z-index: 1;
+	white-space: nowrap;
+	font-size: 15px;
+	font-weight: normal;
+	text-decoration: none;
 }
 
 .tooltip:hover .tooltiptext {
-  display: block;
+	display: block;
 }
  /* from w3 schools */
+ 
 
 /***HOME*****************************************/
 
@@ -177,7 +181,7 @@ a:hover {color: var(--link-active);}
 .endings span:not(.tooltiptext):not(.stem), .verbs span:not(.tooltiptext):nth-child(even) {color: var(--link);}
 
 .lesson td .tooltip .tooltiptext {background-color: var(--tooltip1);}
-.lesson .example td .tooltip .tooltiptext {background-color: var(--tooltip2);}
+.lesson .tooltip .tooltiptext, .lesson .example td .tooltip .tooltiptext {background-color: var(--tooltip2);}
 .lesson .example th .tooltip .tooltiptext {background-color: var(--tooltip3);}
 
 /***RESOURCE*****************************************/
@@ -307,6 +311,7 @@ a:hover {color: var(--link-active);}
 	width: 100%;
 	text-align: center;
 	display: flex;
+	z-index: 1;
 }
 
 .navbar a {
@@ -325,6 +330,7 @@ a:hover {color: var(--link-active);}
 	float: left;
 	overflow: hidden;
 	width: 17%;
+	font-family: var(--basictext), sans-serif;
 }
 
 .dropdown .dropbtn {
@@ -344,8 +350,7 @@ a:hover {color: var(--link-active);}
 
 .dropbtn {
 	display: block;
-	padding-top: 9%;
-	padding-bottom: 9%;
+	height:100%;
 }
 
 .navbar a:hover, .dropdown:hover, .dropbtn:hover {
