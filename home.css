@@ -49,20 +49,19 @@ h3 {
 	font-size: 100%;
 	font-weight: normal;
 }
-p, .pg {
+p {
 	font-family: var(--paragraph), sans-serif;
 	letter-spacing: .05rem;
 	word-spacing: .1rem;
 	line-height: 175%;
-} /* the pg class is for instances of tooltips inside p elements- 
-	can't set letter- or word-spacing for a div + html gets confused with stuff between tooltips */
+}
 a, a:visited {color: var(--link);}
 a:hover {color: var(--link-active);}
-.underline span, #underline span {
+.underline span:not(.tooltip):not(.tooltiptext), #underline span:not(.tooltip):not(.tooltiptext) {
 	text-decoration: underline;
 	color: var(--text);
 }
-.change span {
+.change span:not(.tooltip):not(.tooltiptext) {
 	color: var(--link);
 	text-decoration: none;
 }
@@ -91,18 +90,16 @@ a:hover {color: var(--link-active);}
 .tooltip {
 	position: relative;
 	display: inline-block;
-	font-family: var(--paragraph), sans-serif;
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
 	display: none;
-	color: var(--text);
-	text-align: center;
+	text-align: left;
 	padding: 5px;
 	border-radius: 6px;
 	position:absolute;
-	top: 105%;
+	top: 125%;
 	left: 0;
 	z-index: 1;
 	white-space: nowrap;
@@ -111,8 +108,30 @@ a:hover {color: var(--link-active);}
 	text-decoration: none;
 }
 
+.tooltip, .tooltip .tooltiptext {
+	color: var(--text);
+	font-family: var(--paragraph), sans-serif;
+}
+
+.tooltip .tooltiptext::after {
+	content: " ";
+  position: absolute;
+  bottom: 100%; /* At the bottom of the tooltip */
+  left: 25%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+} /* arrows */
+
+/* w3 schools uses div for tooltip but i find a span better because text can be styled and it doesn't indent weird */
+
 .tooltip:hover .tooltiptext {
 	display: block;
+}
+
+.tooltiptext.wrap {
+	width: 200px;
+	white-space: wrap;
 }
  /* from w3 schools */
  
@@ -177,12 +196,16 @@ a:hover {color: var(--link-active);}
 	padding: .75%;
 }
 
-.stem, .verbs span:not(.tooltiptext):nth-child(odd) {color: var(--background2-4);}
-.endings span:not(.tooltiptext):not(.stem), .verbs span:not(.tooltiptext):nth-child(even) {color: var(--link);}
+.stem, .verbs span:not(.tooltip):not(.tooltiptext):nth-child(odd) {color: var(--background2-4);}
+.endings span:not(.tooltip):not(.tooltiptext):not(.stem), .verbs span:not(.tooltip):not(.tooltiptext):nth-child(even) {color: var(--link);}
 
+/* styling tooltips according to where they occur: */
 .lesson td .tooltip .tooltiptext {background-color: var(--tooltip1);}
+	.lesson td .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip1) transparent;}
 .lesson .tooltip .tooltiptext, .lesson .example td .tooltip .tooltiptext {background-color: var(--tooltip2);}
-.lesson .example th .tooltip .tooltiptext {background-color: var(--tooltip3);}
+	.lesson .tooltip .tooltiptext::after, .lesson .example td .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip2) transparent;}
+.lesson .example th .tooltip .tooltiptext, .lesson .verbs .tooltip .tooltiptext {background-color: var(--tooltip3);}
+	 .lesson .example th .tooltip .tooltiptext, .lesson .verbs .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip3) transparent;}
 
 /***RESOURCE*****************************************/
 

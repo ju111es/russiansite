@@ -7,13 +7,16 @@
 <link rel='icon' type='image/x-icon' href='flag.ico'>
 <style>
 .flex-container div {width: 50%;}
+
+.tooltip .tooltiptext {top: 80%;}
+.tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip2) transparent;}
 </style>
 </head>
 
 <body class='home'>
 <div style='float:none; background-color:white; width:100%; 
 	padding:2%; padding-left:5%; margin:-1%;'>
-<h1>Изучайте Русский Язык со Мной!<br><i>Study Russian with Me!</i></h1>
+<h1>Изучайте Русский Язык со Мной!<br><br><i>Study Russian with Me!</i></h1>
 </div>
 
 <div style='width: 20%; margin-left:-1%; margin-top:-2%;'>
@@ -79,7 +82,7 @@ for (i = 0; i < acc.length; i++) {
 
 <div style='position: absolute; left:22%; top: 30%; width:75%;'>
 <div class='flex-container'>
-<div style='width:25%;'><h1><div class='tooltip'>Привет!<span class='tooltiptext' style='background-color: var(--tooltip2);'><b>Hello!</b> Hover over Russian text on this site to see it in English.</span></div></h1></div>
+<div style='width:25%;'><div class='tooltip'><h1>Привет!</h1><span class='tooltiptext' style='background-color: var(--tooltip2);'><b>Hello!</b> Hover over Russian text on this site to see it in English.</span></div></div>
 <div><p><i>&larr; hover cursor here</i></p></div>
 </div>
 
@@ -97,9 +100,7 @@ for (i = 0; i < acc.length; i++) {
 		<h3>A note on gender</h3>
 		<p>Russian is a very gendered language, and it can be difficult to use for someone
 			who doesn't feel comfortable with gendered language. The creator of this site (me!!) is non-binary and uses they/them pronouns
-			in English and feminine grammar in Russian (I think they're the prettiest :P). I like to think that because every
-			Russian noun is gendered, it means less- is a couch or soup necessarily masculine, and is water or a star necessarily
-			feminine in any sense but grammatically? Of course not. Transgender and non-binary native Russian speakers of course exist; 
+			in English and feminine grammar in Russian (I think it's the prettiest :P). Transgender and non-binary native Russian speakers of course exist; 
 			some choose to use the neuter grammar while some prefer to switch between masculine and feminine, especially since the 
 			neuter gender is generally for inanimate objects. However you choose to express yourself in Russian, this site
 			is for everyone &#10084;</p>
