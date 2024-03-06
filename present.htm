@@ -16,6 +16,7 @@ div {float: left;}
 .accordion {font-family: var(--paragraph), sans-serif; padding:10%;}
 
 </style>
+<script src='../home.js'></script>
 </head>
 
 <body class='lesson'>
@@ -23,8 +24,8 @@ div {float: left;}
 <div class='navbar'>
 	<a href='../home.htm'>Home</a>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
-		<div class='dpanel' id='navdrop1'>
+	<button class='dropbtn' onclick='dropdown(1)'>Basics</button>
+		<div class='dpanel'>
 		<a href='../basics/alphabet.htm'>Alphabet</a>
 		<a href='../basics/spellingrules.htm'>Spelling Rules</a>
 		<a href='../basics/pronouns.htm'>Pronouns</a>
@@ -34,30 +35,30 @@ div {float: left;}
 		</div>
 	</div>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
-		<div class='dpanel' id='navdrop2'>
+	<button class='dropbtn' onclick='dropdown(2)'>Cases</button>
+		<div class='dpanel'>
 		<a href='../cases/genitive.htm'>Genitive</a>
-<a href='../cases/accusative.htm'>Accusative</a>
-<a href='../cases/prepositional.htm'>Prepositional</a>
-<a href='../cases/dative.htm'>Dative</a>
-<a href='../cases/instrumental.htm'>Instrumental</a>
+		<a href='../cases/accusative.htm'>Accusative</a>
+		<a href='../cases/prepositional.htm'>Prepositional</a>
+		<a href='../cases/dative.htm'>Dative</a>
+		<a href='../cases/instrumental.htm'>Instrumental</a>
 		</div>
 	</div>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
-		<div class='dpanel' id='navdrop3'>
-		<a href='../vocab/numbers.htm'>Numbers</a>
-		</div>
-	</div>
-	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown4()'>Verbs</button>
-		<div class='dpanel' id='navdrop4'>
+	<button class='dropbtn' onclick='dropdown(3)'>Verbs</button>
+		<div class='dpanel'>
 		<a href='past.htm'>Past Tense</a>
 		</div>
 	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(4)'>Vocabulary</button>
+		<div class='dpanel'>
+		<a href='../vocab/numbers.htm'>Numbers</a>
+		</div>
+	</div>
 	<div class='dropdown resourcebtn'>
-	<button class='dropbtn' onclick='dropdown5()'>Resources</button>
-		<div class='dpanel' id='navdrop5'>
+	<button class='dropbtn' onclick='dropdown(5)'>Resources</button>
+		<div class='dpanel'>
 		<a href='../resources/noun-table.htm'>Nouns</a>
 		<a href='../resources/pronoun-table.htm'>Pronouns</a>
 		<a href='../resources/adjective-table.htm'>Adjectives</a>
@@ -632,76 +633,6 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
-}
-</script> <!-- all from w3 schools -->
-
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function dropdown1() {
-  document.getElementById("navdrop1").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop1");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown2() {
-  document.getElementById("navdrop2").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop2");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown3() {
-  document.getElementById("navdrop3").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop3");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown4() {
-  document.getElementById("navdrop4").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop4");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown5() {
-  document.getElementById("navdrop5").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop5");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
 }
 </script> <!-- all from w3 schools -->
 
