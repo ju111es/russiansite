@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>Learn Russian</title>
-<link rel='stylesheet' href='home.css'>
+<link rel='stylesheet' href='styles/retro.css'>
 <link rel='icon' type='image/x-icon' href='flag.ico'>
 <style>
 .flex-container div {width: 50%;}
@@ -59,27 +59,6 @@
 	</div>
 </div>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
-</script> <!-- all from w3 schools -->
-
 <div style='position: absolute; left:22%; top: 30%; width:75%;'>
 <div class='flex-container'>
 <div style='width:25%;'><div class='tooltip'><h1>Привет!</h1><span class='tooltiptext' style='background-color: var(--tooltip2);'><b>Hello!</b> Hover over Russian text on this site to see it in English.</span></div></div>
@@ -106,6 +85,17 @@ for (i = 0; i < acc.length; i++) {
 			is for everyone &#10084;</p>
 	</div>
 </div>
+
+<div style='background-color: var(--background2-2); position: absolute; top: 5%; left: 75%;'>
+	<h3>Theme</h3>
+	<button onclick='themeChange("retro.css")'>Retro</button>
+	<button onclick='themeChange("gothic.css")'>Gothic</button>
+	<button onclick='themeChange("russian.css")'>Russian</button>
+</div>
+
+<button onclick='pp()'>button</button>
+
+<script src='home.js'></script>
 
 </body>
 </html>
