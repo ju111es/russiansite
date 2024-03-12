@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>Learn Russian</title>
-<link rel='stylesheet' href='styles/retro.css'>
+<link rel='stylesheet' href='home.css'>
 <link rel='icon' type='image/x-icon' href='flag.ico'>
 <style>
 .flex-container div {width: 50%;}
@@ -14,7 +14,7 @@
 </head>
 
 <body class='home'>
-<div style='float:none; background-color:white; width:100%; 
+<div class='fill' style='float:none; border:none; width:100%; 
 	padding:2%; padding-left:5%; margin:-1%;'>
 <h1>Изучайте Русский Язык со Мной!<br><br><i>Study Russian with Me!</i></h1>
 </div>
@@ -88,12 +88,10 @@
 
 <div style='background-color: var(--background2-2); position: absolute; top: 5%; left: 75%;'>
 	<h3>Theme</h3>
-	<button onclick='themeChange("retro.css")'>Retro</button>
-	<button onclick='themeChange("gothic.css")'>Gothic</button>
+	<button onclick='themeChange(retro)'>Retro</button>
+	<button onclick='themeChange(gothic)'>Gothic</button>
 	<button onclick='themeChange("russian.css")'>Russian</button>
 </div>
-
-<button onclick='pp()'>button</button>
 
 <script src='home.js'></script>
 
