@@ -51,15 +51,21 @@ th:not(#f) {width: 25%;}
 <a href='#n'>NEUTER</a>
 </nav>
 
-<table id='m' class='blank'>
+<table style='margin: 1% auto -2%; width:50%;'>
+<tr>
+<td style='background-color: var(--background2-2);'><b>add</b> to end</td>
+<td style='baclground-color: var(--background);'><b>replace</b> ending</td>
+</tr>
+</table>
+
+<button class='accordion' id='m'>MASCULINE</button>
+<div class='apanel'>
+<table class='blank'>
 <colgroup>
 	<col span='1' style='background-color:white;'>
 	<col span='1' style='background-color:var(--background2-2);'>
 	<col span='2' style='background-color:var(--background);'>
 </colgroup>
-<tr>
-<th class='title'>MASCULINE</th>
-</tr>
 <tr>
 <th>nominative</th>
 <th><i>-consonant</i></th>
@@ -121,15 +127,15 @@ th:not(#f) {width: 25%;}
 <td>-ями</td>
 </tr>
 </table>
+</div>
 
+<button class='accordion' id='f'>FEMININE</button>
+<div class='apanel'>
 <table id='f' class='blank'>
 <colgroup>
 	<col span='1' style='background-color:white;'>
 	<col span='3' style='background-color:var(--background);'>
 </colgroup>
-<tr>
-<th class='title'>FEMININE</th>
-</tr>
 <tr>
 <th>nominative</th>
 <th>-а</th>
@@ -195,15 +201,15 @@ th:not(#f) {width: 25%;}
 <td>-ями</td>
 </tr>
 </table>
+</div>
 
+<button class='accordion' id='n'>NEUTER</button>
+<div class='apanel'>
 <table id='n' class='blank'>
 <colgroup>
 	<col span='1' style='background-color:white;'>
 	<col span='3' style='background-color:var(--background);'>
 </colgroup>
-<tr>
-<th class='title'>NEUTER</th>
-</tr>
 <tr>
 <th>nominative</th>
 <th>-о</th>
@@ -258,48 +264,9 @@ th:not(#f) {width: 25%;}
 <td colspan='2'>-ями</td>
 </tr>
 </table>
+</div>
 
-<script>
-function dropdown1() {
-  document.getElementById("navdrop1").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop1");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown2() {
-  document.getElementById("navdrop2").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop2");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown3() {
-  document.getElementById("navdrop3").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop3");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-</script> <!-- all from w3 schools -->
+<script src='../home.js'></script>
 
 </body>
 </html>

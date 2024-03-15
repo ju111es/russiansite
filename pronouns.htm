@@ -7,8 +7,8 @@
 <link rel='icon' type='image/x-icon' href='../flag.ico'>
 <style>
 .table1 td:nth-of-type(even) {background-color: var(--background); 
-	border: 2px solid white; border-radius: 10px;}
-.table1 td:nth-of-type(odd) {background-color: white; border: none;}
+	border: 2px solid var(--higlight); border-radius: 10px;}
+.table1 td:nth-of-type(odd) {background-color: var(--highlight); border: none;}
 .100 table: {width: 100%;}
 .flex-container {flex-wrap: wrap;}
 
@@ -21,25 +21,48 @@
 <div class='navbar'>
 	<a href='../home.htm'>Home</a>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
-		<div class='dpanel' id='navdrop1'>
-		<a href='alphabet.htm'>Alphabet</a>
-		<a href='nominative.htm'>Nouns</a>
-		<a href='adjectives.htm'>Adjectives</a>
+	<button class='dropbtn' onclick='dropdown(1)'>Basics</button>
+		<div class='dpanel'>
+		<a href='../basics/alphabet.htm'>Alphabet</a>
+		<a href='../basics/spellingrules.htm'>Spelling Rules</a>
+		<a href='../basics/pronouns.htm'>Pronouns</a>
+		<a href='../basics/nominative.htm'>Nouns</a>
+		<a href='../basics/adjectives.htm'>Adjectives</a>
+		<a href='../basics/consonantmutation.htm'>Consonant Mutation</a>
 		</div>
 	</div>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
-		<div class='dpanel' id='navdrop2'>
+	<button class='dropbtn' onclick='dropdown(2)'>Cases</button>
+		<div class='dpanel'>
+		<a href='../cases/genitive.htm'>Genitive</a>
+		<a href='../cases/accusative.htm'>Accusative</a>
+		<a href='../cases/prepositional.htm'>Prepositional</a>
+		<a href='../cases/dative.htm'>Dative</a>
+		<a href='../cases/instrumental.htm'>Instrumental</a>
 		</div>
 	</div>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
-		<div class='dpanel' id='navdrop3'>
-		<a href='numbers.htm'>Numbers</a>
+	<button class='dropbtn' onclick='dropdown(3)'>Verbs</button>
+		<div class='dpanel'>
+		<a href='../verbs/past.htm'>Past Tense</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(4)'>Vocabulary</button>
+		<div class='dpanel'>
+		<a href='../vocab/numbers.htm'>Numbers</a>
+		</div>
+	</div>
+	<div class='dropdown resourcebtn'>
+	<button class='dropbtn' onclick='dropdown(5)'>Resources</button>
+		<div class='dpanel'>
+		<a href='../resources/noun-table.htm'>Nouns</a>
+		<a href='../resources/pronoun-table.htm'>Pronouns</a>
+		<a href='../resources/adjective-table.htm'>Adjectives</a>
 		</div>
 	</div>
 </div>
+
 
 <div class='flex-container'>
 <div class='fill' style='align-self:start;'>
@@ -49,26 +72,26 @@
 <td>я</td>
 <td>I, me</td>
 <td>мы</td>
-<td>We, us</td>
+<td>we, us</td>
 </tr>
 <tr>
 <td>ты</td>
-<td>You (singular/informal)</td>
+<td>you (singular/informal)</td>
 <td>вы</td>
-<td>You (plural/formal)</td>
+<td>you (plural/formal)</td>
 </tr>
 <tr>
 <td>он</td>
-<td>He, him</td>
+<td>he, him</td>
 <td>он<b>и</b></td>
-<td>They, them</td>
+<td>they, them</td>
 </tr>
 <tr>
 <td>он<b>а</b></td>
-<td>She, her</td>
+<td>she, her</td>
 <tr>
 <td>он<b>о</b></td>
-<td>It</td>
+<td>it</td>
 </tr>
 </table>
 
@@ -80,17 +103,17 @@
 	and only when addressing just one person.</p>
 </div>
 
-<div class='fill'>
+<div>
 <p>These pronouns show ownership, and they change depending on
 	the gender of the following noun:</p>
-<table class='opposite'>
+<table>
 <tr>
 <th></th>
-<th>My, mine</th>
-<th>Your, yours<br>(ты)</th>
-<th>Our, ours</th>
-<th>You, yours<br>(вы)</th>
-<th>One's own</th>
+<th>my, mine</th>
+<th>your, yours<br>(ты)</th>
+<th>our, ours</th>
+<th>you, yours<br>(вы)</th>
+<th>one's own</th>
 </tr>
 <tr>
 <th>masculine</th>
@@ -145,13 +168,13 @@
 </div>
 
 <div class='fill' style='width: 72%;'>
-<p>These are demonstrative pronouns. They also change with the gender of the following noun:</p>
+<p>These are demonstrative <i>(this, that)</i> and determinative <i>(all)</i> pronouns. They also change with the gender of the following noun:</p>
 <table class='opposite'>
 <tr>
 <th style='width:17%;'></th>
-<th>This</th>
-<th>That</th>
-<th>All</th>
+<th>this</th>
+<th>that</th>
+<th>all</th>
 </tr>
 <tr>
 <th>masculine</th>
@@ -201,53 +224,92 @@
 
 </div> <!-- flex-container -->
 
+<div class='flex-container'>
+<div style='width:60%;'>
+<p>Finally, there are interoggative pronouns and their negative forms (ни + pronoun, across cases):</p>
+<table>
+<tr>
+<th></th>
+<th>what</th>
+<th>who</th>
+<th>which*</th>
+<th>nothing</th>
+<th>nobody</th>
+<th>none*</th>
+<th>
+</tr>
+<tr>
+<th>masculine</th>
+<td rowspan='4'>что<br>&darr;</td>
+<td rowspan='4'>кто<br>&darr;</td>
+<td>как<b>о</b>й</td>
+<td rowspan='4'>ничт<b>о</b><br>&darr;</td>
+<td rowspan='4'>никт<b>о</b><br>&darr;</td>
+<td>никак<b>о</b>й</td>
+</tr>
+<tr>
+<th>feminine</th>
+<td>как<b>а</b>я</td>
+<td>никак<b>а</b>я</td>
+</tr>
+<tr>
+<th>neuter</th>
+<td>как<b>о</b>е</td>
+<td>никак<b>о</b>е</td>
+</tr>
+<tr>
+<th>plural</th>
+<td>как<b>и</b>е</td>
+<td>никак<b>и</b>е</td>
+</tr>
+</table>
+</div>
+
+<div style='width:30%;'>
+<p>*Какой can mean <i>which one, (of) which type, </i>or<i> how</i> (as in <i>what is it like</i> or as an
+	exaclamation <i>how [adjective]!</i> or <i>what (a) ___</i>.<br>Никакой means of no type, as in <i>whatsoever</i>. 
+	It is not often used over ничто.</p>
+</div>
+
+<div style='width:100%;'>
+<table class='example' style='width:100%;'>
+<tr>
+<th style='font-size:200%; width:5%; text-align: center;' rowspan='3'>&rarr;</th>
+<td colspan='2'><span class='tooltip'>Чт<b>о</b> он д<b>е</b>лает?
+	<span class='tooltiptext'>What is he doing?</span></span></td>
+<td colspan='2'><span class='tooltip'>Кт<b>о</b> т<b>о</b> сказ<b>а</b>л?
+	<span class='tooltiptext'>Who said that?</span></span></td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Он ничег<b>о</b> не д<b>е</b>лает.
+	<span class='tooltiptext'>He's doing nothing <i>(genitive case)</i>. 
+	<br><i>Notice there is an additional не to negate the action.</i></span></span></td>
+<td colspan='2'><span class='tooltip'>Никт<b>о</b> ничег<b>о</b> не сказ<b>а</b>л.
+	<span class='tooltiptext'>No one said anything.</span></span></td>
+</tr>
+<tr>
+<td><span class='tooltip'>Как<b>о</b>й мужч<b>и</b>на е<b>ё</b> м<b>у</b>ж?
+	<span class='tooltiptext'>Which man is her husband?</span></span></td>
+<td><span class='tooltip'>Как<b>а</b>я м<b>у</b>зыка в<b>а</b>ша люб<b>и</b>мая?
+	<span class='tooltiptext'>What kind of music is your favorite?</span></span></td>
+<td><span class='tooltip'>Как<b>о</b>е тво<b>е</b> плеч<b>о</b>?
+	<span class='tooltiptext'>How is your shoulder?</span></span></td>
+<td><span class='tooltip'>Как<b>и</b>е крас<b>и</b>вы д<b>е</b>ти!
+	<span class='tooltiptext'>What beautiful children!</span></span></td>
+</tr>
+</table>
+</div>
+
 <div>
-<p>Finally there are the pronouns <b>что</b> and <b>кто</b>, meaning <i>what</i> and <i>who</i>. 
-	These don’t change with gender, since they are naturally ambiguous- you don’t 
-	know the gender of what’s being referred to.</p>
+<p>When a negative pronoun is used with a preposition, the preposition goes between ни and the pronoun.</p>
+</div>
+
+</div> <!--flex-->
 
 <p>Like nouns, Russian pronouns change with grammatical case. 
 	These pronouns are in the nominative/default case.</p>
-</div>
 
-<script>
-function dropdown1() {
-  document.getElementById("navdrop1").classList.toggle("show");
-}
-
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop1");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown2() {
-  document.getElementById("navdrop2").classList.toggle("show");
-}
-
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop2");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown3() {
-  document.getElementById("navdrop3").classList.toggle("show");
-}
-
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop3");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-</script> <!-- all from w3 schools -->
+<script src='../home.js'></script>
 
 </body>
 </html>

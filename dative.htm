@@ -8,17 +8,18 @@
 <style> 
 	th {width: 25%;} 
 	.example th {width: auto;}
+	.pronouns table th:first-of-type {width:30%;}
 </style>
 </head>
 
-<body class='lesson'>
+<body class='lesson case'>
 <h1>The Dative Case</h1>
 
 <div class='navbar'>
 	<a href='../home.htm'>Home</a>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
-		<div class='dpanel' id='navdrop1'>
+	<button class='dropbtn' >Basics</button>
+		<div class='dpanel'>
 		<a href='alphabet.htm'>Alphabet</a>
 		<a href='pronouns.htm'>Pronouns</a>
 		<a href='nominative.htm'>Nouns</a>
@@ -26,19 +27,21 @@
 		</div>
 	</div>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
-		<div class='dpanel' id='navdrop2'>
+	<button class='dropbtn' >Cases</button>
+		<div class='dpanel'>
 		<a href='genitive.htm'>Genitive</a>
 		<a href='accusative.htm'>Accusative</a>
 		</div>
 	</div>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
-		<div class='dpanel' id='navdrop3'>
+	<button class='dropbtn' >Vocabulary</button>
+		<div class='dpanel'>
 		<a href='numbers.htm'>Numbers</a>
 		</div>
 	</div>
 </div>
+
+<p id='tester'></p>
 
 <p class='underline'>The dative case is mainly used on the <span>indirect object</span> of a sentence.</p>
 	
@@ -126,7 +129,7 @@
 	with the dative case it usually means <i>around/along</i> (where you'd expect 
 	the prepositional) or <i>using/by means of</i> (where you'd expect the 
 	instrumental)</th>
-<td><span class='tooltip'>мы гул<b>я</b>ли по г<b>о</b>род<span>у</span> весь день<span class='tooltiptext'>we strolled around the city all day</span></span></td>
+<td><span class='tooltip'>мы гул<b>я</b>ли по г<b>о</b>род<span>у</span> в<b>е</b>сь д<b>е</b>нь<span class='tooltiptext'>we strolled around the city all day</span></span></td>
 <td><span class='tooltip'>он см<b>о</b>трит футб<b>о</b>л по телев<b>и</b>зор<span>у</span><span class='tooltiptext' style='white-space: wrap;'>he is watching football on (using) television</span></span></td>
 </tr>
 <th id='underline'>with the verbs <span>помог<b>а</b>ть</span> <i>to help</i> and 
@@ -155,30 +158,30 @@
 <th id='underline'>In other ways <span>similar to the English <i>to</span>-</i> 
 	to send to, to call to, to bring to, etc.</th>
 <td><span class='tooltip'>я позв<b>о</b>ню <span>ей</span> сейч<b>а</b>с<span class='tooltiptext'>I will call her now</span></span></td>
-<td><span class='tooltip'>мо<b>я</b> сестр<b>а</b> принес<b>е</b>т торт на вечер<b>и</b>нк<span>е</span><span class='tooltiptext' style='white-space: wrap;'>my sister will bring a cake to the party</span></span></td>
+<td><span class='tooltip'>мо<b>я</b> сестр<b>а</b> принес<b>е</b>т т<b>о</b>рт на вечер<b>и</b>нк<span>е</span><span class='tooltiptext' style='white-space: wrap;'>my sister will bring a cake to the party</span></span></td>
 </tr>
 </table>
 	
 
-<h2>Pronouns</h2>
-
+<button class='accordion'>Pronouns</button>
+<div class='apanel'>
 <table style='width:40%;'>
 <tr>
 <th><i>Personal</i></th>
 <th>1st person</th>
 <th>2nd person</th>
 <th>3rd person</th>
-<th>Reflexive</th>
+<th>reflexive</th>
 </tr>
 <tr>
-<th>Singular</th>
+<th>singular</th>
 <td>мне</td>
 <td>теб<b>е</b></td>
 <td>ему/ей</td>
 <td rowspan='2'>себ<b>е</b><br>&darr;</td>
 </tr>
 <tr>
-<th>Plural</th>
+<th>plural</th>
 <td>нам</td>
 <td>вам</td>
 <td>им</td>
@@ -193,7 +196,7 @@
 	<th>3rd person</th>
 	<th>1st person plural</th>
 	<th>2nd person plural</th>
-	<th>Reflexive</th>
+	<th>reflexive</th>
 </tr>
 <tr>
 	<th>masculine</th>
@@ -230,22 +233,18 @@
 </tr>
 </table>
 
-<table style='width:70%;'>
+<table style='width:50%;'>
 <tr>
-	<th><i>Demonstrative, Determinative, & Indicative</i></th>
-	<th>This</th>
-	<th>That</th>
-	<th>All</th>
-	<th>What</th>
-	<th>Who</th>
+	<th><i>Demonstrative & Determinative</i></th>
+	<th>this</th>
+	<th>that</th>
+	<th>all</th>
 </tr>
 <tr>
 	<th>masculine</th>
 	<td><b>э</b>тому</td>
 	<td>том<b>у</b></td>
 	<td>всем<b>у</b></td>
-	<td rowspan='4'>&uarr;<br>чем<b>у</b><br>&darr;</td>
-	<td rowspan='4'>&uarr;<br>ком<b>у</b><br>&darr;</td>
 </tr>
 <tr>
 	<th>feminine</th>
@@ -267,8 +266,37 @@
 </tr>
 </table>
 
-<h2>Adjectives</h2>
+<table style='width: 50%;'>
+<tr>
+<th><i>Interrogative</i></th>
+<th>who</th>
+<th>what</th>
+<th>which</th>
+</tr>
+<tr>
+<th>masculine</th>
+<td rowspan='4'>&uarr;<br>чем<b>у</b><br>&darr;</td>
+<td rowspan='4'>&uarr;<br>ком<b>у</b><br>&darr;</td>
+<td>как<b>о</b>му</td>
+</tr>
+<tr>
+<th>feminine</th>
+<td>как<b>о</b>й</td>
+</tr>
+<tr>
+<th>neuter</th>
+<td>как<b>о</b>му</td>
+</tr>
+<tr>
+<th>plural</th>
+<td>как<b>и</b>х</td>
+</tr>
+</table>
 
+</div>
+
+<button class='accordion'>Adjectives</button>
+<div class='apanel'>
 <table>
 <tr>
 <th>masculine</th>
@@ -289,48 +317,29 @@
 <td>ч<b>ё</b>рн<span>ым</span></td>
 </tr>
 </table>
+</div>
 
+<script src='../w3schools.js'></script>
 <script>
-function dropdown1() {
-  document.getElementById("navdrop1").classList.toggle("show");
-}
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop1");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown2() {
-  document.getElementById("navdrop2").classList.toggle("show");
-}
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop2");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
-  }
+  });
 }
-function dropdown3() {
-  document.getElementById("navdrop3").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop3");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-</script> <!-- all from w3 schools -->
+</script>  <!-- all from w3 schools -->
 
 </body>
 </html>

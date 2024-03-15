@@ -8,10 +8,11 @@
 <style> 
 	th {width: 25%;} 
 	.example th {width: auto;}
+	.pronouns table th:first-of-type {width:30%;}
 </style>
 </head>
 
-<body class='lesson'>
+<body class='lesson case'>
 <h1>The Accusative Case</h1>
 
 <div class='navbar'>
@@ -93,31 +94,30 @@
 
 <table class='opposite example change'>
 <tr>
-<td><div class='tooltip'>они ход<b>я</b>т в библиот<b>е</b>к<span>у</span><span class='tooltiptext'>they are going to (a/the) library</span></span></td>
+<td><div class='tooltip'>он<b>и</b> ход<b>я</b>т в библиот<b>е</b>к<span>у</span><span class='tooltiptext'>they are going to (a/the) library</span></span></td>
 <td><div class='tooltip'>пт<b>и</b>ца лет<b>и</b>т на ст<b>а</b>нци<span>ю</span></b><span class='tooltiptext'>(a/the) bird is flying to (a/the) station</span></span></td>
 </tr>
 </table>
 
-
-<h2>Pronouns</h2>
-
+<button class='accordion'>Pronouns</button>
+<div class='apanel pronouns'>
 <table style='width:40%;'>
 <tr>
 <th><i>Personal</i></th>
 <th>1st person</th>
 <th>2nd person</th>
 <th>3rd person</th>
-<th>Reflexive</th>
+<th>reflexive</th>
 </tr>
 <tr>
-<th>Singular</th>
+<th>singular</th>
 <td>мен<b>я</b></td>
 <td>ты</td>
 <td>(н)ег<b>о</b>/(н)е<b>е</b>*</td>
 <td rowspan='2'>себ<b>я</b><br>&darr;</td>
 </tr>
 <tr>
-<th>Plural</th>
+<th>plural</th>
 <td>нас</td>
 <td>вас</td>
 <td>(н)их</td>
@@ -132,7 +132,7 @@
 	<th>3rd person</th>
 	<th>1st person plural</th>
 	<th>2nd person plural</th>
-	<th>Reflexive</th>
+	<th>reflexive</th>
 </tr>
 <tr>
 	<th>masculine</th>
@@ -169,22 +169,18 @@
 </tr>
 </table>
 
-<table style='width:70%;'>
+<table style='width:50%;'>
 <tr>
-	<th><i>Demonstrative, Determinative, & Indicative</i></th>
-	<th>This</th>
-	<th>That</th>
-	<th>All</th>
-	<th>What</th>
-	<th>Who</th>
+	<th><i>Demonstrative & Determinative</i></th>
+	<th>this</th>
+	<th>that</th>
+	<th>all</th>
 </tr>
 <tr>
 	<th>masculine</th>
 	<td><b>э</b>того</td>
 	<td>тог<b>о</b></td>
 	<td>всег<b>о</b></td>
-	<td rowspan='4'>&uarr;<br>что<br>&darr;</td>
-	<td rowspan='4'>&uarr;<br>ког<b>о</b><br>&darr;</td>
 </tr>
 <tr>
 	<th>feminine</th>
@@ -206,12 +202,42 @@
 </tr>
 </table>
 
+<table style='width: 50%;'>
+<tr>
+<th><i>Interrogative</i></th>
+<th>who</th>
+<th>what</th>
+<th>which</th>
+</tr>
+<tr>
+<th>masculine</th>
+<td rowspan='4'>&uarr;<br>что<br>&darr;</td>
+<td rowspan='4'>&uarr;<br>ког<b>о</b><br>&darr;</td>
+<td>как<b>о</b>й<br>как<b>о</b>го</td>
+</tr>
+<tr>
+<th>feminine</th>
+<td>как<b>у</b>ю</td>
+</tr>
+<tr>
+<th>neuter</th>
+<td>как<b>о</b>е</td>
+</tr>
+<tr>
+<th>plural</th>
+<td>как<b>и</b>е<br>как<b>и</b>х</td>
+</tr>
+</table>
+
 <p>Notice that pronouns that are necessarily inanimate (all neuter pronouns, as all
 	neuter nouns are inanimate, and the pronoun <i>what,</i> but not <i>who</i>) use their
 	nominative forms, while all others use their genitive forms.</p>
+<p class='underline'>Additionally, for pronouns replacing or describing a masculine or plural noun, if the noun is <span>animate</span>, use
+	the <span>genitive</span> form; otherwise, use the <span>nominative</span> form.</p>
+</div>
 	
-<h2>Adjectives</h2>
-
+<button class='accordion'>Adjectives</button>
+<div class='apanel'>
 <table>
 <tr>
 <th>masculine</th>
@@ -235,52 +261,8 @@
 
 <p class='underline'>When describing a masculine or plural noun, if it is <span>animate</span>, use
 	the <span>genitive</span> form; otherwise, use the <span>nominative</span> form.</p>
+</div>
 
-
-
-
-
-<script>
-function dropdown1() {
-  document.getElementById("navdrop1").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop1");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown2() {
-  document.getElementById("navdrop2").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop2");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown3() {
-  document.getElementById("navdrop3").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop3");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-</script> <!-- all from w3 schools -->
-
+<script src='../home.js'></script>
 </body>
 </html>

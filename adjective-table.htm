@@ -45,7 +45,9 @@ th {width: 20%;}
 <a href='#soft'>SOFT</a>
 </nav>
 
-<table id='regular'>
+<button class='accordion' id='regular'>REGULAR</button>
+<div class='apanel'>
+<table>
 <tr>
 <th class='title'>REGULAR</th>
 <th>masculine</th>
@@ -96,8 +98,11 @@ th {width: 20%;}
 <td>-ыми</td>
 </tr>
 </table>
+</div>
 
-<table id='soft'>
+<button class='accordion' id='soft'>SOFT (-ний)</button>
+<div class='apanel'>
+<table>
 <tr>
 <th class='title'>SOFT (-ний)</th>
 <th>masculine</th>
@@ -148,48 +153,9 @@ th {width: 20%;}
 <td>-ими</td>
 </tr>
 </table>
+</div>
 
-<script>
-function dropdown1() {
-  document.getElementById("navdrop1").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop1");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown2() {
-  document.getElementById("navdrop2").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop2");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown3() {
-  document.getElementById("navdrop3").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop3");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-</script> <!-- all from w3 schools -->
+<script src='../home.js'></script>
 
 </body>
 </html>

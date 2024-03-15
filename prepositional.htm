@@ -8,10 +8,11 @@
 <style> 
 	th {width: 25%;} 
 	.example th {width: auto;}
+	.pronouns table th:first-of-type {width:30%;}
 </style>
 </head>
 
-<body class='lesson'>
+<body class='lesson case'>
 <h1>The Prepositional Case</h1>
 
 <div class='navbar'>
@@ -126,25 +127,25 @@
 	sometimes difficult to know which to use- в is most common, so it's always
 	a fair guess.</p>
 
-<h2>Pronouns</h2>
-
+<button class='accordion'>Pronouns</button>
+<div class='apanel pronouns'>
 <table style='width:40%;'>
 <tr>
 <th><i>Personal</i></th>
 <th>1st person</th>
 <th>2nd person</th>
 <th>3rd person</th>
-<th>Reflexive</th>
+<th>reflexive</th>
 </tr>
 <tr>
-<th>Singular</th>
+<th>singular</th>
 <td>мне</td>
 <td>теб<b>е</b></td>
 <td>нем*/ней</td>
 <td rowspan='2'>себ<b>е</b><br>&darr;</td>
 </tr>
 <tr>
-<th>Plural</th>
+<th>plural</th>
 <td>нас</td>
 <td>вас</td>
 <td>них</td>
@@ -159,7 +160,7 @@
 	<th>3rd person</th>
 	<th>1st person plural</th>
 	<th>2nd person plural</th>
-	<th>Reflexive</th>
+	<th>reflexive</th>
 </tr>
 <tr>
 	<th>masculine</th>
@@ -196,22 +197,18 @@
 </tr>
 </table>
 
-<table style='width:70%;'>
+<table style='width:50%;'>
 <tr>
-	<th><i>Demonstrative, Determinative, & Indicative</i></th>
-	<th>This</th>
-	<th>That</th>
-	<th>All</th>
-	<th>What</th>
-	<th>Who</th>
+	<th><i>Demonstrative & Determinative</i></th>
+	<th>this</th>
+	<th>that</th>
+	<th>all</th>
 </tr>
 <tr>
 	<th>masculine</th>
 	<td><b>э</b>том</td>
 	<td>том</td>
 	<td>всём</td>
-	<td rowspan='4'>&uarr;<br>чём<br>&darr;</td>
-	<td rowspan='4'>&uarr;<br>ком<br>&darr;</td>
 </tr>
 <tr>
 	<th>feminine</th>
@@ -233,8 +230,37 @@
 </tr>
 </table>
 
-<h2>Adjectives</h2>
+<table style='width: 50%;'>
+<tr>
+<th><i>Interrogative</i></th>
+<th>who</th>
+<th>what</th>
+<th>which</th>
+</tr>
+<tr>
+<th>masculine</th>
+<td rowspan='4'>&uarr;<br>чём<br>&darr;</td>
+<td rowspan='4'>&uarr;<br>ком<br>&darr;</td>
+<td>как<b>о</b>м</td>
+</tr>
+<tr>
+<th>feminine</th>
+<td>как<b>о</b>й</td>
+</tr>
+<tr>
+<th>neuter</th>
+<td>как<b>о</b>м</td>
+</tr>
+<tr>
+<th>plural</th>
+<td>как<b>и</b>х</td>
+</tr>
+</table>
 
+</div>
+
+<button class='accordion'>Adjectives</button>
+<div class='apanel'>
 <table>
 <tr>
 <th>masculine</th>
@@ -255,6 +281,8 @@
 <td>ч<b>ё</b>рн<span>ых</span></td>
 </tr>
 </table>
+
+</div>
 
 <script>
 function dropdown1() {
@@ -296,7 +324,27 @@ window.onclick = function(e) {
     }
   }
 }
-</script> <!-- all from w3 schools -->
+</script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>  <!-- all from w3 schools -->
 
 </body>
 </html>

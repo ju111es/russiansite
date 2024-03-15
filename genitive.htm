@@ -9,17 +9,18 @@
 	th {width: 25%;} 
 	.example th {width: auto;}
 	.example {width: 90%;}
+	.pronouns table th:first-of-type {width:30%;}
 </style>
 </head>
 
-<body class='lesson'>
+<body class='lesson case'>
 <h1>The Genitive Case</h1>
 
 <div class='navbar'>
 	<a href='../home.htm'>Home</a>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
-		<div class='dpanel' id='navdrop1'>
+	<button class='dropbtn' onclick='dropdown(1)'>Basics</button>
+		<div class='dpanel'>
 		<a href='alphabet.htm'>Alphabet</a>
 		<a href='pronouns.htm'>Pronouns</a>
 		<a href='nominative.htm'>Nouns</a>
@@ -27,14 +28,14 @@
 		</div>
 	</div>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
-		<div class='dpanel' id='navdrop2'>
+	<button class='dropbtn' onclick='dropdown(2)'>Cases</button>
+		<div class='dpanel'>
 		<a href='accusative.htm'>Accusative</a>
 		</div>
 	</div>
 	<div class='dropdown'>
-	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
-		<div class='dpanel' id='navdrop3'>
+	<button class='dropbtn' onclick='dropdown(3)'>Vocabulary</button>
+		<div class='dpanel'>
 		<a href='numbers.htm'>Numbers</a>
 		</div>
 	</div>
@@ -135,10 +136,10 @@
 </tr>
 <tr>
 <td><span class='tooltip'>к<b>о</b>фе без молок<span><b>а</b></span><span class='tooltiptext'>coffee without milk</span></span></td>
-<td><span class='tooltip'>у той ж<b>е</b>нщин<span>ы</span> есть к<b>о</b>льцо<span class='tooltiptext'>that woman has (a/the) ring</span></span></td>
+<td><span class='tooltip'>у т<b>о</b>й ж<b>е</b>нщин<span>ы</span> <b>е</b>сть к<b>о</b>льцо<span class='tooltiptext'>that woman has (a/the) ring</span></span></td>
 <td><span class='tooltip'>далек<b>о</b> от муз<b>е</b><span>я</span><span class='tooltiptext'>far from (a/the) museum)</span></span></td>
 <td><span class='tooltip'>он<b>а</b> из Росс<b>и</b><span>и</span><span class='tooltiptext'>she is from Russia</span></span></td>
-<td><span class='tooltip'><b>э</b>то для моег<b>о</b> пар<b>е</b>н<span>я</span><span class='tooltiptext'>this is for my boyfriend</span></span></td>
+<td><span class='tooltip'><b>э</b>то для моег<b>о</b> п<b>а</b>рн<span>я</span><span class='tooltiptext'>this is for my boyfriend</span></span></td>
 </table>
 
 <p>The genitive case is also used with numbers and amounts:</p>
@@ -152,9 +153,9 @@
 </tr>
 <tr>
 <td><span class='tooltip'>одн<b>а</b> кор<b>о</b>в<span>а</span><span class='tooltiptext'>one cow</span></span></td>
-<td><span class='tooltip'>два, три, чет<b>ы</b>ре кор<b>о</b>в<span>ы</span><span class='tooltiptext'>two, three, four cows</span></span></td>
-<td><span class='tooltip'>пять или б<b>о</b>льше кор<b>о</b>в<span class='tooltiptext'>five or more cows</span></span></td>
-<td><span class='tooltip'>нуль кор<b>о</b>в<span class='tooltiptext'>zero cows</span></span></td>
+<td><span class='tooltip'>дв<b>а</b>, тр<b>и</b>, чет<b>ы</b>ре кор<b>о</b>в<span>ы</span><span class='tooltiptext'>two, three, four cows</span></span></td>
+<td><span class='tooltip'>п<b>я</b>ть или б<b>о</b>льше кор<b>о</b>в<span class='tooltiptext'>five or more cows</span></span></td>
+<td><span class='tooltip'>н<b>у</b>ль кор<b>о</b>в<span class='tooltiptext'>zero cows</span></span></td>
 </tr>
 </table>
 
@@ -164,34 +165,34 @@
 <table class='example change'>
 <tr>
 <td>с<b>о</b>рок одн<b>а</b> <i>41</i> кор<b>о</b>в<span>а</span></td>
-<td>сто девян<b>о</b>сто три <i>193</i> кор<b>о</b>в<span>ы</span></td>
+<td>ст<b>о</b> девян<b>о</b>сто тр<b>и</b> <i>193</i> кор<b>о</b>в<span>ы</span></td>
 <td>двен<b>а</b>дцать <i>12</i> кор<b>о</b>в</td>
 <td>шестдес<b>я</b>ть <i>60</i> кор<b>о</b>в</td>
 </tr>
 </table>
 
 <p>The genitive case is also used with more general amounts like мн<b>о</b>го
-	<i>a lot,</i> немн<b>о</b>го <i>a little,</i> etc.
+	<i>a lot,</i> немн<b>о</b>го <i>a little,</i> etc.</p>
 
-<h2>Pronouns</h2>
-
+<button class='accordion'>Pronouns</button>
+<div class='apanel pronouns'>
 <table style='width:40%;'>
 <tr>
-<th><i>Personal</i></th>
+<th><i>personal</i></th>
 <th>1st person</th>
 <th>2nd person</th>
 <th>3rd person</th>
-<th>Reflexive</th>
+<th>reflexive</th>
 </tr>
 <tr>
-<th>Singular</th>
+<th>singular</th>
 <td>мен<b>я</b></td>
 <td>ты</td>
 <td>(н)ег<b>о</b>/(н)е<b>е</b>*</td>
 <td rowspan='2'>себ<b>я</b><br>&darr;</td>
 </tr>
 <tr>
-<th>Plural</th>
+<th>plural</th>
 <td>нас</td>
 <td>вас</td>
 <td>(н)их</td>
@@ -206,7 +207,7 @@
 	<th>3rd person</th>
 	<th>1st person plural</th>
 	<th>2nd person plural</th>
-	<th>Reflexive</th>
+	<th>reflexive</th>
 </tr>
 <tr>
 	<th>masculine</th>
@@ -243,22 +244,18 @@
 </tr>
 </table>
 
-<table style='width:70%;'>
+<table style='width:50%;'>
 <tr>
-	<th><i>Demonstrative, Determinative, & Indicative</i></th>
-	<th>This</th>
-	<th>That</th>
-	<th>All</th>
-	<th>What</th>
-	<th>Who</th>
+	<th><i>Demonstrative & Determinative</i></th>
+	<th>this</th>
+	<th>that</th>
+	<th>all</th>
 </tr>
 <tr>
 	<th>masculine</th>
 	<td><b>э</b>того</td>
 	<td>тог<b>о</b></td>
 	<td>всег<b>о</b></td>
-	<td rowspan='4'>&uarr;<br>чег<b>о</b><br>&darr;</td>
-	<td rowspan='4'>&uarr;<br>ког<b>о</b><br>&darr;</td>
 </tr>
 <tr>
 	<th>feminine</th>
@@ -280,6 +277,33 @@
 </tr>
 </table>
 
+<table style='width: 50%;'>
+<tr>
+<th><i>Interrogative</i></th>
+<th>who</th>
+<th>what</th>
+<th>which</th>
+</tr>
+<tr>
+<th>masculine</th>
+<td rowspan='4'>&uarr;<br>чег<b>о</b><br>&darr;</td>
+<td rowspan='4'>&uarr;<br>ког<b>о</b><br>&darr;</td>
+<td>как<b>о</b>го</td>
+</tr>
+<tr>
+<th>feminine</th>
+<td>как<b>о</b>й</td>
+</tr>
+<tr>
+<th>neuter</th>
+<td>как<b>о</b>го</td>
+</tr>
+<tr>
+<th>plural</th>
+<td>как<b>и</b>х</td>
+</tr>
+</table>
+
 <h3>
 ЕГО/ОГО
 </h3>
@@ -287,9 +311,10 @@
 	<span><b>г</b> sounds like <b>в</b></span> (a v sound instead of g). So, <i>его</i> is
 	pronounced <i>yevo</i>; <i>ого, ovo</i>. This is mostly present in the genitive case, as well as the accusative case which uses some
 	genitive pronouns, and the masculine possessive pronoun ег<b>о</b> which is used in all cases.</p>
+</div>
 
-<h2>Adjectives</h2>
-
+<button class='accordion'>Adjectives</button>
+<div class='apanel'>
 <table>
 <tr>
 <th>masculine</th>
@@ -310,49 +335,8 @@
 <td>ч<b>ё</b>рн<span>ых</span></td>
 </tr>
 </table>
+</div>
 
-
-<script>
-function dropdown1() {
-  document.getElementById("navdrop1").classList.toggle("show");
-}
-
-/* Close the dropdown if the user clicks outside of it */
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop1");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown2() {
-  document.getElementById("navdrop2").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop2");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-function dropdown3() {
-  document.getElementById("navdrop3").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var navdrop = document.getElementById("navdrop3");
-    if (navdrop.classList.contains('show')) {
-      navdrop.classList.remove('show');
-    }
-  }
-}
-</script> <!-- all from w3 schools -->
-
+<script src='../home.js'></script>
 </body>
 </html>
