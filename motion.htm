@@ -7,7 +7,7 @@
 <link rel='stylesheet' href='../home.css'>
 <link rel='icon' type='image/x-icon' href='../flag.ico'>
 <style>
-#moreverbs td:last-child {background-color: var(--background);}
+#moreverbs td:nth-of-type(3n-0) {background-color: var(--background);}
 
 .dot {text-decoration: underline dotted var(--text);}
 </style>
@@ -72,13 +72,37 @@
 </tr>
 <tr>
 <th style='text-align: right;'>by foot</th>
-<td class='dot'><span>ход</span><span><b>и</b></span>ть</td>
-<td class='dot'><span>ид</span><span>т<b>и</b></span></td>
+<td><span class='tooltip dot'><span>ход</span><span><b>и</b></span>ть<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>хож</span><b>у</b></td><td><span>х<b>о</b>д</span>им</td></tr>
+	<tr><td><span>х<b>о</b>д</span>ишь</td><td><span>х<b>о</b>д</span>ите</td></tr>
+	<tr><td><span>х<b>о</b>д</span>ит</td><td><span>х<b>о</b>д</span>ят</td></tr>
+	</table>
+	</span></span></td>
+<td ><span class='tooltip dot'><span>ид</span><span>т<b>и</b></span><span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>ид</span><b>у</b></td><td><span>ид</span><b>ё</b>м</td></tr>
+	<tr><td><span>ид</span><b>ё</b>шь</td><td><span>ид</span><b>ё</b>те</td></tr>
+	<tr><td><span>ид</span><b>ё</b>т</td><td><span>ид</span><b>у</b>т</td></tr>
+	</table>
+	</span></span></td>
 </tr>
 <tr>
 <th style='text-align: right;'>by other means</th>
-<td class='dot'><span><b>е</b>зд</span><span>и</span>ть</td>
-<td class='dot'><span><b>е</b>х</span><span>а</span>ть</td>
+<td ><span class='tooltip dot'><span><b>е</b>зд</span><span>и</span>ть<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span><b>е</b>зж</span>у</td><td><span><b>е</b>зд</span>им</td></tr>
+	<tr><td><span><b>е</b>зд</span>ишь</td><td><span><b>е</b>зд</span>ите</td></tr>
+	<tr><td><span><b>е</b>зд</span>ит</td><td><span><b>е</b>зд</span>ят</td></tr>
+	</table>
+	</span></span></td>
+<td ><span class='tooltip dot'><span><b>е</b>х</span><span>а</span>ть<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span><b>е</b>д</span><b>у</b></td><td><span><b>е</b>д</span>ем</td></tr>
+	<tr><td><span><b>е</b>д</span>ешь</td><td><span><b>е</b>д</span>ете</td></tr>
+	<tr><td><span><b>е</b>д</span>ет</td><td><span><b>е</b>д</span>ут</td></tr>
+	</table>
+	</span></span></td>
 </tr>
 </table>
 
@@ -87,7 +111,7 @@
 <h2>Indeterminate vs. Determinate</h2>
 
 <p class='underline'><span>Determinate</span> verbs of motion indicate motion in <span>one direction</span>.
-	These verbs are also known as <span>unidirectional</span>.</p>
+	These verbs are also known as <span>unidirectional</span> or <span>concrete</span>.</p>
 
 <table class='example'>
 <tr>
@@ -99,7 +123,7 @@
 
 <p class='underline'><span>Indeterminate</span> verbs indicate basically everything determinate verbs don't:
 	motion in <span>more than one direction</span>, or motions made <span>habitually</span>. These verbs are also known
-	as <span>multidirectional</span>.</p>
+	as <span>multidirectional</span> or <span>abstract</span>.</p>
 	
 <table class='example' style='width: 80%;'>
 <tr>
@@ -180,7 +204,7 @@
 </tr>
 </table>
 
-<p>По always indicates the perfective aspect of any verb of motion.</p>
+<p>The prefix по always indicates the perfective aspect of any verb of motion.</p>
 </div>
 
 </div>
@@ -191,42 +215,147 @@
 
 <div class='flex-container' id='moreverbs'>
 <div>
-<table>
+<table class='verbs'>
 <tr>
 <th>indeterminate</th>
 <th>determinate</th>
 <th>meaning</th>
 </tr>
-<tr><td>беж<b>а</b>ть</td><td>б<b>е</b>гать</td><td>to run</td></tr>
-<tr><td>брод<b>и</b>ть</td><td>брест<b>и</b></td><td>to stroll, wander, roam</td></tr>
-<tr><td>вод<b>и</b>ть</td><td>вест<b>и</b></td><td>to lead; to drive (a vehicle)</td></tr>
-<tr><td>воз<b>и</b>ть</td><td>везт<b>и</b></td><td>to transport</td></tr>
-<tr><td>гон<b>я</b>ть</td><td>гн<b>а</b>ть</td><td>to drive (as cattle)</td></tr>
-<tr><td>гон<b>я</b>ться</td><td>гн<b>а</b>ться</td><td>to chase</td></tr>
-<tr><td>кат<b>а</b>ть</td><td>кат<b>и</b>ть</td><td>to take for a ride</td></tr>
-<tr><td>кат<b>а</b>ться</td><td>кат<b>и</b>ться</td><td>to go for a ride</td></tr>
+<tr><td><span>б<b>е</b>г</span><span>а</span>ть</td><td><span class='tooltip dot'><span>беж</span><span><b>а</b></span>ть<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>бег</span><b>у</b></td><td><span>беж</span><b>и</b>м</td></tr>
+	<tr><td><span>беж</span><b>и</b>шь</td><td><span>беж</span><b>и</b>те</td></tr>
+	<tr><td><span>беж</span><b>и</b>т</td><td><span>бег</span><b>у</b>т</td></tr>
+	</table>
+	</span></span></td>
+	<td>to run</td></tr>
+<tr><td><span>брод</span><span><b>и</b></span>ть</td><td><span class='tooltip dot'><span>бре</span><span>с</span>т<b>и</b><span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>бре</span><span>д</span><b>у</b></td><td><span>бре</span><span>д</span><b>ё</b>м</td></tr>
+	<tr><td><span>бре</span><span>д</span><b>ё</b>шь</td><td><span>бре</span><span>д</span><b>ё</b>те</td></tr>
+	<tr><td><span>бре</span><span>д</span><b>ё</b>т</td><td><span>бре</span><span>д</span><b>у</b>т</td></tr>
+	</table>
+	</span></span></td>
+	<td>to stroll, wander, roam</td></tr>
+<tr><td><span>вод</span><span><b>и</b></span>ть</td><td><span class='tooltip dot'><span>ве</span><span>с</span>т<b>и</b><span class='tooltiptext'>
+<table class='verbs'>
+	<tr><td><span>ве</span><span>д</span><b>у</b></td><td><span>ве</span><span>д</span><b>ё</b>м</td></tr>
+	<tr><td><span>ве</span><span>д</span><b>ё</b>шь</td><td><span>ве</span><span>д</span><b>ё</b>те</td></tr>
+	<tr><td><span>ве</span><span>д</span><b>ё</b>т</td><td><span>ве</span><span>д</span><b>у</b>т</td></tr>
+	</table>
+	</span></span></td>
+	<td>to lead; to drive (a vehicle)</td></tr>
+<tr><td><span>воз</span><span><b>и</b></span>ть</td><td><span class='tooltip dot'><span>ве</span><span>з</span>т<b>и</b><span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>ве</span><span>з</span><b>у</b></td><td><span>ве</span><span>з</span><b>ё</b>м</td></tr>
+	<tr><td><span>ве</span><span>з</span><b>ё</b>шь</td><td><span>ве</span><span>з</span><b>ё</b>те</td></tr>
+	<tr><td><span>ве</span><span>з</span><b>ё</b>т</td><td><span>ве</span><span>з</span><b>у</b>т</td></tr>
+	</table>
+	</span></span></td>
+	<td>to transport</td></tr>
+<tr><td><span>гон</span><span><b>я</b></span>ть</td><td><span class='tooltip dot'><span>гн</span><span><b>а</b></span>ть<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>гон</span><b>ю</b></td><td><span>г<b>о</b>н</span>им</td></tr>
+	<tr><td><span>г<b>о</b>н</span>ишь</td><td><span>г<b>о</b>н</span>ите</td></tr>
+	<tr><td><span>г<b>о</b>н</span>ит</td><td><span>г<b>о</b>н</span>ят</td></tr>
+	</table>
+	</span></span></td>
+	<td>to drive (as cattle)</td></tr>
+<tr><td><span>гон</span><span><b>я</b></span>ться</td><td><span class='tooltip dot'><span>гн</span><span><b>а</b></span>ться<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>г<b>о</b>н</span>юсь</td><td><span>г<b>о</b>н</span>имся</td></tr>
+	<tr><td><span>г<b>о</b>н</span>ишься</td><td><span>г<b>о</b>н</span>итесь</td></tr>
+	<tr><td><span>г<b>о</b>н</span>ится</td><td><span>г<b>о</b>н</span>ятся</td></tr>
+	</table>
+	</span></span></td>
+	<td>to chase</td></tr>
+<tr><td><span>кат</span><span><b>а</b></span>ть</td><td><span>кат</span><span><b>и</b></span>ть</td><td>to take for a ride</td></tr>
+<tr><td><span>кат</span><span><b>а</b></span>ться</td><td><span>кат</span><span><b>и</b></span>ться</td><td>to go for a ride</td></tr>
 </table>
 </div>
 
 <div>
-<table>
+<table class='verbs'>
 <tr>
 <th>indeterminate</th>
 <th>determinate</th>
 <th>meaning</th>
 </tr>
-<tr><td>л<b>а</b>зить</td><td>л<b>е</b>зть</td><td>to climb</td></tr>
-<tr><td>лет<b>а</b>ть</td><td>лет<b>е</b>ть</td><td>to fly</td></tr>
-<tr><td>пл<b>а</b>вать</td><td>пл<b>ы</b>ть</td><td>to swim</td></tr>
-<tr><td>п<b>о</b>лзать</td><td>ползт<b>и</b></td><td>to crawl</td></tr>
-<tr><td>нос<b>и</b>ть</td><td>нест<b>и</b></td><td>to carry; to bring</td></tr>
-<tr><td>нос<b>и</b>ться</td><td>нест<b>и</b>сь</td><td>to be carried; to rush</td></tr>
-<tr><td>таск<b>а</b>ть</td><td>тащ<b>и</b>ть</td><td>to pull, drag something</td></tr>
-<tr><td>таск<b>а</b>ться</td><td>тащ<b>и</b>ться</td><td>to pull, drag oneself</td></tr>
+<tr><td><span>л<b>а</b>з</span><span>и</span>ть</td><td><span class='tooltip dot'><span>л<b>е</b></span><span>з</span>ть<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>л<b>е</b></span><span>з</span>у</td><td><span>л<b>е</b><span>з</span></span>ем</td></tr>
+	<tr><td><span>л<b>е</b></span><span>з</span>ешь</td><td><span>л<b>е</b></span><span>з</span>ете</td></tr>
+	<tr><td><span>л<b>е</b></span><span>з</span>ет</td><td><span>л<b>е</b></span><span>з</span>ут</td></tr>
+	</table>
+	</span></span></td>
+	<td>to climb</td></tr>
+<tr><td><span>лет</span><span><b>а</b></span>ть</td><td><span class='tooltip dot'><span>лет</span><span><b>е</b></span>ть<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>леч</span><b>у</b></td><td><span>лет</span><b>им</b></td></tr>
+	<tr><td><span>лет</span><b>и</b>шь</td><td><span>лет</span><b>и</b>те</td></tr>
+	<tr><td><span>лет</span><b>и</b>т</td><td><span>лет</span><b>я</b>т</td></tr>
+	</table>
+	</span></span></td>
+	<td>to fly</td></tr>
+<tr><td><span>пл<b>а</b>в</span><span>а</span>ть</td><td><span class='tooltip dot'><span>пл</span><span><b>ы</b></span>ть<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>пл</span><span>ыв</span><b>у</b></td><td><span>пл</span><span>ыв</span><b>ё</b>м</td></tr>
+	<tr><td><span>пл</span><span>ыв</span><b>ё</b>шь</td><td><span>пл</span><span>ыв</span><b>ё</b>те</td></tr>
+	<tr><td><span>пл</span><span>ыв</span><b>ё</b>т</td><td><span>пл</span><span>ыв</span><b>у</b>т</td></tr>
+	</table>
+	</span></span></td>
+	<td>to swim</td></tr>
+<tr><td><span>п<b>о</b>лз</span><span>а</span>ть</td><td><span class='tooltip dot'><span>пол</span><span>з</span>т<b>и</b><span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>пол</span><span>з</span><b>у</b></td><td><span>пол</span><span>з</span><b>ё</b>м</td></tr>
+	<tr><td><span>пол</span><span>з</span><b>ё</b>шь</td><td><span>пол</span><span>з</span><b>ё</b>те</td></tr>
+	<tr><td><span>пол</span><span>з</span><b>ё</b>т</td><td><span>пол</span><span>з</span><b>у</b>т</td></tr>
+	</table>
+	</span></span></td>
+	<td>to crawl</td></tr>
+<tr><td><span>нос</span><span><b>и</b></span>ть</td><td><span class='tooltip dot'><span>не</span><span>с</span>т<b>и</b><span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>не</span><span>с</span><b>у</b></td><td><span>не</span><span>с</span><b>ё</b>м</td></tr>
+	<tr><td><span>не</span><span>с</span><b>ё</b>шь</td><td><span>не</span><span>с</span><b>ё</b>те</td></tr>
+	<tr><td><span>не</span><span>с</span><b>ё</b>т</td><td><span>не</span><span>с</span><b>у</b>т</td></tr>
+	</table>
+	</span></span></td>
+	<td>to carry; to bring</td></tr>
+<tr><td><span>нос</span><span><b>и</b></span>ться</td><td><span class='tooltip dot'><span>не</span><span>с</span>т<b>и</b>сь<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>не</span><span>с</span><b>у</b>сь</td><td><span>не</span><span>с</span><b>ё</b>мся</td></tr>
+	<tr><td><span>не</span><span>с</span><b>ё</b>шься</td><td><span>не</span><span>с</span><b>ё</b>тесь</td></tr>
+	<tr><td><span>не</span><span>с</span><b>ё</b>тся</td><td><span>не</span><span>с</span><b>у</b>тся</td></tr>
+	</table>
+	</span></span></td>
+	<td>to be carried; to rush</td></tr>
+<tr><td><span class='tooltip dot'><span>таск</span><span><b>а</b></span>ть<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>таск</span><span><b>а</b></span>ю</td><td><span>таск</span><span><b>а</b></span>ем</td></tr>
+	<tr><td><span>таск</span><span><b>а</b></span>ешь</td><td><span>таск</span><span><b>а</b></span>ете</td></tr>
+	<tr><td><span>таск</span><span><b>а</b></span>ет</td><td><span>таск</span><span><b>а</b></span>ют</td></tr>
+	</table>
+	</span></span></td>
+	<td><span>тащ</span><span><b>и</b></span>ть</td>
+	<td>to pull, drag something</td></tr>
+<tr><td><span class='tooltip dot'><span>таск</span><span><b>а</b></span>ться<span class='tooltiptext'>
+	<table class='verbs'>
+	<tr><td><span>таск</span><span><b>а</b></span>юсь</td><td><span>таск</span><span><b>а</b></span>емся</td></tr>
+	<tr><td><span>таск</span><span><b>а</b></span>ешься</td><td><span>таск</span><span><b>а</b></span>етесь</td></tr>
+	<tr><td><span>таск</span><span><b>а</b></span>ется</td><td><span>таск</span><span><b>а</b></span>ютcz</td></tr>
+	</table>
+	</span></span></td>
+	<td><span>тащ</span><span><b>и</b></span>ться</td>
+	<td>to pull, drag oneself</td></tr>
 </table>
 </div>
 
 </div>
+
+<p><i>Conjugations included for irregular verbs.</i></p>
+
+<p>Other verbs of motion work just like the main two pairs- they can be prefixed, including using
+	по to form the perfective aspect.</p>
 
 <script src='../home.js'></script>
 
