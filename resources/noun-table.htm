@@ -1,0 +1,272 @@
+<! DOCTYPE html>
+
+<html>
+<head>
+<title>Русская Звезда</title>
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<style>
+.nochange {font-style: italic;}
+.nochange span {font-size: 120%;}
+
+table {width: 80%; margin-bottom: 2%;}
+
+th:not(#f) {width: 25%;}
+#f th {width:20%;}
+</style>
+</head>
+
+<body class='resource'>
+
+<div class='navbar'>
+	<a href='../home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
+		<div class='dpanel' id='navdrop1'>
+		<a href='alphabet.htm'>Alphabet</a>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
+		<div class='dpanel' id='navdrop2'>
+		<a href='genitive.htm'>Genitive</a>
+		<a href='accusative.htm'>Accusative</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
+		<div class='dpanel' id='navdrop3'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
+
+<h1>Noun Endings by Case</h1>
+
+<nav>
+<a href='#m'>MASCULINE</a> &emsp;|&emsp; 
+<a href='#f'>FEMININE</a> &emsp;|&emsp;
+<a href='#n'>NEUTER</a>
+</nav>
+
+<table style='margin: 1% auto -2%; width:50%;'>
+<tr>
+<td style='background-color: var(--background2-2);'><b>add</b> to end</td>
+<td style='baclground-color: var(--background);'><b>replace</b> ending</td>
+</tr>
+</table>
+
+<button class='accordion' id='m'>MASCULINE</button>
+<div class='apanel'>
+<table class='blank'>
+<colgroup>
+	<col span='1' style='background-color:white;'>
+	<col span='1' style='background-color:var(--background2-2);'>
+	<col span='2' style='background-color:var(--background);'>
+</colgroup>
+<tr>
+<th>nominative</th>
+<th><i>-consonant</i></th>
+<th>-й</th>
+<th>-ь <i>(m)</i></th>
+</tr>
+<tr>
+<td><b>genitive</b></td>
+<td>-а</td>
+<td>-я</td>
+<td>-я</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-ов</td>
+<td>-ев</td>
+<td>-ей</td>
+</tr>
+<tr>
+<td><b>accusative</b></td>
+<td>-а</td>
+<td>-я</td>
+<td>-я</td>
+</tr>
+<tr>
+<td><b>prepositional</b></td>
+<td>-е</td>
+<td>-е</td>
+<td>-е</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-ах</td>
+<td>-ях</td>
+<td>-ях</td>
+</tr>
+<tr>
+<td><b>dative</b></td>
+<td>-у</td>
+<td>-ю</td>
+<td>-ю</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-ам</td>
+<td>-ям</td>
+<td>-ям</td>
+</tr>
+<tr>
+<td><b>instrumental</b></td>
+<td>-ом</td>
+<td>-ем</td>
+<td>-ем</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-ами</td>
+<td>-ями</td>
+<td>-ями</td>
+</tr>
+</table>
+</div>
+
+<button class='accordion' id='f'>FEMININE</button>
+<div class='apanel'>
+<table id='f' class='blank'>
+<colgroup>
+	<col span='1' style='background-color:white;'>
+	<col span='3' style='background-color:var(--background);'>
+</colgroup>
+<tr>
+<th>nominative</th>
+<th>-а</th>
+<th>-я</th>
+<th>-ия</th>
+<th>-ь <i>(f)</i></th>
+</tr>
+<tr>
+<td><b>genitive</b></td>
+<td>-ы</td>
+<td colspan='2'>-и</td>
+<td>-и</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-</td>
+<td>-ь</td>
+<td>-ий</td>
+<td>-ей</td>
+</tr>
+<tr>
+<td><b>accusative</b></td>
+<td>-у</td>
+<td colspan='2'>-ю</td>
+<td class='nochange' style='background-color:white;'>no change</td>
+</tr>
+<tr>
+<td><b>prepositional</b></td>
+<td>-и</td>
+<td>-е</td>
+<td>-ии</td>
+<td>-е</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-ах</td>
+<td colspan='2'>-ях</td>
+<td>-ях</td>
+</tr>
+<tr>
+<td><b>dative</b></td>
+<td>-е</td>
+<td>-е</td>
+<td>-ии</td>
+<td>-и</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-ам</td>
+<td colspan='2'>-ям</td>
+<td>-ям</td>
+</tr>
+<tr>
+<td><b>instrumental</b></td>
+<td>-ой</td>
+<td colspan='2'>-ей</td>
+<td style='background-color:var(--background2-2);'>-ю</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-ами</td>
+<td colspan='2'>-ями</td>
+<td>-ями</td>
+</tr>
+</table>
+</div>
+
+<button class='accordion' id='n'>NEUTER</button>
+<div class='apanel'>
+<table id='n' class='blank'>
+<colgroup>
+	<col span='1' style='background-color:white;'>
+	<col span='3' style='background-color:var(--background);'>
+</colgroup>
+<tr>
+<th>nominative</th>
+<th>-о</th>
+<th>-е</th>
+<th>-ие</th>
+</tr>
+<tr>
+<td><b>genitive</b></td>
+<td>-и</td>
+<td>-а</td>
+<td colspan='2'>-я</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-</td>
+<td style='background-color: var(--background2-2);'>-й</td>
+<td>-ий</td>
+</tr>
+<tr>
+<td><b>accusative</b></td>
+<td class='nochange' colspan='3' style='background-color:white;'>no change <span>&rarr;</span></td>
+</tr>
+<tr>
+<td><b>prepositional</b></td>
+<td>-е</td>
+<td>-е</td>
+<td>-ии</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-ах</td>
+<td colspan='2'>-ях</td>
+</tr>
+<tr>
+<td><b>dative</b></td>
+<td>-у</td>
+<td colspan='2'>-ю</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-ам</td>
+<td colspan='2'>-ям</td>
+</tr>
+<tr>
+<td><b>instrumental</b></td>
+<td style='background-color:var(--background2-2);'>-м</td>
+<td style='background-color:var(--background2-2);' colspan='2'>-м</td>
+</tr>
+<tr>
+<td><i>plural</i></td>
+<td>-ами</td>
+<td colspan='2'>-ями</td>
+</tr>
+</table>
+</div>
+
+<script src='../home.js'></script>
+
+</body>
+</html>

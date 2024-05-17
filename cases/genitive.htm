@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Русская Звезда</title>
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<style> 
+	th {width: 25%;} 
+	.example th {width: auto;}
+	.example {width: 90%;}
+	.pronouns table th:first-of-type {width:30%;}
+</style>
+</head>
+
+<body class='lesson case'>
+<h1>The Genitive Case</h1>
+
+<div class='navbar'>
+	<a href='../home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(1)'>Basics</button>
+		<div class='dpanel'>
+		<a href='alphabet.htm'>Alphabet</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='adjectives.htm'>Adjectives</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(2)'>Cases</button>
+		<div class='dpanel'>
+		<a href='accusative.htm'>Accusative</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(3)'>Vocabulary</button>
+		<div class='dpanel'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
+
+<p class='underline'>The genitive case is used to indicate <span>possession</span>, <span>negation</span>, 
+	<span>origin</span>, and <span>amount</span>- it answers questions like, 
+	“<span>whose?</span>”, “<span>what is absent?</span>”, and “<span>of what?</span>”. 
+	The genitive case could be considered the most complicated case in Russian, 
+	with myriad uses and no real pattern to the ending changes. 
+	(So it only gets easier from here!)</p>
+	
+<table class='opposite change'>
+<tr>
+<th><i>Add</i> а to a hard consonant</th>
+<th>Replace а with ы</th>
+<th>Replace о with а</th>
+<th>Replace <!--ffccccccccfgvt--> ь (masculine) with я</th>
+</tr>
+<tr>
+<td><span class='tooltip'>волк &rarr; в<b>о</b>лк<span>а</span><span class='tooltiptext'>wolf <i>nominative</i> &rarr; wolf <i>genitive</i></span></span></td>
+<td><span class='tooltip'>ж<b>е</b>нщин<span>а</span> &rarr; ж<b>е</b>нщин<span>ы</span><span class='tooltiptext'>woman <i>nom.</i> &rarr; woman <i>gen.</i></span></span></td>
+<td><span class='tooltip'><b>я</b>блок<span>о</span> &rarr; <b>я</b>блок<span>а</span><span class='tooltiptext'>apple <i>nom.</i> &rarr; apple <i>gen.</i></span></span></td>
+<td><span class='tooltip'>слов<b>а</b>р<span>ь</span> &rarr; слов<b>а</b>р<span>я</span><span class='tooltiptext'>dictionary <i>nom.</i> &rarr; dictionary <i>gen.</i></span></span></td>
+</tr>
+<tr>
+<th>Replace й with я</th>
+<th>Replace я with и</th>
+<th>Replace е with я</th>
+<th>Replace ь (feminine) with и</th>
+</tr>
+<tr>
+<td><span class='tooltip'>злод<b>е</b><span>й</span> &rarr; злод<b>е</b><span>я</span><span class='tooltiptext'>villain <i>nom.</i> &rarr; villain <i>gen.</i></span></span></td>
+<td><span class='tooltip'>зме<span><b>я</b></span> &rarr; зме<span><b>и</b></span><span class='tooltiptext'>snake <i>nom.</i> &rarr; snake <i>gen.</i></span></span></td>
+<td><span class='tooltip'>м<b>о</b>р<span>е</span> &rarr; м<b>о</b>р<span>я</span><span class='tooltiptext'>sea <i>nom.</i> &rarr; sea <i>gen.</i></span></span></td>
+<td><span class='tooltip'>двер<span>ь</span> &rarr; дв<b>е</b>р<span>и</span><span class='tooltiptext'>door <i>nom.</i> &rarr; door <i>gen.</i></span></span></td>
+</tr>
+</table>
+
+<p>The plural form also changes in the gen. case:</p>
+
+<table class='opposite change'>
+<tr>
+<th><i>Add</i> ов to a hard consonant</th>
+<th><i>Remove</i> а</th>
+<th><i>Remove</i> о</th>
+<th>Replace ь (masculine) with ей</th>
+</tr>
+<tr>
+<td><span class='tooltip'>волк &rarr; в<b>о</b>лк<span>ов</span><span class='tooltiptext'>wolf <i>nom.</i> &rarr; wolves <i>gen.</i></span></span></td>
+<td><span class='tooltip'>ж<b>е</b>нщин<span>а</span> &rarr; ж<b>е</b>нщин<span class='tooltiptext'>woman <i>nom.</i> &rarr; women <i>gen.</i></span></span></td>
+<td><span class='tooltip'><b>я</b>блок<span>о</span> &rarr; <b>я</b>блок<span class='tooltiptext'>apple <i>nom.</i> &rarr; apples <i>gen.</i></span></span></td>
+<td><span class='tooltip'>слов<b>а</b>р<span>ь</span> &rarr; слов<b>а</b>р<span>ей</span><span class='tooltiptext'>dictionary <i>nom.</i> &rarr; dictionaries <i>gen.</i></span></span></td>
+</tr>
+<tr>
+<th>Replace й with ев</th>
+<th>Replace [vowel] я with й</th>
+<th><i>Add</i> й to е</th>
+<th>Replace ь (feminine) with ей</th>
+</tr>
+<tr>
+<td><span class='tooltip'>злод<b>е</b><span>й</span> &rarr; злод<b>е</b><span>ев</span><span class='tooltiptext'>villain <i>nom.</i> &rarr; villains <i>gen.</i></span></span></td>
+<td><span class='tooltip'>зме<span><b>я</b></span> &rarr; зме<span>й</span><span class='tooltiptext'>snake <i>nom.</i> &rarr; snakes <i>gen.</i></span></span></td>
+<td><span class='tooltip'>м<b>о</b>р<span>е</span> &rarr; м<b>о</b>р<span>ей</span><span class='tooltiptext'>sea <i>nom.</i> &rarr; seas <i>gen.</i></span></span></td>
+<td><span class='tooltip'>двер<span>ь</span> &rarr; дв<b>е</b>р<span>ей</span><span class='tooltiptext'>door <i>nom.</i> &rarr; doors <i>gen.</i></span></span></td>
+</tr>
+<tr>
+<th>Replace ж, ч, ш, щ with ей</th>
+<th>Replace [consonant] я with ь</th>
+<th>Replace ие with ий</th>
+</tr>
+<tr>
+<td><span class='tooltip'>муж &rarr; муж<span><b>е</b>й</span><span class='tooltiptext'>husband <i>nom.</i> &rarr; husbands <i>gen.</i></span></span></td>
+<td><span class='tooltip'>к<b>у</b>хн<span>я</span> &rarr; к<b>у</b>хон<span>ь</span>*<span class='tooltiptext'>kitchen <i>nom.</i> &rarr; kitchens <i>gen.</i></span></span></td>
+<td><span class='tooltip'>помиш<b>е</b>н<span>ие</span> &rarr; помиш<b>е</b>н<span>ий</span><span class='tooltiptext'>room <i>nom.</i> &rarr; rooms <i>gen.</i></span></span></td>
+</tr>
+</table>
+
+<p><i>*For nouns ending in a, o, or я whose stems end in multiple consonants, 
+	an o or e is usually inserted between the consonants in the genitive plural.
+	<span class='tooltip'>К<b>о</b>шка &rarr; к<b>о</b>шек
+	<span class='tooltiptext'>cat <i>nom.</i> &rarr; cats <i>gen.</i></span></span> 
+	and <span class='tooltip'>окн<b>о</b> &rarr; ок<b>о</b>н
+	<span class='tooltiptext'>window <i>nom.</i> &rarr; windows <i>gen.</i></span></span>
+	are other examples.</i></p>
+	
+<h2>Uses</h2>
+<p>There are a few prepositions which indicate that the corresponding noun
+	will be in the genitive case:</p>
+	
+<table class='example change'>
+<tr>
+<th>без <i>without</i></th>
+<th>у <i>(indicates possession)</i></th>
+<th>о(т)<i>from</i></th>
+<th>из <i>from</i></th>
+<th>для <i>for</i></th>
+</tr>
+<tr>
+<td><span class='tooltip'>к<b>о</b>фе без молок<span><b>а</b></span><span class='tooltiptext'>coffee without milk</span></span></td>
+<td><span class='tooltip'>у т<b>о</b>й ж<b>е</b>нщин<span>ы</span> <b>е</b>сть к<b>о</b>льцо<span class='tooltiptext'>that woman has (a/the) ring</span></span></td>
+<td><span class='tooltip'>далек<b>о</b> от муз<b>е</b><span>я</span><span class='tooltiptext'>far from (a/the) museum)</span></span></td>
+<td><span class='tooltip'>он<b>а</b> из Росс<b>и</b><span>и</span><span class='tooltiptext'>she is from Russia</span></span></td>
+<td><span class='tooltip'><b>э</b>то для моег<b>о</b> п<b>а</b>рн<span>я</span><span class='tooltiptext'>this is for my boyfriend</span></span></td>
+</table>
+
+<p>The genitive case is also used with numbers and amounts:</p>
+
+<table class='example change'>
+<tr>
+<th><b>1</b> nominative singular</th>
+<th><b>2, 3, 4</b> genitive singular</th>
+<th><b>5+</b> genitive plural</th>
+<th><b>0</b> genitive plural</th>
+</tr>
+<tr>
+<td><span class='tooltip'>одн<b>а</b> кор<b>о</b>в<span>а</span><span class='tooltiptext'>one cow</span></span></td>
+<td><span class='tooltip'>дв<b>а</b>, тр<b>и</b>, чет<b>ы</b>ре кор<b>о</b>в<span>ы</span><span class='tooltiptext'>two, three, four cows</span></span></td>
+<td><span class='tooltip'>п<b>я</b>ть или б<b>о</b>льше кор<b>о</b>в<span class='tooltiptext'>five or more cows</span></span></td>
+<td><span class='tooltip'>н<b>у</b>ль кор<b>о</b>в<span class='tooltiptext'>zero cows</span></span></td>
+</tr>
+</table>
+
+<p>When dealing with numbers bigger than 20, 
+	these rules apply to the last number:</p>
+
+<table class='example change'>
+<tr>
+<td>с<b>о</b>рок одн<b>а</b> <i>41</i> кор<b>о</b>в<span>а</span></td>
+<td>ст<b>о</b> девян<b>о</b>сто тр<b>и</b> <i>193</i> кор<b>о</b>в<span>ы</span></td>
+<td>двен<b>а</b>дцать <i>12</i> кор<b>о</b>в</td>
+<td>шестдес<b>я</b>ть <i>60</i> кор<b>о</b>в</td>
+</tr>
+</table>
+
+<p>The genitive case is also used with more general amounts like мн<b>о</b>го
+	<i>a lot,</i> немн<b>о</b>го <i>a little,</i> etc.</p>
+
+<button class='accordion'>Pronouns</button>
+<div class='apanel pronouns'>
+<table style='width:40%;'>
+<tr>
+<th><i>personal</i></th>
+<th>1st person</th>
+<th>2nd person</th>
+<th>3rd person</th>
+<th>reflexive</th>
+</tr>
+<tr>
+<th>singular</th>
+<td>мен<b>я</b></td>
+<td>ты</td>
+<td>(н)ег<b>о</b>/(н)е<b>е</b>*</td>
+<td rowspan='2'>себ<b>я</b><br>&darr;</td>
+</tr>
+<tr>
+<th>plural</th>
+<td>нас</td>
+<td>вас</td>
+<td>(н)их</td>
+</tr>
+</table>
+
+<table style='width:70%;'>
+<tr>
+	<th><i>Possessive</i></th>
+	<th>1st person singular</th>
+	<th>2nd person singular</th>
+	<th>3rd person</th>
+	<th>1st person plural</th>
+	<th>2nd person plural</th>
+	<th>reflexive</th>
+</tr>
+<tr>
+	<th>masculine</th>
+	<td>моег<b>о</b></td>
+	<td>твоег<b>о</b></td>
+	<td rowspan='4'>&uarr;<br>ег<b>о</b>/е<b>е</b>*/их<br>&darr;</td>
+	<td>н<b>а</b>шего</td>
+	<td>в<b>а</b>шего</td>
+	<td>своег<b>о</b></td>
+</tr>
+<tr>
+	<th>feminine</th>
+	<td>мо<b>е</b>й</td>
+	<td>тво<b>е</b>й</td>
+	<td>н<b>а</b>шем</td>
+	<td>в<b>а</b>шей</td>
+	<td>сво<b>е</b>й</td>
+</tr>
+<tr>
+	<th>neuter</th>
+	<td>моег<b>о</b></td>
+	<td>твоег<b>о</b></td>
+	<td>н<b>а</b>шего</td>
+	<td>в<b>а</b>шего</td>
+	<td>своег<b>о</b></td>
+</tr>
+<tr>
+	<th>plural</th>
+	<td>мо<b>и</b>х</td>
+	<td>тво<b>и</b>х</td>
+	<td>н<b>а</b>ших</td>
+	<td>в<b>а</b>ших</td>
+	<td>сво<b>и</b>х</td>
+</tr>
+</table>
+
+<table style='width:50%;'>
+<tr>
+	<th><i>Demonstrative & Determinative</i></th>
+	<th>this</th>
+	<th>that</th>
+	<th>all</th>
+</tr>
+<tr>
+	<th>masculine</th>
+	<td><b>э</b>того</td>
+	<td>тог<b>о</b></td>
+	<td>всег<b>о</b></td>
+</tr>
+<tr>
+	<th>feminine</th>
+	<td><b>э</b>той</td>
+	<td>той</td>
+	<td>всей</td>
+</tr>
+<tr>
+	<th>neuter</th>
+	<td><b>э</b>того</td>
+	<td>тог<b>о</b></td>
+	<td>всег<b>о</b></td>
+</tr>
+<tr>
+	<th>plural</th>
+	<td><b>э</b>тих</td>
+	<td>тех</td>
+	<td>всех</td>
+</tr>
+</table>
+
+<table style='width: 50%;'>
+<tr>
+<th><i>Interrogative</i></th>
+<th>who</th>
+<th>what</th>
+<th>which</th>
+</tr>
+<tr>
+<th>masculine</th>
+<td rowspan='4'>&uarr;<br>чег<b>о</b><br>&darr;</td>
+<td rowspan='4'>&uarr;<br>ког<b>о</b><br>&darr;</td>
+<td>как<b>о</b>го</td>
+</tr>
+<tr>
+<th>feminine</th>
+<td>как<b>о</b>й</td>
+</tr>
+<tr>
+<th>neuter</th>
+<td>как<b>о</b>го</td>
+</tr>
+<tr>
+<th>plural</th>
+<td>как<b>и</b>х</td>
+</tr>
+</table>
+
+<h3>
+ЕГО/ОГО
+</h3>
+<p class='underline'>Many pronouns use the ending его or ого in the genitive case. In these words, 
+	<span><b>г</b> sounds like <b>в</b></span> (a v sound instead of g). So, <i>его</i> is
+	pronounced <i>yevo</i>; <i>ого, ovo</i>. This is mostly present in the genitive case, as well as the accusative case which uses some
+	genitive pronouns, and the masculine possessive pronoun ег<b>о</b> which is used in all cases.</p>
+</div>
+
+<button class='accordion'>Adjectives</button>
+<div class='apanel'>
+<table>
+<tr>
+<th>masculine</th>
+<th>feminine</th>
+<th>neuter</th>
+<th>plural</th>
+</tr>
+<tr>
+<td>-ого</td>
+<td>-ой</td>
+<td>-ого</td>
+<td>-ых</td>
+</tr>
+<tr class='example change'>
+<td>ч<b>ё</b>рн<span>ого</span></td>
+<td>ч<b>ё</b>рн<span>ой</span></td>
+<td>ч<b>ё</b>рн<span>ого</span></td>
+<td>ч<b>ё</b>рн<span>ых</span></td>
+</tr>
+</table>
+</div>
+
+<script src='../home.js'></script>
+</body>
+</html>

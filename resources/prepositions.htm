@@ -1,0 +1,405 @@
+<! DOCTYPE html>
+
+<html>
+<head>
+<title>Русская Звезда</title>
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<style>
+td:nth-child(odd) {background-color: var(--background);}
+td:nth-child(even) {background-color: var(--background2-2);}
+tr:nth-child(odd) td {background-color: transparent;}
+td, th {width: 25%;}
+</style>
+</head>
+
+<body class='resource'>
+
+<div class='navbar'>
+	<a href='../home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(1)'>Basics</button>
+		<div class='dpanel'>
+		<a href='../basics/alphabet.htm'>Alphabet</a>
+		<a href='../basics/spellingrules.htm'>Spelling Rules</a>
+		<a href='../basics/pronouns.htm'>Pronouns</a>
+		<a href='../basics/nominative.htm'>Nouns</a>
+		<a href='../basics/adjectives.htm'>Adjectives</a>
+		<a href='../basics/consonantmutation.htm'>Consonant Mutation</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(2)'>Cases</button>
+		<div class='dpanel'>
+		<a href='../cases/genitive.htm'>Genitive</a>
+		<a href='../cases/accusative.htm'>Accusative</a>
+		<a href='../cases/prepositional.htm'>Prepositional</a>
+		<a href='../cases/dative.htm'>Dative</a>
+		<a href='../cases/instrumental.htm'>Instrumental</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(3)'>Verbs</button>
+		<div class='dpanel'>
+		<a href='../verbs/present.htm'>Present Tense</a>
+		<a href='../verbs/past.htm'>Past Tense</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(4)'>Vocabulary</button>
+		<div class='dpanel'>
+		<a href='../vocab/numbers.htm'>Numbers</a>
+		</div>
+	</div>
+	<div class='dropdown resourcebtn'>
+	<button class='dropbtn' onclick='dropdown(5)'>Resources</button>
+		<div class='dpanel'>
+		<a href='../resources/noun-table.htm'>Nouns</a>
+		<a href='../resources/pronoun-table.htm'>Pronouns</a>
+		<a href='../resources/adjective-table.htm'>Adjectives</a>
+		</div>
+	</div>
+</div>
+
+<h1>Prepositions by Case</h1>
+
+<p><i>Example sentences included below each term. More common synonyms included.</i></p>
+
+<button class='accordion' id='genitive'>GENITIVE</button>
+<div class='apanel'>
+<table>
+<tr>
+<th>preposition</th><th>meaning</th>
+<th>preposition</th><th>meaning</th>
+</tr>
+<tr>
+<td>б<b>е</b>з(о)</td><td>without</td>
+<td>м<b>и</b>мо</td><td>past</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Не могу жить без кофе!<span class='tooltiptext'>I can't live without coffee!</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>близ</td><td>near</td>
+<td>на борт(<b>y</b>)</td><td>aboard</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Дом находится близ реки.<span class='tooltiptext'>The house is located near the river.</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>в к<b>а</b>честве</td><td>as, in capacity of<br><i>synonym: как</i></td>
+<td>напод<b>о</b>бие</td><td>like, similar to</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Мы не здесь в качестве гостей!<span class='tooltiptext'>We aren't here as guests!</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>в п<b>о</b>исках</td><td>in pursuit of</td>
+<td>напр<b>о</b>тив</td><td>opposite</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>В п<b>о</b>исках Н<b>е</b>мо<span class='tooltiptext'>Finding Nemo</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>в св<b>е</b>те</td><td>in light of, given</td>
+<td>нас<b>у</b>против</td><td>opposite, in relation to</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>в сл<b>у</b>чае <i>sometimes на сл<b>у</b>чай</i></td><td>in the event of</td>
+<td>не счит<b>а</b>я</td><td>not counting; not to mention</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>в см<b>ы</b>сле</td><td>in terms of</td>
+<td><b>о</b>коло</td><td>near, around</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>в теч<b>е</b>ние</td><td>during, over the course of</td>
+<td>от(о)</td><td>from; away from; since</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>в х<b>о</b>де</td><td>in the process of <i>(figuratively/idiomaticaly)</i></td>
+<td>от лиц<b>а</b></td><td>on behalf of</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>в честь</td><td>after, in honor of</td>
+<td>относ<b>и</b>тельно</td><td>regarding, concerning</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Мой сын названный в честь моего отца.<span class='tooltiptext'>My son is named after my father.</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>вблиз<b>и</b></td><td>around, near</td>
+<td>по мот<b>и</b>вам</td><td>based on (a story)</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>ввид<b>у</b></td><td>in view</td>
+<td>пов<b>е</b>рх<br><i>synonym: над</i></td><td>over</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Река ввиду дома.<span class='tooltiptext'>The river is in view of the house.</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>вдоль</td><td>along</td>
+<td>позад<b>и</b><br><i>synonym: за</i></td><td>behind</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>вм<b>е</b>сто <i>abbr. вм.</i></td><td>instead (of)</td>
+<td>пом<b>и</b>мо</td><td>apart from; in spite of</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Используй кленовый сироп вместо сахара.<span class='tooltiptext'>Use maple syrup instead of sugar.</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>вне</td><td>outside</td>
+<td>попер<b>ё</b>к</td><td>across, crosswise</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>внутр<b>и</b></td><td>inside, within <i>position</i></td>
+<td>п<b>о</b>сле</td><td>after (time)</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Внутри месяци есть скамейки.<span class='tooltiptext'>Inside of the church are pews.</span></span></td>
+<td colspan='2'><span class='tooltip'>После работы, я приготовлю ужин.<span class='tooltiptext'>After work, I will make dinner.</span></span></td>
+</tr>
+<tr>
+<td>внутрь</td><td>inside; into <i>direction</i></td>
+<td>посред<b>и</b></td><td>in the middle/midst (of)</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Он посмотрел внутрь воды.<span class='tooltiptext'>He gazed into the water.</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>во вр<b>е</b>мя</td><td>during</td>
+<td>пос(е)ред<b>и</b>не</td><td>in the middle</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Люди едят конфеты и попкорн во время фильма.<span class='tooltiptext'>People eat candy and popcorn during the movie.</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>во <b>и</b>мя</td><td>in the name of</td>
+<td>поср<b>е</b>дством</td><td>by means of, with the help of</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>во имя Бога<span class='tooltiptext'>in the name of God</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>в<b>о</b>зле</td><td>by, near<br><i>synonym: <b>о</b>коло</i></td>
+<td>прев<b>ы</b>ше</td><td>above <i>figurative</i></td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>вокр<b>у</b>г</td><td>around</td>
+<td>пр<b>о</b>тив</td><td>against; opposite</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>вперед<b>и</b></td><td>in front (of)<br><i>synonym: п<b>е</b>ред</i></td>
+<td>пут<b>ё</b>м</td><td>by means of, through</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>вр<b>о</b>де</td><td>similar to; such as</td>
+<td>р<b>а</b>ди</td><td>for the sake of</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'>Ради ушей всех, выключи музыку.<span class='tooltiptext'>For the sake of everyone's ears, turn the music down.</span></span></td>
+</tr>
+<tr>
+<td>всд<b>е</b>ствие</td><td>because (of)</td>
+<td>р<b>а</b>нее</td><td>previous (to)</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>для</td><td>for</td>
+<td>с(о)</td><td>from (abstract noun); from off; from (time); due to</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Это шоу не для детей.<span class='tooltiptext'>This show is not for kids.</span></span></td>
+<td colspan='2'><span class='tooltip'>Я окончательно уйти с работы.<span class='tooltiptext'>I'm finally leaving work.</span></span></td>
+</tr>
+<tr>
+<td>до</td><td>before; up to; concerning, regarding</td>
+<td>с п<b>о</b>мощью</td><td>via</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>за в<b>ы</b>четом</td><td>except for, minus<br><i>synonyms: кр<b>о</b>ме, пом<b>и</b>мо</i></td>
+<td>св<b>е</b>рх(y)</td><td>above, beyond</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>за исключ<b>е</b>нием</td><td>except, apart from<br><i>synonyms: кр<b>о</b>ме, пом<b>и</b>мо</i></td>
+<td>св<b>ы</b>ше</td><td>from above</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td><b>и</b>з(о)</td><td>from; out (of)</td>
+<td>сз<b>а</b>ди</td><td>from behind</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Откуда вы? Вы из России?<span class='tooltiptext'>Where are you from? Are you from Russia?</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td><b>и</b>з-за</td><td>from behind; because (of)</td>
+<td>сред<b>и</b> <i>or средь</i></td><td>among</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Она не могла прийти из-за болезни.<span class='tooltiptext'>She can't come due to an illness.</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td><b>и</b>з-под</td><td>from under</td>
+<td>супрот<b>и</b>в</td><td>against; in spite of</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'>Саламандра пришел из-под этого бревно.<span class='tooltiptext'>(A/The) salamander came from under this log.</span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>кас<b>а</b>тельно</td><td>concerning, regarding</td>
+<td>у</td><td><i>expressing possession</i>; at, near</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>кр<b>о</b>ме</td><td>except, besides</td>
+<td>что кас<b>а</b>ется</td><td>regarding, as for</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+<tr>
+<td>круг<b>о</b>м</td><td>around</td>
+</tr>
+<tr>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+<td colspan='2'><span class='tooltip'><span class='tooltiptext'></span></span></td>
+</tr>
+</table>
+</div>
+
+<button class='accordion' id='accusative'>ACCUSATIVE</button>
+<div class='apanel'>
+<table>
+<tr>
+<th>preposition</th><th>meaning</th>
+<th>preposition</th><th>meaning</th>
+</tr>
+<tr>
+<td>в(о)</td><td>to, into; per, in; at, on, in (time)</td>
+<td>по</td><td></td>
+</tr>
+<tr>
+<td>взамен (на)</td><td>against; in exchange for</td>
+<td>под</td><td></td>
+</tr>
+<tr>
+<td>включая <i>abbr. вкл.</i></td><td>including</td>
+<td>про</td><td></td>
+</tr>
+<tr>
+<td>за</td><td>for (the benefit, support of); during; </td>
+<td>с</td><td></td>
+</tr>
+<tr>
+<td>исключая</td><td></td>
+<td>сквозь</td><td></td>
+</tr>
+<tr>
+<td>на</td><td></td>
+<td>спустя</td><td></td>
+</tr>
+<tr>
+<td>несмотря на</td><td></td>
+<td>сродни</td><td></td>
+</tr>
+<tr>
+<td>о</td><td></td>
+<td>через</td><td></td>
+</tr>
+
+</table>
+</div>
+
+
+<div>
+<h3>Notes</h3>
+<ul>
+</ul>
+</div>
+
+<p>Adapted from <a href='https://en.wiktionary.org/wiki/Category:Russian_prepositions' target='blank'>
+	Wiktionary's Russian prepositions category</a>.</p>
+
+<script src='../home.js'></script>
+
+</body>
+</html>

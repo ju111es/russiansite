@@ -1,0 +1,209 @@
+<! DOCTYPE html>
+
+<html>
+
+<head>
+<title>Русская Звезда</title>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<link rel='stylesheet' href='../home.css'>
+<style>
+.words {grid-area: 1 / 1;}
+.when {grid-area: 1 / 2;}
+.letters {grid-area: 2 / 1;}
+.examples {grid-area: 2 / 2;}
+
+.grid-container {justify-content: space-evenly;}
+
+.letters1 span {
+	border-radius:10px; 
+	padding:1%;
+	background-color:white; 
+	border:1px solid var(--background);
+}
+.letters2 td {border: none; border-radius: 0;}
+.letters2 td:nth-of-type(3n-2) {text-align:right;}
+.letters2 td:nth-of-type(3n-1) {text-align:center;}
+.letters2 td:nth-of-type(3n-0) {text-align:left;}
+
+.example td {width: 25%;}
+
+#verb {background-color: var(--background);}
+#conjugation {font-size: 95%;}
+</style>
+</head>
+
+<body class='lesson'>
+
+<div class='navbar'>
+	<a href='home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
+		<div class='dpanel' id='navdrop1'>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
+		<div class='dpanel' id='navdrop2'>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
+		<div class='dpanel' id='navdrop3'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
+
+<h1>Consonant Mutation</h1>
+
+<p class='underline'>In Russian, some consonants <span>mutate</span> under certain circumstances,
+	usually in certain verb conjugations. So,</p>
+
+<div class='grid-container'>	
+<div class='words'>
+<h3>Which words undergo consonant mutation?...</h3>
+<p class='letters1'>
+&starf;  most <span>-ать</span> verbs<br><br>
+&starf;  <span>-ить</span> and <span>-еть</span> <i>second conjugation</i> verbs<br><br>
+&starf;  most adjectives
+</p>
+</div>
+
+<div class='when fill'>
+<h3>...And when?</h3>
+<p>
+<i>-ать verbs</i><br>
+&starf;  every conjugation<br>
+&starf;  in the imperative mood<br><br>
+<i>-ить and -еть verbs</i><br>
+&starf;  first person singular conjugation only<br><br>
+<i>adjectives</i><br>
+&starf;  in comparative form (adjectives with mutating stems use the ending -е instead of -ее)
+</p>
+</div>
+
+<div class='letters fill'>
+<h3>And finally, which consonants mutate?</h3>
+<table class='letters2 change'>
+<tr>
+<td>consonant</td>
+<td>&rarr;</td>
+<td>mutation</td>
+</tr>
+<tr>
+<td><b>б</b></td>
+<td>&rarr;</td>
+<td>бл</td>
+</tr>
+<tr>
+<td><b><span>в</span></b></td>
+<td>&rarr;</td>
+<td>вл</td>
+</tr>
+<tr>
+<td><b><span>м</span></b></td>
+<td>&rarr;</td>
+<td>мл</td>
+</tr><tr>
+<td><b>п</b></td>
+<td>&rarr;</td>
+<td>пл</td>
+</tr>
+<tr>
+<td>ф</td>
+<td>&rarr;</td>
+<td>фл</td>
+</tr>
+<tr>
+<td><span>т</span>&emsp;к</td>
+<td>&rarr;</td>
+<td>ч</td>
+</tr>
+<tr>
+<td><span>д</span>&emsp;<span>г</span>&emsp;з</td>
+<td>&rarr;</td>
+<td>ж</td>
+</tr>
+<tr>
+<td>с&emsp;х</td>
+<td>&rarr;</td>
+<td>ш</td>
+</tr>
+<tr>
+<td>ст&emsp;ск</td>
+<td>&rarr;</td>
+<td>щ</td>
+</tr>
+</table>
+
+<p class='change' style='position:absolute; left:20%; top:100%;'>&starf;  Consonants in 
+	<span>pink</span><br>do not mutate in -ать<br>verb conjgations.<br><br>
+	&starf;  Consonants in <b>bold</b><br>do not mutate in<br>adjectives.</p>
+</div>
+
+<div class='examples'>
+<h3>Examples</h3>
+<table class='example change' style='width:102%;'>
+<tr>
+<th colspan='4'>-ать verbs</th>
+</tr>
+<tr>
+<td id='verb'>пи<span>с</span><b>а</b>ть</td>
+<td id='verb'>п<b>а</b><span>д</span>ать</td>
+<td id='verb'>ска<span>з</span><b>а</b>ть</td>
+<td id='verb'>помо<span>г</span><b>а</b>ть</td>
+</tr>
+<tr>
+<td id='conjugation'>пи<span>ш</span><b>у</b>&emsp;п<b>и</b><span>ш</span>ем<br>
+	п<b>и</b><span>ш</span>ешь&emsp;п<b>и</b><span>ш</span>ете<br>
+	п<b>и</b><span>ш</span>ет&emsp;п<b>и</b><span>ш</span>ут</td>
+
+<td id='conjugation'>п<b>а</b>даю&emsp;п<b>а</b>даем<br>
+	п<b>а</b>даещь&emsp;п<b>а</b>даете<br>
+	п<b>а</b>дает&emsp;п<b>а</b>дают</td>
+
+<td>ска<span>ж</span><b>и</b><br>ска<span>ж</span><b>и</b>те</td>
+<td>помо<span>г</span><b>и</b><br>помо<span>г</span><b>и</b>те</td>
+</tr>
+<tr>
+<th colspan='4'>-ить and -еть verbs</th>
+</tr>
+<tr>
+<td id='verb'>лю<span>б</span><b>и</b>ть</td>
+<td id='verb'>и<span>м</span><b>е</b>ть</td>
+<td id='verb'>хо<span>д</span><b>и</b>ть</td>
+<td id='verb'>смот<span>р</span><b>е</b>ть</td>
+</tr>
+<tr>
+<td id='conjugation'>лю<span>бл</span><b>ю</b>&emsp;л<b>ю</b>бим<br>
+	л<b>ю</b>бишь&emsp;л<b>ю</b>бите<br>
+	л<b>ю</b>бит&emsp;л<b>ю</b>бят</td>
+
+<td id='conjugation'>и<span>м</span><b>е</b>ю&emsp;им<b>е</b>ем<br>
+	им<b>е</b>ешь&emsp;им<b>е</b>ете<br>
+	им<b>е</b>ет&emsp;им<b>е</b>ют</td>
+
+<td>хо<span>д</span><b>и</b><br>хо<span>д</span><b>и</b>те</td>
+<td>смот<span>р</span><b>и</b><br>смот<span>р</span><b>и</b>те</td>
+</tr>
+<tr>
+<th colspan='4'>adjectives</th>
+</tr>
+<tr>
+<td colspan='2'>доро<span>г</span><b>о</b>й &rarr; дор<b>о</b><span>ж</span>е</td>
+<td colspan='2'>крас<b>и</b><span>в</span>ый &rarr; крас<b>и</b><span>в</span>ее</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+
+<script src='../home.js'></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Русская Звезда</title>
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<style>
+.soft {grid-column: 1 / 2;}
+.short {grid-column: 2 / 3;}
+
+.flex-container div {width: 33%; padding:0 1%;}
+</style>
+</head>
+
+<body class='lesson'>
+
+<div class='navbar'>
+	<a href='../home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
+		<div class='dpanel' id='navdrop1'>
+		<a href='alphabet.htm'>Alphabet</a>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
+		<div class='dpanel' id='navdrop2'>
+		<a href='genitive.htm'>Genitive</a>
+		<a href='accusative.htm'>Accusative</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
+		<div class='dpanel' id='navdrop3'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
+
+<h1>Adjectives in Russian</h1>
+
+<p>An adjective's ending always matches the gender of the object they describe:</p>
+
+<table>
+<tr>
+<th>masculine</th><th>feminine</th>
+<th>neuter</th><th>plural</th>
+</tr>
+<tr>
+<td>-ый*</td><td>-ая</td>
+<td>-ое</td><td>-ые</td>
+</tr>
+<tr class='example'>
+<td><span class='tooltip'>вк<b>у</b>сный суп<span class='tooltiptext'>tasty soup</span></span></td>
+<td><span class='tooltip'>вк<b>у</b>сная к<b>у</b>рица<span class='tooltiptext'>tasty chicken</span></span></td>
+<td><span class='tooltip'>вк<b>у</b>сное м<b>я</b>со<span class='tooltiptext'>tasty meat</span></span></td>
+<td><span class='tooltip'>вк<b>у</b>сные т<b>о</b>рты<span class='tooltiptext'>tasty cakes</span></span></td>
+</tr>
+</table>
+
+<p><i>*Masculine nouns can also have other ending such as <b>-ой</b> and <b>-ий</b>; 
+	-ый is most common.</i></p>
+
+<div class='grid-container'>
+<div class='soft'>
+<p>There are also soft adjectives, whose masculine forms end in -ний. 
+	These simply use soft vowels <b>(я, е, и, ю)</b> in place of hard ones <b>(а, о, ы, у)</b> 
+	in every grammatical case.</p>
+
+<table>
+<tr>
+<th>masculine</th><th>feminine</th>
+<th>neuter</th><th>plural</th>
+</tr>
+<tr>
+<td>-ий</td><td>-яя</td>
+<td>-ее</td><td>-ие</td>
+</tr>
+<tr class='example'>
+<td><span class='tooltip'>ср<b>е</b>дний реб<b>ё</b>нок<span class='tooltiptext'>middle child</span></span></td>
+<td><span class='tooltip'>ср<b>е</b>дняя шк<b>о</b>ла<span class='tooltiptext'>middle school</span></span></td>
+<td><span class='tooltip'>ср<b>е</b>днее им<b>я</b>*<span class='tooltiptext wrap'>middle name<br><i>*имя is an irregular noun- it appears feminine but is neuter.</i></span></span></td>
+<td><span class='tooltip'>ср<b>е</b>дние сид<b>е</b>нья<span class='tooltiptext'>middle seats</span></span></td>
+</tr>
+</table>
+</div>
+
+<div class='short'>
+<p>Adjectives can be shortened for simple, subject-adjective sentences (for example: 
+	that building is old; this woman is kind; my dog is cute).</p>
+
+<table>
+<tr>
+<th>masculine</th><th>feminine</th>
+<th>neuter</th><th>plural</th>
+</tr>
+<tr>
+<td>-</td><td>-а</td>
+<td>-о</td><td>-ы</td>
+</tr>
+<tr class='example'>
+<td><span class='tooltip'>крас<b>и</b>в храм<span class='tooltiptext'>beautiful temple</span></span></td>
+<td><span class='tooltip'>крас<b>и</b>ва пт<b>и</b>ца<span class='tooltiptext'>beautiful bird</span></span></td>
+<td><span class='tooltip'>крас<b>и</b>во с<b>о</b>лнце<span class='tooltiptext'>beautiful sun</span></span></td>
+<td><span class='tooltip'>крас<b>и</b>вы л<b>ю</b>ди<span class='tooltiptext'>beautiful people</span></span></td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<p>Like nouns and pronouns, adjectives change with 
+	grammatical case. These are in their nominative forms.</p>
+
+<h2>Comparative adjectives</h2>
+
+<p>There are a few way to compare nouns using adjectives.</p>
+
+<div class='flex-container'>
+<div>
+<h3>Using б<b>о</b>лее <i>more</i> / м<b>е</b>нее <i>less</i> + чем <i>than</i></h3>
+<p class='fill'><span class='tooltip'><b>Э</b>тот суп м<b>е</b>нее вк<b>у</b>сный, чем тот.<span class='tooltiptext'>This soup is less tasty than that one.</span></span></p>
+<p class='fill'><span class='tooltip'>Е<b>е</b> карт<b>и</b>на б<b>о</b>лее крас<b>и</b>вая, чем ег<b>о</b> скульпт<b>у</b>ра.<span class='tooltiptext'>Her painting is more beautiful than his sculpture.</span></span></p>
+<p>As you can see, the adjective still matches the gender of the noun.</p>
+</div>
+
+<div>
+<h3>Using the ending ее + чем</h3>
+<p class='fill'><span class='tooltip'>Тот суп вк<b>у</b>снее, чем <b>э</b>тот.<span class='tooltiptext'>That soup is tastier than this one.</span></span></p>
+<p>Notice the pronouns are switched- this ending always means <i>more.</i></p>
+<p class='fill'><span class='tooltip'>Е<b>е</b> карт<b>и</b>на крас<b>и</b>вее, чем ег<b>о</b> скульпт<b>у</b>ра.<span class='tooltiptext'>Her painting is more beautiful than his sculpture.</span></span></p>
+<p>Many adjectives undergo consonant mutation using this ending.</p>
+</div>
+
+<div>
+<h3>Using the genitive case in place of чем</h3>
+<p class='fill'><span class='tooltip'><b>Э</b>тот суп м<b>е</b>нее вк<b>у</b>сный того.<span class='tooltiptext'>This soup is less tasty than that one.</span></span></p>
+<p class='fill'><span class='tooltip'>Е<b>е</b> карт<b>и</b>на крас<b>и</b>вее ег<b>о</b> скульпт<b>у</b>ры.<span class='tooltiptext wrap'>Her painting is more beautiful than his sculpture.</span></span></p>
+</div>
+
+</div>
+
+<p>The adjective с<b>а</b>мый means <i>(the) most.</i> 
+	It can be used with other adjectives, with both matching the gender of the noun:</p>
+	
+<table class='example' style='width:80%;'>
+<tr>
+<td><span class='tooltip'>с<b>а</b>мый молод<b>о</b>й сын<span class='tooltiptext'>youngest son</span></span></td>
+<td><span class='tooltip'>с<b>а</b>мая больш<b>а</b>я соб<b>а</b>ка<span class='tooltiptext'>biggest dog</span></span></td>
+<td><span class='tooltip'>с<b>а</b>мо66е м<b>а</b>ленькое <b>я</b>йцо<span class='tooltiptext'>smallest egg</span></span></td>
+<td><span class='tooltip'>с<b>а</b>мые ст<b>а</b>рые д<b>е</b>вушки<span class='tooltiptext'>oldest girls</span></span></td>
+</tr>
+</table>
+
+<script src='../home.js'></script>
+
+</body>
+</html>

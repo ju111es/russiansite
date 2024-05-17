@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Русская Звезда</title>
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<style> 
+	th {width: 25%;} 
+	.example th {width: auto;}
+	.pronouns table th:first-of-type {width:30%;}
+</style>
+</head>
+
+<body class='lesson case'>
+<h1>The Dative Case</h1>
+
+<div class='navbar'>
+	<a href='../home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' >Basics</button>
+		<div class='dpanel'>
+		<a href='alphabet.htm'>Alphabet</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='adjectives.htm'>Adjectives</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' >Cases</button>
+		<div class='dpanel'>
+		<a href='genitive.htm'>Genitive</a>
+		<a href='accusative.htm'>Accusative</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' >Vocabulary</button>
+		<div class='dpanel'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
+
+<p id='tester'></p>
+
+<p class='underline'>The dative case is mainly used on the <span>indirect object</span> of a sentence.</p>
+	
+<table class='opposite change'>
+<tr>
+<th><i>Add</i> у to a hard consonant</th>
+<th>Replace а with е</th>
+<th>Replace о with у</th>
+<th>Replace ь (masculine) with ю</th>
+</tr>
+<tr>
+<td><span class='tooltip'>брат &rarr; бр<b>а</b>т<span>у</span><span class='tooltiptext'>brother <i>nominative</i> &rarr; brother <i>dative</i></span></span></td>
+<td><span class='tooltip'>голов<span><b>а</b></span> &rarr; голов<span><b>е</b></span><span class='tooltiptext'>head <i>nom.</i> &rarr; head <i>dat.</i></span></span></td>
+<td><span class='tooltip'>ч<b>у</b>вств<span>о</span> &rarr; ч<b>у</b>вств<span>у</span><span class='tooltiptext'>feeling <i>nom.</i> &rarr; feeling <i>dat.</i></span></span></td>
+<td><span class='tooltip'>п<b>а</b>рен<span>ь</span> &rarr; п<b>а</b>рн<span>ю</span><span class='tooltiptext'>guy <i>nom.</i> &rarr; guy <i>dat.</i></span></span></td>
+</tr>
+<tr>
+<th>Replace й with ю</th>
+<th>Replace я with е</th>
+<th>Replace е with ю</th>
+<th>Replace ь (feminine) with и</th>
+</tr>
+<tr>
+<td><span class='tooltip'>г<b>е</b>ро<span>й</span> &rarr; г<b>е</b>ро<span>ю</span><span class='tooltiptext'>hero <i>nom.</i> &rarr; hero <i>dat.</i></span></span></td>
+<td><span class='tooltip'>т<b>е</b>т<span>я</span> &rarr; т<b>е</b>т<span>е</span><span class='tooltiptext'>aunt <i>nom.</i> &rarr; aunt <i>dat.</i></span></span></td>
+<td><span class='tooltip'>б<b>у</b>дуще<span>е</span> &rarr; б<b>у</b>дуще<span>ю</span><span class='tooltiptext'>future <i>nom.</i> &rarr; future <i>dat.</i></span></span></td>
+<td><span class='tooltip'>мысл<span>ь</span> &rarr; м<b>ы</b>сл<span>и</span><span class='tooltiptext'>thought <i>nom.</i> &rarr; thought <i>dat.</i></span></span></td>
+</tr>
+<tr>
+<td></td>
+<th>Replace ия with ии</th>
+</tr>
+<tr>
+<td></td>
+<td><span class='tooltip'>п<b>а</b>рт<span>ия</span> &rarr; п<b>а</b>рт<span>ии</span><span class='tooltiptext'>(political) party <i>nom.</i> &rarr; (political) party <i>dat.</i></span></span></td>
+</tr>
+</table>
+
+<p>The plural form also changes in the prepositional case:</p>
+
+<table class='opposite change'>
+<tr>
+<th>hard consonant, а, о &rarr; ам</th>
+<td style='width:5%;'></td>
+<th>й, ь, я, е &rarr; ям</th>
+</tr>
+<tr>
+<td><span class='tooltip'>брат &rarr; бр<b>а</b>т<span>ам</span><span class='tooltiptext'>brother <i>nom.</i> &rarr;  brothers <i>dat.</i></span></span></td>
+<td></td>
+<td><span class='tooltip'>г<b>е</b>ро<span>й</span> &rarr; г<b>е</b>ро<span>ям</span><span class='tooltiptext'>hero <i>nom.</i> &rarr; heroes <i>dat.</i></span></span></td>
+<td><span class='tooltip'>п<b>а</b>рен<span>ь</span> &rarr; п<b>а</b>рн<span>ям</span><span class='tooltiptext'>guy <i>nom.</i> &rarr; guys <i>dat.</i></span></span></td>
+<td><span class='tooltip'>т<b>е</b>т<span>я</span> &rarr; т<b>е</b>т<span>ям</span><span class='tooltiptext'>aunt <i>nom.</i> &rarr; aunts <i>dat.</i></span></span></td>
+</tr>
+<tr>
+<td><span class='tooltip'>голов<span><b>а</b></span> &rarr; голов<span><b>а</b>м</span><span class='tooltiptext'>head <i>nom.</i> heads &rarr; <i>dat.</i></span></span></td>
+<td></td>
+<td><span class='tooltip'>б<b>у</b>дуще<span>е</span> &rarr; б<b>у</b>дуще<span>ям</span><span class='tooltiptext'>future <i>nom.</i> &rarr; futures <i>dat.</i></span></span></td>
+<td><span class='tooltip'>мысл<span>ь</span> &rarr; м<b>ы</b>сл<span>ям</span><span class='tooltiptext'>thought <i>nom.</i> &rarr; thoughts <i>dat.</i></span></span></td>
+<td><span class='tooltip'>п<b>а</b>рти<span>я</span> &rarr; п<b>а</b>рти<span>ям</span><span class='tooltiptext' style='white-space: wrap;'>(political) party <i>nom.</i> &rarr; (political) parties <i>dat.</i></span></span></td>
+</tr>
+<tr>
+<td><span class='tooltip'>ч<b>у</b>вств<span>о</span> &rarr; ч<b>у</b>вств<span>ам</span><span class='tooltiptext'>feeling <i>nom.</i> &rarr; feelings <i>dat.</i></span></span></td>
+</tr>
+</table>
+
+<h2>Uses</h2>
+
+<h3>The indirect object</h3>
+<p class='underline'>In a sentence like <i>the teacher gives books to the children, the teacher</i>
+	would be the subject, <i>books</i> would be the object, and <i>children</i>
+	would be the <span>indirect object</span>. The indirect object is the <span>recipient
+	of an action</span>; the action is not performed directly on it.</p>
+<table class='example change'>
+<tr>
+<td><span class='tooltip'>уч<b>и</b>тельница да<b>ё</b>т кн<b>и</b>ги дет<span><b>я</b>м</span><span class='tooltiptext'>(a/the) teacher gives books to children</span></span></td>
+<td><span class='tooltip'>д<b>е</b>вушка д<b>а</b>рит цвет<b>ы</b> е<b>е</b> подр<b>у</b>г<span>е</span><span class='tooltiptext'>(a/the) girl gives flowers to her girlfriend</span></span></td>
+</tr> 
+</table>
+
+<h3>Other uses</h3>
+<table class='example change' style='width:100%;'>
+<colgroup><col span='1' style='width:50%;'></colgroup>
+<tr>
+<th id='underline'>With the preposition <span>по</span>- по has many meanings; 
+	with the dative case it usually means <i>around/along</i> (where you'd expect 
+	the prepositional) or <i>using/by means of</i> (where you'd expect the 
+	instrumental)</th>
+<td><span class='tooltip'>мы гул<b>я</b>ли по г<b>о</b>род<span>у</span> в<b>е</b>сь д<b>е</b>нь<span class='tooltiptext'>we strolled around the city all day</span></span></td>
+<td><span class='tooltip'>он см<b>о</b>трит футб<b>о</b>л по телев<b>и</b>зор<span>у</span><span class='tooltiptext' style='white-space: wrap;'>he is watching football on (using) television</span></span></td>
+</tr>
+<th id='underline'>with the verbs <span>помог<b>а</b>ть</span> <i>to help</i> and 
+	<span>сов<b>е</b>товать</span> <i>to advise</i> (one gives/recieves help/advice)</th>
+<td><span class='tooltip'>д<b>е</b>вочка помог<b>а</b>ет <span>сво<b>е</b>й</span> б<b>а</b>бушк<span>е</span><span class='tooltiptext'>(a/the) girl is helping her grandmother</span></span></td>
+<td><span class='tooltip'>я сов<b>е</b>тую <span>моем<b>у</b></span> др<b>у</b>г<span>у</span> ег<b>о</b> отнош<b>е</b>ния<span class='tooltiptext' style='white-space: wrap;'>I am advising my friend on his relationship</span></span></td>
+</tr>
+<tr>
+<th id='underline'>with the verb <span>нр<b>а</b>виться</span> <i>to like</i> 
+	and some other reflexive (-ся) verbs- the one who likes is in the dative</th>
+<td><span class='tooltip'><span>мне</span> нр<b>а</b>вится зим<b>а</b><span class='tooltiptext'>I like winter</span></span></td>
+<td><span class='tooltip'>е<b>е</b> с<b>ы</b>н<span>у</span> <b>о</b>чень нр<b>а</b>вятся жив<b>о</b>тные<span class='tooltiptext'>her son really likes animals</span></span></td>
+</tr>
+<tr>
+<th id='underline'>with the adjective <span>н<b>у</b>жен</span> <i>needed-</i> 
+	the one who needs is in the dative</td>
+<td><span class='tooltip'><span>ем<b>у</b></span> н<b>у</b>жни д<b>е</b>ньги<span class='tooltiptext'>he needs money</span></span></td>
+<td><span class='tooltip'>соб<b>а</b>к<span>ам</span> н<b>у</b>жно мн<b>о</b>го упражн<b>е</b>ний<span class='tooltiptext'>dogs need lots of exercise</span></span></td>
+</tr>
+<tr>
+<th id='underline'>to communicate <span>age</span></th>
+<td><span class='tooltip'><span>моем<b>у</b></span> отц<span><b>у</b></span> пятдес<b>я</b>ть лет<span class='tooltiptext'>my father is fifty years old</span></span></td>
+<td><span class='tooltip'><span>мне</span> почт<b>и</b> восемн<b>а</b>дцать лет<span class='tooltiptext' style='white-space: wrap;'>I am almost eighteen years old <i>(it's true!! :D)</i></span></span></td>
+</tr>
+<tr>
+<th id='underline'>In other ways <span>similar to the English <i>to</span>-</i> 
+	to send to, to call to, to bring to, etc.</th>
+<td><span class='tooltip'>я позв<b>о</b>ню <span>ей</span> сейч<b>а</b>с<span class='tooltiptext'>I will call her now</span></span></td>
+<td><span class='tooltip'>мо<b>я</b> сестр<b>а</b> принес<b>е</b>т т<b>о</b>рт на вечер<b>и</b>нк<span>е</span><span class='tooltiptext' style='white-space: wrap;'>my sister will bring a cake to the party</span></span></td>
+</tr>
+</table>
+	
+
+<button class='accordion'>Pronouns</button>
+<div class='apanel'>
+<table style='width:40%;'>
+<tr>
+<th><i>Personal</i></th>
+<th>1st person</th>
+<th>2nd person</th>
+<th>3rd person</th>
+<th>reflexive</th>
+</tr>
+<tr>
+<th>singular</th>
+<td>мне</td>
+<td>теб<b>е</b></td>
+<td>ему/ей</td>
+<td rowspan='2'>себ<b>е</b><br>&darr;</td>
+</tr>
+<tr>
+<th>plural</th>
+<td>нам</td>
+<td>вам</td>
+<td>им</td>
+</tr>
+</table>
+
+<table style='width:70%;'>
+<tr>
+	<th><i>Possessive</i></th>
+	<th>1st person singular</th>
+	<th>2nd person singular</th>
+	<th>3rd person</th>
+	<th>1st person plural</th>
+	<th>2nd person plural</th>
+	<th>reflexive</th>
+</tr>
+<tr>
+	<th>masculine</th>
+	<td>моем<b>у</b></td>
+	<td>твоем<b>у</b></td>
+	<td rowspan='4'>&uarr;<br>ег<b>о</b>/е<b>е</b>/их<br>&darr;</td>
+	<td>н<b>а</b>шему</td>
+	<td>в<b>а</b>шему</td>
+	<td>своем<b>у</b></td>
+</tr>
+<tr>
+	<th>feminine</th>
+	<td>мо<b>е</b>й</td>
+	<td>тво<b>е</b>й</td>
+	<td>н<b>а</b>шем</td>
+	<td>в<b>а</b>шей</td>
+	<td>сво<b>е</b>й</td>
+</tr>
+<tr>
+	<th>neuter</th>
+	<td>моем<b>у</b></td>
+	<td>твоем<b>у</b></td>
+	<td>н<b>а</b>шему</td>
+	<td>в<b>а</b>шему</td>
+	<td>своем<b>у</b></td>
+</tr>
+<tr>
+	<th>plural</th>
+	<td>мо<b>и</b>м</td>
+	<td>тво<b>и</b>м</td>
+	<td>н<b>а</b>шим</td>
+	<td>в<b>а</b>шим</td>
+	<td>сво<b>и</b>м</td>
+</tr>
+</table>
+
+<table style='width:50%;'>
+<tr>
+	<th><i>Demonstrative & Determinative</i></th>
+	<th>this</th>
+	<th>that</th>
+	<th>all</th>
+</tr>
+<tr>
+	<th>masculine</th>
+	<td><b>э</b>тому</td>
+	<td>том<b>у</b></td>
+	<td>всем<b>у</b></td>
+</tr>
+<tr>
+	<th>feminine</th>
+	<td><b>э</b>той</td>
+	<td>той</td>
+	<td>всей</td>
+</tr>
+<tr>
+	<th>neuter</th>
+	<td><b>э</b>тому</td>
+	<td>том<b>у</b></td>
+	<td>всем<b>у</b></td>
+</tr>
+<tr>
+	<th>plural</th>
+	<td><b>э</b>тим</td>
+	<td>тем</td>
+	<td>всем</td>
+</tr>
+</table>
+
+<table style='width: 50%;'>
+<tr>
+<th><i>Interrogative</i></th>
+<th>who</th>
+<th>what</th>
+<th>which</th>
+</tr>
+<tr>
+<th>masculine</th>
+<td rowspan='4'>&uarr;<br>чем<b>у</b><br>&darr;</td>
+<td rowspan='4'>&uarr;<br>ком<b>у</b><br>&darr;</td>
+<td>как<b>о</b>му</td>
+</tr>
+<tr>
+<th>feminine</th>
+<td>как<b>о</b>й</td>
+</tr>
+<tr>
+<th>neuter</th>
+<td>как<b>о</b>му</td>
+</tr>
+<tr>
+<th>plural</th>
+<td>как<b>и</b>х</td>
+</tr>
+</table>
+
+</div>
+
+<button class='accordion'>Adjectives</button>
+<div class='apanel'>
+<table>
+<tr>
+<th>masculine</th>
+<th>feminine</th>
+<th>neuter</th>
+<th>plural</th>
+</tr>
+<tr>
+<td>ому</td>
+<td>ой</td>
+<td>ому</td>
+<td>ым</td>
+</tr>
+<tr class='example change'>
+<td>ч<b>ё</b>рн<span>ому</span></td>
+<td>ч<b>ё</b>рн<span>ой</span></td>
+<td>ч<b>ё</b>рн<span>ому</span></td>
+<td>ч<b>ё</b>рн<span>ым</span></td>
+</tr>
+</table>
+</div>
+
+<script src='../home.js'></script>
+
+
+</body>
+</html>

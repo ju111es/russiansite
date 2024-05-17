@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+.alphabet {width: 65%;}
+.special {width:35%}
+.letters span {font-size: 200%; font-weight: bold;}
+</style>
+<title>Русская Звезда</title>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<link rel='stylesheet' href='../home.css'>
+</head>
+<body class='lesson'>
+
+<h1>The Russian Alphabet</h1>
+
+<div class='navbar'>
+	<a href='home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
+		<div class='dpanel' id='navdrop1'>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
+		<div class='dpanel' id='navdrop2'>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
+		<div class='dpanel' id='navdrop3'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
+
+<p>The Russian alphabet contains 33 letters. 
+	Some of them look like the Latin letters you’re used to, 
+	some don’t, and some look the same as Latin letters but have 
+	completely different sounds.</p>
+
+<div class='flex-container'>
+<div class='alphabet'>
+<table class='letters'>
+<tr>
+<td><span>Аа</span><br>sound: ah<br>name: ah<br>cursive: <i>Аа</i></td>
+<td><span>Бб</span><br>sound: b<br>name: beh<br>cursive: <i>Бб</i></td>
+<td><span>Вв</span><br>sound: v<br>name: veh<br>cursive: <i>Вв</i></td>
+<td><span>Гг</span><br>sound: g (hard)<br>name: geh<br>cursive: <i>Гг</i></td>
+<td><span>Дд</span><br>sound: d<br>name: deh<br>cursive: <i>Дд</i></td>
+<td><span>Ее</span><br>sound: ye<br>name: yeh<br>cursive: <i>Ее</i></td>
+</tr>
+<tr>
+<td><span>Ёё</span><br>sound: yo<br>name: yo<br>cursive: <i>Ёё</i></td>
+<td><span>Жж</span><br>sound: zh<br>name: zheh<br>cursive: <i>Жж</i></td>
+<td><span>Зз</span><br>sound: z<br>name: zeh<br>cursive: <i>Зз</i></td>
+<td><span>Ии</span><br>sound: ee<br>name: ee<br>cursive: <i>Ии</i></td>
+<td><span>Кк</span><br>sound: k<br>name: kah<br>cursive: <i>Кк</i></td>
+<td><span>Лл</span><br>sound: l<br>name: el<br>cursive: <i>Лл</i></td>
+</tr>
+<tr>
+<td><span>Mм</span><br>sound: m<br>name: em<br>cursive: <i>Мм</i></td>
+<td><span>Hн</span><br>sound: n<br>name: en<br>cursive: <i>Нн</i></td>
+<td><span>Oо</span><br>sound: oh, ah<br>name: oh<br>cursive: <i>Оо</i></td>
+<td><span>Пп</span><br>sound: p<br>name: peh<br>cursive: <i>Пп</i></td>
+<td><span>Pр</span><br>sound: r<br>name: ehr<br>cursive: <i>Рр</i></td>
+<td><span>Cс</span><br>sound: s<br>name: ess<br>cursive: <i>Сс</i></td>
+</tr>
+<tr>
+<td><span>Tт</span><br>sound: t<br>name: teh<br>cursive: <i>Тт</i></td>
+<td><span>Yу</span><br>sound: oo<br>name: oo<br>cursive: <i>Уу</i></td>
+<td><span>Фф</span><br>sound: f<br>name: ef<br>cursive: <i>Фф</i></td>
+<td><span>Xх</span><br>sound: kh<br>name: khah<br>cursive: <i>Хх</i></td>
+<td><span>Цц</span><br>sound: ts<br>name: tseh<br>cursive: <i>Цц</i></td>
+<td><span>Чч</span><br>sound: ch<br>name: cheh<br>cursive: <i>Чч</i></td>
+</tr>
+<tr>
+<td><span>Шш</span><br>sound: sh<br>name: shah<br>cursive: <i>Шш</i></td>
+<td><span>Щщ</span><br>sound: shch<br>name: schyah<br>cursive: <i>Щщ</i></td>
+<td><span>Ыы</span><br>sound: iy<br>name: ih<br>cursive: <i>Ыы</i></td>
+<td><span>Ээ</span><br>sound: eh<br>name: eh<br>cursive: <i>Ээ</i></td>
+<td><span>Юю</span><br>sound: yoo<br>name: yoo<br>cursive: <i>Юю</i></td>
+<td><span>Яя</span><br>sound: ya<br>name: ya<br>cursive: <i>Яя</i></td>
+</tr>
+</table>
+</div>
+
+<div class='special'>
+<table class='letters'>
+<tr>
+<td><span>Йй</span><br><br>This letter is used to extended or soften vowels, 
+	like English y.<br><br>
+	name: ee kratkoyeh<br>краткое is an adjective meaning short or brief.
+	<br><br>cursive: <i>Йй</i></td>
+</tr>
+<td><span>Ьь</span><br>This letter is used to <i>soften</i> both consonants
+	preceding it and vowels following it.<br><br>name: myagkey znak<br>
+	мягкий = soft, знак = sign:<br><br>in English this letter is called 
+	the soft sign.<br><br>cursive: <i>Ьь</i></td>
+</tr>
+<tr>
+<td><span>Ъъ</span><br>This letter is used to <i>harden</i> 
+	both consonants preceding it and vowels following it. <br><br>
+	name: tvyordiy znak<br>твёрдый = hard, знак = sign:<br><br>
+	in English this letter is called the hard sign.<br><br>cursive: <i>Ъъ</i></td>
+</tr>
+</table>
+</div>
+</div> <!-- flexbox-->
+
+<div class='flex-container'>
+<div>
+<h3>A note on е and ё</h3>
+<p class='underline'><span>When the stress in a word falls on <b>е</b>, 
+	its sound often becomes that of <b>ё</b></span>. For this reason,
+	you may see many words with a stressed <b>е</b> spelled with a <b>ё</b> instead- 
+	the pronounciation is the same either way. This is true for many multi-syllable words.</p>
+</div>
+
+<div style='width:98%; background-color:var(--background2-2); padding:1%;'> 
+	<p><i>You'll learn more about the properties of Russian letters- soft and hard
+	consonants and vowels, the soft and hard signs, and more- in the 
+	spelling rules lesson and throughout learning Russian!</i></p></div>
+</div>
+</div> <!-- flexbox-->
+
+<script src='../home.js'></script>
+
+</body>
+</html>

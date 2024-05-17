@@ -1,0 +1,675 @@
+<! DOCTYPE html>
+
+<html>
+<head>
+<title>Русская Звезда</title>
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<style>
+th {width: 16.5%; padding: 1%;}
+td:first-of-type {background-color: white;}
+.table1 td:nth-of-type(6n-1) {background-color: white;}
+.table2 th {width: 14%;}
+.table2 .case {
+	background-color: var(--background2-2);
+	border-radius: 0;
+}
+
+</style>
+</head>
+
+<body class='resource'>
+
+<div class='navbar'>
+	<a href='../home.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown1()'>Basics</button>
+		<div class='dpanel' id='navdrop1'>
+		<a href='alphabet.htm'>Alphabet</a>
+		<a href='nominative.htm'>Nouns</a>
+		<a href='pronouns.htm'>Pronouns</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown2()'>Cases</button>
+		<div class='dpanel' id='navdrop2'>
+		<a href='genitive.htm'>Genitive</a>
+		<a href='accusative.htm'>Accusative</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown3()'>Vocabulary</button>
+		<div class='dpanel' id='navdrop3'>
+		<a href='numbers.htm'>Numbers</a>
+		</div>
+	</div>
+</div>
+
+<h1>Pronouns by Case</h1>
+
+<nav>
+<a href='#personal'>PERSONAL</a> &emsp;|&emsp;
+<a href='#possessive'>POSSESSIVE</a> &emsp;|&emsp;
+<a href='#d/d/i'>DEMONSTRATIVE</a> &emsp;|&emsp;
+<a href='#d/d/i'>DETERMINATIVE</a> &emsp;|&emsp;
+<a href='#d/d/i'>INDICATIVE</a>
+</nav>
+
+<button class='accordion' id='personal'>PERSONAL</button>
+<div class='apanel'>
+<table>
+<tr>
+<th class='title'>SINGULAR</th>
+<th>1st person</th>
+<th>2nd person</th>
+<th>3rd person M</th>
+<th>3rd person F</th>
+<th>3rd person N</th>
+</tr>
+<tr>
+<td>nominative</td>
+<td>я</td>
+<td>ты</td>
+<td>он</td>
+<td>он<b>а</b></td>
+<td>он<b>о</b></td>
+</tr>
+<tr>
+<td>genitive</td>
+<td>мен<b>я</b></td>
+<td>теб<b>я</b></td>
+<td>(н)ег<b>о</b></td>
+<td>(н)е<b>е</b></td>
+<td>(н)ег<b>о</b></td>
+</tr>
+<tr>
+<td>accusative</td>
+<td>мен<b>я</b></td>
+<td>теб<b>я</b></td>
+<td>(н)ег<b>о</b></td>
+<td>(н)е<b>е</b></td>
+<td>(н)ег<b>о</b></td>
+</tr>
+<tr>
+<td>prepositional</td>
+<td>мне</td>
+<td>теб<b>е</b></td>
+<td>нем</td>
+<td>ней</td>
+<td>нем</td>
+</tr>
+<tr>
+<td>dative</td>
+<td>мне</td>
+<td>теб<b>е</b></td>
+<td>ем<b>у</b></td>
+<td>ей</td>
+<td>ем<b>у</b></td>
+</tr>
+<tr>
+<td>instrumental</td>
+<td>мной</td>
+<td>тоб<b>о</b>й</td>
+<td>(н)им</td>
+<td>(н)ей</td>
+<td>(н)им</td>
+</tr>
+</table>
+
+<table class='table1'>
+<tr>
+<th class='title'>PLURAL</th>
+<th>1st person</th>
+<th>2nd person</th>
+<th>3rd person</th>
+<th class='title'>REFLEXIVE</th>
+<th>reflexive</th>
+</tr>
+<tr>
+<td>nominative</td>
+<td>мы</td>
+<td>вы</td>
+<td>он<b>и</b></td>
+<td>nominative</td>
+</tr>
+<tr>
+<td>genitive</td>
+<td>нас</td>
+<td>вас</td>
+<td>(н)их</td>
+<td>genitive</td>
+<td>себ<b>я</b></td>
+</tr>
+<tr>
+<td>accusative</td>
+<td>нас</td>
+<td>вас</td>
+<td>(н)их</td>
+<td>accusative</td>
+<td>себ<b>я</b></td>
+</tr>
+<tr>
+<td>prepositional</td>
+<td>нас</td>
+<td>вас</td>
+<td>(н)их</td>
+<td>prepositional</td>
+<td>себ<b>е</b></td>
+</tr>
+<tr>
+<td>dative</td>
+<td>нам</td>
+<td>вам</td>
+<td>им</td>
+<td>dative</td>
+<td>себ<b>е</b></td>
+</tr>
+<tr>
+<td>instrumental</td>
+<td>н<b>а</b>ми</td>
+<td>в<b>а</b>ми</td>
+<td>(н)<b>и</b>ми</td>
+<td>instrumental</td>
+<td>себ<b>о</b>й</td>
+</tr>
+</table>
+</div>
+
+<button class='accordion' id='possessive'>POSSESSIVE</button>
+<div class='apanel'>
+<table class='table2'>
+<tr>
+	<th style='font-size:90%;' colspan='5'><i>The masculine, feminine, and 
+		plural possessive pronouns are ег<b>о</b>, е<b>е</b>, and их in every case.</i></th>
+</tr>
+<!---->
+<tr>
+	<th class='case'>nominative</th>
+	<th>1st person singular</th>
+	<th>2nd person singular</th>
+	<th>1st person plural</th>
+	<th>2nd person plural</th>
+	<th>reflexive</th>
+</tr>
+<!-- NOMINATIVE -->
+	<tr>
+	<td>masculine</td>
+		<td>мой</td>
+		<td>твой</td>
+		<td>наш</td>
+		<td>ваш</td>
+		<td>свой</td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td>мо<b>я</b></td>
+		<td>тво<b>я</b></td>
+		<td>н<b>а</b>ша</td>
+		<td>в<b>а</b>ша</td>
+		<td>сво<b>я</b></td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td>мо<b>е</b></td>
+		<td>тво<b>е</b></td>
+		<td>н<b>а</b>ше</td>
+		<td>в<b>а</b>ше</td>
+		<td>сво<b>е</b></td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td>мо<b>и</b></td>
+		<td>тво<b>и</b></td>
+		<td>н<b>а</b>ши</td>
+		<td>в<b>а</b>ши</td>
+		<td>сво<b>и</b></td>
+	</tr>
+<!---->
+<tr>
+	<td class='case' colspan='6'>genitive</td>
+</tr>
+<!-- GENITIVE -->	
+	<tr>
+		<td>masculine</td>
+		<td>моег<b>о</b></td>
+		<td>твоег<b>о</b></td>
+		<td>н<b>а</b>шего</td>
+		<td>в<b>а</b>шего</td>
+		<td>своег<b>о</b></td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td>мо<b>е</b>й</td>
+		<td>тво<b>е</b>й</td>
+		<td>н<b>а</b>шей</td>
+		<td>в<b>а</b>шей</td>
+		<td>сво<b>е</b>й</td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td>моег<b>о</b></td>
+		<td>твоег<b>о</b></td>
+		<td>н<b>а</b>шего</td>
+		<td>в<b>а</b>шего</td>
+		<td>своег<b>о</b></td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td>мо<b>и</b>х</td>
+		<td>тво<b>и</b>х</td>
+		<td>н<b>а</b>ших</td>
+		<td>в<b>а</b>ших</td>
+		<td>сво<b>и</b>х</td>
+	</tr>
+<!---->
+<tr>
+	<td class='case' colspan='6'>accusative</td>
+</tr>
+<!-- ACCUSATIVE -->
+	<tr>
+		<td>masculine</td>
+		<td>моег<b>о</b></td>
+		<td>твоег<b>о</b></td>
+		<td>н<b>а</b>шего</td>
+		<td>в<b>а</b>шего</td>
+		<td>своег<b>о</b></td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td>мо<b>ю</b></td>
+		<td>тво<b>ю</b></td>
+		<td>н<b>а</b>шу</td>
+		<td>в<b>а</b>шу</td>
+		<td>сво<b>ю</b></td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td>мо<b>е</b></td>
+		<td>тво<b>е</b></td>
+		<td>н<b>а</b>ше</td>
+		<td>в<b>а</b>ше</td>
+		<td>сво<b>е</b></td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td>мо<b>и</b>х</td>
+		<td>тво<b>и</b>х</td>
+		<td>н<b>а</b>ших</td>
+		<td>в<b>а</b>ших</td>
+		<td>сво<b>и</b>х</td>
+	</tr>
+<!---->
+<tr>
+	<td class='case' colspan='6'>prepositional</td>
+</tr>
+<!-- PREPOSITIONAL -->
+	<tr>
+		<td>masculine</td>
+		<td>мо<b>е</b>м</td>
+		<td>тво<b>е</b>м</td>
+		<td>н<b>а</b>шем</td>
+		<td>в<b>а</b>шем</td>
+		<td>сво<b>е</b>м</td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td>мо<b>е</b>й</td>
+		<td>тво<b>е</b>й</td>
+		<td>н<b>а</b>шей</td>
+		<td>в<b>а</b>шей</td>
+		<td>сво<b>е</b>й</td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td>мо<b>е</b>м</td>
+		<td>тво<b>е</b>м</td>
+		<td>н<b>а</b>шем</td>
+		<td>в<b>а</b>шем</td>
+		<td>сво<b>е</b>м</td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td>мо<b>и</b>х</td>
+		<td>тво<b>и</b>х</td>
+		<td>н<b>а</b>ших</td>
+		<td>в<b>а</b>ших</td>
+		<td>сво<b>и</b>х</td>
+	</tr>
+<!---->
+<tr>
+	<td class='case' colspan='6'>dative</td>
+</tr>
+<!-- DATIVE -->
+	<tr>
+		<td>masculine</td>
+		<td>моем<b>у</b></td>
+		<td>твоем<b>у</b></td>
+		<td>н<b>а</b>шему</td>
+		<td>в<b>а</b>шему</td>
+		<td>своем<b>у</b></td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td>мо<b>е</b>й</td>
+		<td>тво<b>е</b>й</td>
+		<td>н<b>а</b>шей</td>
+		<td>в<b>а</b>шей</td>
+		<td>сво<b>е</b>й</td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td>моем<b>у</b></td>
+		<td>твоем<b>у</b></td>
+		<td>н<b>а</b>шему</td>
+		<td>в<b>а</b>шему</td>
+		<td>своем<b>у</b></td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td>мо<b>и</b>м</td>
+		<td>тво<b>и</b>м</td>
+		<td>н<b>а</b>шим</td>
+		<td>в<b>а</b>шим</td>
+		<td>сво<b>и</b>м</td>
+	</tr>
+<!---->
+<tr>
+	<td class='case' colspan='6'>instrumental</td>
+</tr>
+<!-- INSTRUMENTAL -->
+	<tr>
+		<td>masculine</td>
+		<td>мо<b>и</b>м</td>
+		<td>тво<b>и</b>м</td>
+		<td>н<b>а</b>шим</td>
+		<td>в<b>а</b>шим</td>
+		<td>сво<b>и</b>м</td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td>мо<b>е</b>й</td>
+		<td>тво<b>е</b>й</td>
+		<td>н<b>а</b>шей</td>
+		<td>в<b>а</b>шей</td>
+		<td>сво<b>е</b>й</td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td>мо<b>и</b>м</td>
+		<td>тво<b>и</b>м</td>
+		<td>н<b>а</b>шим</td>
+		<td>в<b>а</b>шим</td>
+		<td>сво<b>и</b>м</td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td>мо<b>и</b>ми</td>
+		<td>тво<b>и</b>ми</td>
+		<td>н<b>а</b>шими</td>
+		<td>в<b>а</b>шими</td>
+		<td>сво<b>и</b>ми</td>
+	</tr>
+</table>
+</div>
+
+<button class='accordion' id='d/d/i'>DEMONSTRATIVE/DETERMINATIVE/INDICATIVE</button>
+<div class='apanel'>
+<table class='table2'>
+<!---->
+<tr>
+	<th class='case'>nominative</th>
+	<th>this</th>
+	<th>that</th>
+	<th>all</th>
+	<th>what</th>
+	<th>who</th>
+	<th>which</th>
+</tr>
+<!-- NOMINATIVE -->
+	<tr>
+	<td>masculine</td>
+		<td><b>э</b>тот</td>
+		<td>тот</td>
+		<td>весь</td>
+		<td>что</td>
+		<td>кто</td>
+		<td>как<b>о</b>й</td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td><b>э</b>та</td>
+		<td>та</td>
+		<td>вся</td>
+		<th>&darr;</th>
+		<th>&darr;</th>
+		<td>как<b>а</b>я</td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td><b>э</b>то</td>
+		<td>то</td>
+		<td>всё</td>
+		<th></th>
+		<th></th>
+		<td>как<b>о</b>е</td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td><b>э</b>ти</td>
+		<td>те</td>
+		<td>все</td>
+		<th></th>
+		<th></th>
+		<td>как<b>и</b>е</td>
+	</tr>
+<!---->
+<tr>
+	<td class='case' colspan='7'>genitive</td>
+</tr>
+<!-- GENITIVE -->	
+	<tr>
+		<td>masculine</td>
+		<td><b>э</b>того</td>
+		<td>тог<b>о</b></td>
+		<td>всег<b>о</b></td>
+		<td>чег<b>о</b></td>
+		<td>ког<b>о</b></td>
+		<td>как<b>о</b>го</td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td><b>э</b>той</td>
+		<td>той</td>
+		<td>всей</td>
+		<th>&darr;</th>
+		<th>&darr;</th>
+		<td>как<b>о</b>й</td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td><b>э</b>того</td>
+		<td>тог<b>о</b></td>
+		<td>всег<b>о</b></td>
+		<th></th>
+		<th></th>
+		<td>как<b>о</b>го</td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td><b>э</b>тих</td>
+		<td>тех</td>
+		<td>всех</td>
+		<th></th>
+		<th></th>
+		<td>как<b>и</b>х</td>
+	</tr>
+<!---->
+<tr>
+	<td class='case' colspan='7'>accusative</td>
+</tr>
+<!-- ACCUSATIVE -->
+	<tr>
+	<td>masculine</td>
+		<td><b>э</b>того</td>
+		<td>тог<b>о</b></td>
+		<td>всег<b>о</b></td>
+		<td>что</td>
+		<td>ког<b>о</b></td>
+		<td>как<b>о</b>го</td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td><b>э</b>ту</td>
+		<td>ту</td>
+		<td>всю</td>
+		<th>&darr;</th>
+		<th>&darr;</th>
+		<td>как<b>у</b>ю</td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td><b>э</b>то</td>
+		<td>то</td>
+		<td>всё</td>
+		<th></th>
+		<th></th>
+		<td>как<b>о</b>е</td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td><b>э</b>тих</td>
+		<td>тех</td>
+		<td>всех</td>
+		<th></th>
+		<th></th>
+		<td>как<b>и</b>х</td>
+	</tr>
+<!---->
+<tr>
+	<td class='case' colspan='7'>prepositional</td>
+</tr>
+<!-- PREPOSITIONAL -->
+	<tr>
+		<td>masculine</td>
+		<td><b>э</b>том</td>
+		<td>том</td>
+		<td>всём</td>
+		<td>чём</td>
+		<td>ком</td>
+		<td>как<b>о</b>м</td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td><b>э</b>той</td>
+		<td>той</td>
+		<td>всей</td>
+		<th>&darr;</th>
+		<th>&darr;</th>
+		<td>как<b>о</b>й</td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td><b>э</b>том</td>
+		<td>том</td>
+		<td>всём</td>
+		<th></th>
+		<th></th>
+		<td>как<b>о</b>м</td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td><b>э</b>тих</td>
+		<td>тех</td>
+		<td>всех</td>
+		<th></th>
+		<th></th>
+		<td>как<b>и</b>х</td>
+	</tr>
+<!---->
+<tr>
+	<td class='case' colspan='7'>dative</td>
+</tr>
+<!-- DATIVE -->
+	<tr>
+		<td>masculine</td>
+		<td><b>э</b>тому</td>
+		<td>том<b>у</b></td>
+		<td>всем<b>у</b></td>
+		<td>чем<b>у</b></td>
+		<td>ком<b>у</b></td>
+		<td>как<b>о</b>му</td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td><b>э</b>той</td>
+		<td>той</td>
+		<td>всей</td>
+		<th>&darr;</th>
+		<th>&darr;</th>
+		<td>как<b>о</b>й</td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td><b>э</b>тому</td>
+		<td>том<b>у</b></td>
+		<td>всем<b>у</b></td>
+		<th></th>
+		<th></th>
+		<td>как<b>о</b>му</td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td><b>э</b>тим</td>
+		<td>тем</td>
+		<td>всем</td>
+		<th></th>
+		<th></th>
+		<td>как<b>и</b>м</td>
+	</tr>
+<!---->
+<tr>
+	<td class='case' colspan='7'>instrumental</td>
+</tr>
+<!-- INSTRUMENTAL -->
+	<tr>
+	<td>masculine</td>
+		<td><b>э</b>тим</td>
+		<td>тем</td>
+		<td>всем</td>
+		<td>чем</td>
+		<td>кем</td>
+		<td>как<b>и</b>м</td>
+	</tr>
+	<tr>
+		<td>feminine</td>
+		<td><b>э</b>той</td>
+		<td>той</td>
+		<td>всей</td>
+		<th>&darr;</th>
+		<th>&darr;</th>
+		<td>как<b>о</b>й</td>
+	</tr>
+	<tr>
+		<td>neuter</td>
+		<td><b>э</b>тим</td>
+		<td>тем</td>
+		<td>всем</td>
+		<th></th>
+		<th></th>
+		<td>как<b>и</b>м</td>
+	</tr>
+	<tr>
+		<td>plural</td>
+		<td><b>э</b>тими</td>
+		<td>т<b>е</b>ми</td>
+		<td>вс<b>е</b>ми</td>
+		<th></th>
+		<th></th>
+		<td>как<b>и</b>ми</td>
+	</tr>
+</table>
+
+<script src='../home.js'></script>
+
+</body>
+</html>
