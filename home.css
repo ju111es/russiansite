@@ -52,7 +52,7 @@ h3 {
 	font-size: 100%;
 	font-weight: normal;
 }
-p {
+p, ul, li {
 	font-family: var(--paragraph), sans-serif;
 	letter-spacing: .05rem;
 	word-spacing: .1rem;
@@ -68,6 +68,11 @@ a:hover {color: var(--link-active);}
 	color: var(--link);
 	text-decoration: none;
 }
+.example .change span:not(.tooltip):not(.tooltiptext) {
+	color: var(--link-active);
+	text-decoration: none;
+}
+
 .fill {
 	background-color: var(--highlight);
 	border: 2px solid var(--background); 
