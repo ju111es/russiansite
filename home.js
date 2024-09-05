@@ -11,6 +11,7 @@ if (b.classList.contains('resource')) {
 	var c;
 	for (c=0; c < panels.length; c++) {
 		panels[c].style.maxHeight = panels[c].scrollHeight + "px";
+		acc[c].classList.toggle('active');
     }
 }
 //
@@ -40,8 +41,8 @@ var retro = [
 ];
 retro = retro.join(' ');
 var gothic = [
-	'#000000', '#474747', '#472929', '#805c5c', 'rgba(255,255,255)', 'rgba(120,120,120)', 'rgba(120,120,120,0.8)',
-	'rgba(255,90,90)', 'rgba(255,90,90,0.8)', 'rgba(233,45,45)', 'rgba(210,0,0)', 'rgba(199,10,0)',
+	'#000000', '#474747', '#805c5c', '#472929', 'rgba(255,255,255)', 'rgba(120,120,120)', 'rgba(120,120,120,0.8)',
+	'rgba(255,90,90)', 'rgba(255,90,90,0.7)', 'rgba(233,45,45)', 'rgba(210,0,0)', 'rgba(199,10,0)',
 	'rgba(236,63,60,0.8)', 'rgba(120,120,120,0.8)', 'rgba(71,71,71,0.9)', '"\\271E"', '"\\271F"'
 ];
 gothic = gothic.join(' ');
