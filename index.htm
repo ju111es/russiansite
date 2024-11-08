@@ -10,6 +10,17 @@
 
 .tooltip .tooltiptext {top: 80%;}
 .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip2) transparent;}
+
+button:not(.accordion) {
+	background-color: var(--background2-1-trans);
+	color: var(--text);
+	border: none;
+	border-radius: 10px;
+	font-family: var(--basictext), sans-serif;
+	font-size: 100%;
+}
+
+button:hover:not(.accordion) {background-color: var(--background2-1);}
 </style>
 </head>
 
@@ -60,9 +71,9 @@
 	<a href='resources/noun-table.htm' target='_self'>Nouns</a>
 	<a href='resources/pronoun-table.htm' target='_self'>Pronouns</a>
 	<a href='resources/adjective-table.htm' target='_self'>Adjectives</a>
-	<a href='resources/prepositions.htm' target='_self'>Prepositions</a>
 	</div>
 </div>
+
 
 <div style='position: absolute; left:20%; top: 30%; width:75%; margin: 2%;'>
 <div class='flex-container'>
@@ -72,30 +83,32 @@
 
 <h2>About</h2>
 <div class='flex-container'>
-	<div class='fill' style='height:50%;'>
+	<div>
+	<aside class='fill' style='padding: 2%; margin-bottom: 2%;'>
 		<h3>Stress Marks</h3>
 		<p>This site uses 
 			<b>bold text</b> to indicate where stress falls in words. Stress is the part of
 			the word pronounced the most- for example, the stress falls on the first <b>a</b>
 			in the words B<b>a</b>sics, C<b>a</b>ses, and Voc<b>a</b>bulary. Stress always falls on a vowel
 			and is very important in Russian grammar. Remember, ё is always stressed :)</p>
+	</aside>
+	<button onclick='document.location="about the creator/about-the-creator.htm"' target='_blank'><h3>About the Creator</h3></button>
 	</div>
 	<div class='fill'>
 		<h3>A note on gender</h3>
-		<p>Russian is a very gendered language, and it can be difficult to use for someone
-			who doesn't feel comfortable with gendered language. The creator of this site (me!!) is non-binary and uses they/them pronouns
-			in English and feminine grammar in Russian (I think it's the prettiest :P). Transgender and non-binary native Russian speakers of course exist; 
-			some choose to use the neuter grammar while some prefer to switch between masculine and feminine, especially since the 
+		<p>Russian is a very gendered and binary language, and it can be difficult to use for someone
+			who doesn't feel comfortable with such terms. Transgender and non-binary native Russian speakers of course exist; 
+			some non-binary Russian speakers choose to use the neuter grammar while some prefer to switch between masculine and feminine, especially since the 
 			neuter gender is generally for inanimate objects. However you choose to express yourself in Russian, this site
 			is for everyone &#10084;</p>
 	</div>
 </div>
 
-<div style='background-color: var(--background2-2); position: absolute; top: 5%; left: 75%; padding: 1%;'>
+<div style='background-color: var(--lightbackground); position: absolute; top: 5%; left: 76%; padding: 1%; white-space: nowrap;'>
 	<h3>Theme</h3>
-	<button onclick='themeChange(retro)'>Retro</button>
-	<button onclick='themeChange(gothic)'>Gothic</button>
-	<button onclick='themeChange(russian)'>Russian</button>
+	<button onclick='themeChange(retro)'>&starf; Retro &starf;</button>
+	<button onclick='themeChange(gothic)'>&#10015; Gothic &#10015;</button>
+	<!--<button onclick='themeChange(russian)'>&#9818; Russian &#9818;</button>-->
 </div>
 
 <script src='home.js'></script>

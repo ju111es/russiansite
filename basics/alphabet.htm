@@ -3,9 +3,9 @@
 <html>
 <head>
 <style>
-.alphabet {width: 65%;}
-.special {width:35%}
-.letters span {font-size: 200%; font-weight: bold;}
+.letters span:not(.tooltip):not(.tooltiptext) {font-size: 200%; font-weight: bold;}
+table {width: 100%;}
+.letters td {width: 16.6%;}
 </style>
 <title>Русская Звезда</title>
 <link rel='icon' type='image/x-icon' href='../flag.ico'>
@@ -61,7 +61,6 @@
 		<a href='../resources/noun-table.htm'>Nouns</a>
 		<a href='../resources/pronoun-table.htm'>Pronouns</a>
 		<a href='../resources/adjective-table.htm'>Adjectives</a>
-		<a href='../resources/prepositions.htm'>Prepositions</a>
 		</div>
 	</div>
 </div>
@@ -71,8 +70,6 @@
 	some don’t, and some look the same as Latin letters but have 
 	completely different sounds.</p>
 
-<div class='flex-container'>
-<div class='alphabet'>
 <table class='letters'>
 <tr>
 <td><span>Аа</span><br>sound: ah<br>name: ah<br>cursive: <i>Аа</i></td>
@@ -115,46 +112,43 @@
 <td><span>Яя</span><br>sound: ya<br>name: ya<br>cursive: <i>Яя</i></td>
 </tr>
 </table>
-</div>
 
-<div class='special'>
+<div class='flex-container'>
+<div style='width: 66.4%;'>
 <table class='letters'>
 <tr>
 <td><span>Йй</span><br><br>This letter is used to extended or soften vowels, 
 	like English y.<br><br>
-	name: ee kratkoyeh<br>краткое is an adjective meaning short or brief.
+	<span class='tooltip'>name: и краткое
+	<span class='tooltiptext'>ee kratkoyeh<br>краткое is an adjective meaning short or brief</span></span>
 	<br><br>cursive: <i>Йй</i></td>
-</tr>
 <td><span>Ьь</span><br>This letter is used to <i>soften</i> both consonants
-	preceding it and vowels following it.<br><br>name: myagkey znak<br>
-	мягкий = soft, знак = sign:<br><br>in English this letter is called 
-	the soft sign.<br><br>cursive: <i>Ьь</i></td>
-</tr>
-<tr>
+	preceding it and vowels following it.<br><br>
+	<span class='tooltip'>name: мягкий знак<span class='tooltiptext'>myagkey znak<br>
+	мягкий = soft, знак = sign: in English this letter is called 
+	the soft sign.</span></span><br><br>cursive: <i>Ьь</i></td>
 <td><span>Ъъ</span><br>This letter is used to <i>harden</i> 
 	both consonants preceding it and vowels following it. <br><br>
-	name: tvyordiy znak<br>твёрдый = hard, знак = sign:<br><br>
-	in English this letter is called the hard sign.<br><br>cursive: <i>Ъъ</i></td>
+	<span class='tooltip'>name: твёрдый знак<span class='tooltiptext'>tvyordiy znak<br>твёрдый = hard, знак = sign:
+	in English this letter is called the hard sign.</span></span><br><br>cursive: <i>Ъъ</i></td>
 </tr>
 </table>
 </div>
-</div> <!-- flexbox-->
 
-<div class='flex-container'>
-<div>
+<div style='width: 33.2%;'>
 <h3>A note on е and ё</h3>
 <p class='underline'><span>When the stress in a word falls on <b>е</b>, 
 	its sound often becomes that of <b>ё</b></span>. For this reason,
 	you may see many words with a stressed <b>е</b> spelled with a <b>ё</b> instead- 
 	the pronounciation is the same either way. This is true for many multi-syllable words.</p>
 </div>
+</div> <!-- flexbox-->
 
 <div style='width:98%; background-color:var(--background2-2); padding:1%;'> 
 	<p><i>You'll learn more about the properties of Russian letters- soft and hard
 	consonants and vowels, the soft and hard signs, and more- in the 
 	spelling rules lesson and throughout learning Russian!</i></p></div>
 </div>
-</div> <!-- flexbox-->
 
 <script src='../home.js'></script>
 

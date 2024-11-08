@@ -22,10 +22,15 @@
 	--tooltip1: rgba(205, 235, 254, 0.8); /* bg2-2 */
 	--tooltip2: rgba(255, 255, 255, 0.8); /* white */
 	--tooltip3: rgba(255, 232, 240, 0.8); /* lightbg */
+	
 /* fonts */
 	--heading: 'ps2p';
 	--basictext: 'pixelify';
 	--paragraph: 'cousine reg';
+
+/* symbols */
+	--star1: '\2606';
+	--star2: '\2605';
 }
 
 @font-face {
@@ -41,17 +46,28 @@
 	src: url(fonts/Cousine-Regular.woff2) format('woff2');
 }
 
-
 /***MAIN*****************************************/
 
 
 section {float: left;}
 aside {float: right;}
-h1, h2, h3 {font-family: var(--heading), sans-serif;}
+h1, h2, h3, h4 {font-family: var(--heading), sans-serif;}
 h3 {
 	font-size: 100%;
 	font-weight: normal;
 }
+
+h4 {
+	font-size: 80%;
+	font-weight: normal;
+}
+
+h5 {
+	font-family: var(--basictext), sans-serif;
+	font-size: 120%;
+	font-weight: normal;
+}
+
 p, ul, li {
 	font-family: var(--paragraph), sans-serif;
 	letter-spacing: .05rem;
@@ -68,10 +84,11 @@ a:hover {color: var(--link-active);}
 	color: var(--link);
 	text-decoration: none;
 }
-.example .change span:not(.tooltip):not(.tooltiptext) {
+.example.change span:not(.tooltip):not(.tooltiptext) {
 	color: var(--link-active);
 	text-decoration: none;
 }
+
 
 .fill {
 	background-color: var(--highlight);
@@ -151,10 +168,10 @@ a:hover {color: var(--link-active);}
 	color: var(--text); 
 	overflow-x: hidden;
 }
-.home button, .home a {
+.home a {
 	font-family: var(--basictext), sans-serif;
+	font-size: 100%;
 }
-
 
 /***LESSON*****************************************/
 
@@ -205,7 +222,7 @@ a:hover {color: var(--link-active);}
 }
 
 .stem, .verbs span:not(.tooltip):not(.tooltiptext):nth-child(odd) {color: var(--background2-4);}
-.endings span:not(.tooltip):not(.tooltiptext):not(.stem), .verbs span:not(.tooltip):not(.tooltiptext):nth-child(even) {color: var(--link);}
+.endings span:not(.tooltip):not(.tooltiptext):not(.stem), .verbs span:not(.tooltip):not(.tooltiptext):nth-child(even) {color: var(--link-active);}
 
 /* styling tooltips according to where they occur: */
 .lesson td .tooltip .tooltiptext {background-color: var(--tooltip1);}
@@ -214,6 +231,8 @@ a:hover {color: var(--link-active);}
 	.lesson .tooltip .tooltiptext::after, .lesson .example td .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip2) transparent;}
 .lesson .example th .tooltip .tooltiptext, .lesson .verbs .tooltip .tooltiptext {background-color: var(--tooltip3);}
 	 .lesson .example th .tooltip .tooltiptext, .lesson .verbs .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip3) transparent;}
+.resource .tooltip .tooltiptext {background-color: var(--tooltip1);}
+	.resource .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip1) transparent;}
 
 /***RESOURCE*****************************************/
 
@@ -239,7 +258,7 @@ a:hover {color: var(--link-active);}
 	padding-bottom: 3%;
 }
 
-.resource th, td {
+.resource th, .resource td {
 	font-family: var(--paragraph), sans-serif; 
 	font-size: 110%;
 	font-weight: normal;
@@ -315,18 +334,35 @@ a:hover {color: var(--link-active);}
 	padding: 5% 10% 5% 15%;
 } 
 
-.apanel. a:hover {color: var(--text);}
+.apanel a:hover {color: var(--text);}
 
 .apanel.lessons {background-color: var(--background2-1-trans);}
 
 .apanel.lessons a:hover {background-color: var(--background2-1);}
 
-.apanel.resources {background-color: rgba(255, 255, 255, 0.5);}
+.apanel.resources {background-color: var(--highlight-trans);}
 
 .apanel.resources a:hover {background-color: var(--highlight);}
 
-.accordion:after {content: '\2606'; float: right;}
-.active:after {content: '\2605'}
+.accordion:after {content: var(--star1); float: right;}
+.active:after {content: var(--star2);}
+
+.case .accordion {
+	background-color: var(--background);
+	padding: 1rem;
+	padding-left: 2rem;
+}
+
+.case .accordion:hover {background-color: var(--lightbackground);}
+
+.case .apanel {font-size: 100%;}
+
+.resource .accordion {
+	background-color: var(--highlight);
+	padding: 1rem;
+}
+
+.resource .accordion:hover {background-color: var(--background2-1);}
 
 /***NAVBAR*****************************************/
 
@@ -337,7 +373,7 @@ a:hover {color: var(--link-active);}
 	position: fixed; 
 	top: 0;
 	margin: -.5%;
-	width: 100%;
+	width: 101%;
 	text-align: center;
 	display: flex;
 	z-index: 1;
@@ -393,6 +429,7 @@ a:hover {color: var(--link-active);}
 	z-index: 1;
 	width: 17%;
 	border: none;
+	border-right: 1px solid var(--lightbackground);
 }
 
 .dpanel a {
@@ -407,6 +444,7 @@ a:hover {color: var(--link-active);}
 }
 
 .dpanel a:hover {
+	color: var(--text);
 	background-color: var(--highlight);
 }
 

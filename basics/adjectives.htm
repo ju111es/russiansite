@@ -10,6 +10,9 @@
 .short {grid-column: 2 / 3;}
 
 .flex-container div {width: 33%; padding:0 1%;}
+
+.fill .tooltip .tooltiptext {background-color: var(--tooltip1);}
+.fill .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip1) transparent;}
 </style>
 </head>
 
@@ -61,7 +64,6 @@
 		<a href='../resources/noun-table.htm'>Nouns</a>
 		<a href='../resources/pronoun-table.htm'>Pronouns</a>
 		<a href='../resources/adjective-table.htm'>Adjectives</a>
-		<a href='../resources/prepositions.htm'>Prepositions</a>
 		</div>
 	</div>
 </div>
@@ -176,10 +178,12 @@
 <tr>
 <td><span class='tooltip'>с<b>а</b>мый молод<b>о</b>й сын<span class='tooltiptext'>youngest son</span></span></td>
 <td><span class='tooltip'>с<b>а</b>мая больш<b>а</b>я соб<b>а</b>ка<span class='tooltiptext'>biggest dog</span></span></td>
-<td><span class='tooltip'>с<b>а</b>мо66е м<b>а</b>ленькое <b>я</b>йцо<span class='tooltiptext'>smallest egg</span></span></td>
+<td><span class='tooltip'>с<b>а</b>мое м<b>а</b>ленькое <b>я</b>йцо<span class='tooltiptext'>smallest egg</span></span></td>
 <td><span class='tooltip'>с<b>а</b>мые ст<b>а</b>рые д<b>е</b>вушки<span class='tooltiptext'>oldest girls</span></span></td>
 </tr>
 </table>
+
+<br>
 
 <script src='../home.js'></script>
 

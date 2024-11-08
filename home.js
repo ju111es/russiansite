@@ -4,14 +4,15 @@ function dropdown(num) {
 } // my first javascript code :D
 
 var acc = document.getElementsByClassName("accordion");
-var b = document.getElementsByTagName('body')[0];
+b = document.getElementsByTagName('body')[0];
+
 // my code- this sets the accordion panels to open instead of closed upon loading resource page
 if (b.classList.contains('resource')) {
 	var panels = document.getElementsByClassName('apanel');
 	var c;
 	for (c=0; c < panels.length; c++) {
-		panels[c].style.maxHeight = panels[c].scrollHeight + "px";
 		acc[c].classList.toggle('active');
+		panels[c].style.maxHeight = panels[c].scrollHeight + "px";
     }
 }
 //
@@ -35,7 +36,7 @@ var theme;
 const getLinks = document.getElementsByTagName('link');
 
 var retro = [
-	'#ffd4e2', '#ffe8f0', '#ff91b5', '#ff6195', '#778899', 'rgba(255,255,255)', 'rgba(255,255,255,0.7)',
+	'#ffd4e2', '#ffe8f0', '#ff6195', '#ff91b5', '#778899', 'rgba(255,255,255)', 'rgba(255,255,255,0.7)',
 	'rgba(230,245,255)', 'rgba(230,245,255,0.7)', 'rgba(205,235,254)', 'rgba(175,225,253)', 'rgba(150,200,252)',
 	'rgba(205,235,254,0.8)', 'rgba(255,255,255,0.8)', 'rgba(255,232,240,0.8)', '"\\2606"', '"\\2605"'
 ];
@@ -47,9 +48,9 @@ var gothic = [
 ];
 gothic = gothic.join(' ');
 var russian = [
-	'#497ce3', '#779eed', '#ffa1a1', '#ffc2c2', '#000000', 'rgba(255,255,255)', 'rgba(255,160,160)',
-	'rgba(250,120,120)', 'rgba(250,80,80)', 'rgba(240,40,40)', 'rgba(230,0,0)', 'rgba(240,30,30)',
-	'rgba(212,42,29,0.8)', 'rgba(255,255,255,0.8)', 'rgba(119,158,237,0.8)', '"\\2654"', '"\\265A"'
+	'#ffffff', '#779eed', '#ffa1a1', '#ffc2c2', '#000000', 'rgba(73,124,227)', 'rgba(73,124,227,0.8)',
+	'rgba(250,80,80)', 'rgba(250,80,80,0.8)', 'rgba(215,49,49)', 'rgba(188,33,33)', 'rgba(166,28,28)',
+	'rgba(215,49,49,0.8)', 'rgba(73,124,227,0.8)', 'rgba(119,158,237,0.8)', '"\\2654"', '"\\265A"'
 ];
 russian = russian.join(' ');
 const properties = [
@@ -63,7 +64,6 @@ function themeChange(themeName) {
 	themeSet();
 }
 
-b = document.getElementsByTagName('body')[0];
 b.addEventListener('load', themeSet());
 
 function themeSet() {
@@ -75,3 +75,28 @@ function themeSet() {
 		r.style.setProperty('--' + properties[a], theme[a]);
 	}
 } // YIPPEEEE
+
+pars = document.getElementsByTagName('p');
+for (let par = 0; par < pars.length; par++) {
+	let raw = pars[par].innerHTML;
+	let fin = '';
+	theme = localStorage.getItem('theme'); 
+	if (theme === retro) {
+		fin = raw.replace(/star1/gi, '&star;');
+		fin = raw.replace(/star2/gi, '&starf;');
+	}
+	else if (theme === gothic) {
+		fin = raw.replace(/star1/gi, '&#10014;');
+		fin = raw.replace(/star2/gi, '&#10015;');
+	}
+	else if (theme === russian) {
+		fin = raw.replace(/star1/gi, '&#9812;');
+		fin = raw.replace(/star2/gi, '&#9818;');
+	}
+	else {
+		fin = raw.replace(/star1/gi, '&star;');
+		fin = raw.replace(/star2/gi, '&starf;');
+	};
+	pars[par].innerHTML = fin;
+};
+

@@ -23,12 +23,12 @@ button {
 }
 button:hover {color: var(--link-active);}
 
-.tables td, .tables th {border: 9px solid white;}
+.tables td, .tables th {border: 9px solid var(--highlight);}
 .tables div {width:25%; border: 5px dashed var(--background);}
 </style>
 </head>
 
-<body class='lesson' style='background-color: white;'>
+<body class='lesson' style='background-color: var(--highlight);'>
 <br>
 <div class='flex-container'>
 <div>
@@ -46,19 +46,19 @@ button:hover {color: var(--link-active);}
 <div>
 <table class='verbs'>
 <tr class='opposite'>
-<th>Хот<b>е</b>ть</th>
+<th><span class='tooltip'><span>хот</span><span><b>е</b></span>ть<span class='tooltiptext'><i>impf</i> to want</span></span></th>
 </tr>
 <tr>
-<td>хоч<b>у</b></td>
-<td>хот<b>и</b>м</td>
+<td><span>хоч</span><b>у</b></td>
+<td><span>хот</span><b>и</b>м</td>
 </tr>
 <tr>
-<td>х<b>о</b>чешь</td>
-<td>хот<b>и</b>те</td>
+<td><span>х<b>о</b>ч</span>ешь</td>
+<td><span>хот</span><b>и</b>те</td>
 </tr>
 <tr>
-<td>хоч<b>е</b>т</td>
-<td>хот<b>я</b>т</td>
+<td><span>хоч</span><b>е</b>т</td>
+<td><span>хот</span><b>я</b>т</td>
 </tr>
 </table>
 </div>
@@ -66,19 +66,19 @@ button:hover {color: var(--link-active);}
 <div>
 <table class='verbs'>
 <tr class='opposite'>
-<th>Беж<b>а</b>ть</th>
+<th><span class='tooltip'><span>беж</span><span><b>а</b></span>ть<span class='tooltiptext'><i>impf</i> to run</span></span></th>
 </tr>
 <tr>
-<td>б<b>е</b>гу</td>
-<td>беж<b>и</b>м</td>
+<td><span>б<b>е</b>г</span>у</td>
+<td><span>беж</span><b>и</b>м</td>
 </tr>
 <tr>
-<td>беж<b>и</b>шь</td>
-<td>беж<b>и</b>те</td>
+<td><span>беж</span><b>и</b>шь</td>
+<td><span>беж</span><b>и</b>те</td>
 </tr>
 <tr>
-<td>беж<b>и</b>т</td>
-<td>бег<b>у</b>т</td>
+<td><span>беж</span><b>и</b>т</td>
+<td><span>бег</span><b>у</b>т</td>
 </tr>
 </table>
 </div>
@@ -86,19 +86,19 @@ button:hover {color: var(--link-active);}
 <div>
 <table class='verbs'>
 <tr class='opposite'>
-<th>Дать</th>
+<th><span class='tooltip'><span>д</span><span>а</span>ть<span class='tooltiptext'><i>pf</i> to give</span></span></th>
 </tr>
 <tr>
-<td>дам</td>
-<td>дад<b>и</b>м</td>
+<td><span>д</span><span>а</span>м</td>
+<td><span>д</span><span>ад</span><b>и</b>м</td>
 </tr>
 <tr>
-<td>дашь</td>
-<td>дад<b>и</b>те</td>
+<td><span>д</span><span>а</span>шь</td>
+<td><span>д</span><span>ад</span><b>и</b>те</td>
 </tr>
 <tr>
-<td>даст</td>
-<td>дад<b>у</b>т</td>
+<td><span>д</span><span>а</span>ст</td>
+<td><span>д</span><span>ад</span><b>у</b>т</td>
 </tr>
 </table>
 </div>
@@ -106,19 +106,19 @@ button:hover {color: var(--link-active);}
 <div>
 <table class='verbs'>
 <tr class='opposite'>
-<th>Есть</th>
+<th><span class='tooltip'><span>е</span>сть<span class='tooltiptext'><i>impf</i> to eat</span></span></th>
 </tr>
 <tr>
-<td>ем</td>
-<td>ед<b>и</b>м</td>
+<td><span>е</span>м</td>
+<td><span>е</span><span>д</span><b>и</b>м</td>
 </tr>
 <tr>
-<td>ещь</td>
-<td>ед<b>и</b>те</td>
+<td><span>е</span>щь</td>
+<td><span>е</span><span>д</span><b>и</b>те</td>
 </tr>
 <tr>
-<td>ест</td>
-<td>ед<b>я</b>т</td>
+<td><span>е</span>ст</td>
+<td><span>е</span><span>д</span><b>я</b>т</td>
 </tr>
 </table>
 </div>
@@ -132,6 +132,8 @@ button:hover {color: var(--link-active);}
 	all. If you are unsure about a verb's conjugation, look it up in a dictionary (or an online dictionary like
 	<a href='https://www.wiktionary.org/' target='_blank'>Wiktionary</a>- an awesome source!). Don't let the exceptions to 
 	the rules intimidate you- you will naturally recall more and more of these irregular conjugations as you learn Russian :)</p>
+
+<script src='../home.js'></script>
 
 </body>
 

@@ -23,6 +23,8 @@ button {
     transform: scale(-1, 1);
 }
 button:hover {color: var(--link-active);}
+
+tr {height: 3.4rem;}
 </style>
 </head>
 
@@ -31,7 +33,7 @@ button:hover {color: var(--link-active);}
 <div class='flex-container'>
 
 <div>
-<button onclick="document.location='nominative.htm'">&#x2794;</button>
+<button onclick="history.back()">&#x2794;</button>
 </div>
 
 <div>
@@ -42,53 +44,54 @@ button:hover {color: var(--link-active);}
 <div class='flex-container'>
 <div class='softsign-text change'>
 <p>
-	&starf;  Nouns decribing a job will always be masculine
-		<span>........................................................</span><br><br>
-	&starf;  Nouns describing a man will be masculine
-		<span>..............................................................</span><br><br>
+	&starf;  Nouns for <i>jobs</i> will always be masculine
+		<span>....................................................</span><br><br>
+	&starf;  Nouns describing a <i>man</i> will be masculine
+		<span>...................................................</span><br><br>
 	&starf;  Nouns describing a person who isn't <i>necessarily feminine</i> are usually masculine
-		<span>........................</span><br><br>
-	&starf;  The months of the year are masculine
-		<span>..................................................................</span><br><br>
-	&starf;  Nouns describing a woman will be feminine
-		<span>.............................................................</span><br><br>
-	&starf;  Nouns describing more abstract concepts are usually feminine, especially ending in -ость or -ность
-		<span>....</span><br><br>
-	&starf;  Nouns ending in ж, ч, ш, or щ + ь <i>not paired with another consonant (as in дождь)</i> are usually feminine
+		<span>............</span><br><br>
+	&starf;  The <i>months of the year</i> are masculine
+		<span>.......................................................</span><br><br>
+	&starf;  Nouns describing a <i>woman</i> will be feminine
+		<span>..................................................</span><br><br>
+	&starf;  Nouns for more <i>abstract concepts</i> are usually feminine, especially <i>ending in -ость or -ность</i>
+		<br><br>
+	&starf;  Nouns ending in <i>ж, ч, ш, or щ + ь</i> are usually feminine
+	<span>....................................</span>
 		<span></span><br><br>
-	&star;  Finally, most -ь nouns are feminine in general!
+	&star;  Finally, most <i>-ь</i> nouns are feminine in general!
 	</p>
 </div>
 
 <div class='softsign-examples'>
 <table class='example'>
 <tr>
-<td>пис<b>а</b>тель</td>
-<td>уч<b>и</b>тель</td>
+<td><span class='tooltip'>пис<b>а</b>тель<span class='tooltiptext'>writer</span></span></td>
+<td><span class='tooltip'>уч<b>и</b>тель<span class='tooltiptext'>teacher</span></span></td>
 </tr>
 <tr>
-<td>п<b>а</b>рень</td>
-<td>князь</td>
+<td><span class='tooltip'>п<b>а</b>рень<span class='tooltiptext'>guy; boyfriend</span></span></td>
+<td><span class='tooltip'>князь<span class='tooltiptext'>king</span></span></td>
 </tr>
 <tr>
-<td>чит<b>а</b>тель</td>
-<td>гость</td>
+<td><span class='tooltip'>чит<b>а</b>тель<span class='tooltiptext'>reader</span></span></td>
+<td><span class='tooltip'>гость<span class='tooltiptext'>guest</span></span></td>
 </tr>
 <tr>
-<td>февр<b>а</b>ль</td>
-<td>окт<b>я</b>брь</td>
+<td><span class='tooltip'>февр<b>а</b>ль<span class='tooltiptext'>February</span></span></td>
+<td><span class='tooltip'>окт<b>я</b>брь<span class='tooltiptext'>October</span></span></td>
 </tr>
 <tr>
-<td>мать</td>
-<td>дочь</td>
+<td><span class='tooltip'>мать<span class='tooltiptext'>mother</span></span></td>
+<td><span class='tooltip'>дочь<span class='tooltiptext'>daughter</span></span></td>
 </tr>
 <tr>
-<td>цель</td>
-<td>м<b>о</b>лодость</td>
+<td><span class='tooltip'>цель<span class='tooltiptext'>goal</span></span></td>
+<td><span class='tooltip'>м<b>о</b>лодость<span class='tooltiptext'>youth</span></span></td>
 </tr>
 <tr>
-<td>мышь</td>
-<td>п<b>о</b>мощь</td>
+<td><span class='tooltip'>мышь<span class='tooltiptext'>mouse</span></span></td>
+<td><span class='tooltip'>п<b>о</b>мощь<span class='tooltiptext'>help</span></span></td>
 </tr>
 </table>
 
