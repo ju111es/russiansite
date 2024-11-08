@@ -1,0 +1,186 @@
+<! DOCTYPE html>
+
+<html>
+<head>
+<title>Русская Звезда</title>
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<style>
+td:nth-of-type(5n-4) {background-color: var(--highlight);}
+th {width: 20%;}
+</style>
+</head>
+
+<body class='resource'>
+
+<div class='navbar'>
+	<a href='../index.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(1)'>Basics</button>
+		<div class='dpanel'>
+		<a href='../basics/alphabet.htm'>Alphabet</a>
+		<a href='../basics/spellingrules.htm'>Spelling Rules</a>
+		<a href='../basics/pronouns.htm'>Pronouns</a>
+		<a href='../basics/nominative.htm'>Nouns</a>
+		<a href='../basics/adjectives.htm'>Adjectives</a>
+		<a href='../basics/consonantmutation.htm'>Consonant Mutation</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(2)'>Cases</button>
+		<div class='dpanel'>
+		<a href='../cases/genitive.htm'>Genitive</a>
+		<a href='../cases/accusative.htm'>Accusative</a>
+		<a href='../cases/prepositional.htm'>Prepositional</a>
+		<a href='../cases/dative.htm'>Dative</a>
+		<a href='../cases/instrumental.htm'>Instrumental</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(3)'>Verbs</button>
+		<div class='dpanel'>
+		<a href='../verbs/present.htm'>Present Tense</a>
+		<a href='../verbs/past.htm'>Past Tense</a>
+		<a href='../verbs/future.htm'>Future Tense</a>
+		<a href='../verbs/motion.htm'>Verbs of Motion</a>
+		<a href='../verbs/imperative.htm'>Imperative Mood</a>
+		<a href='../verbs/subjunctive.htm'>Subjunctive Mood</a>
+		<a href='../verbs/participles.htm'>Participles</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(4)'>Vocabulary</button>
+		<div class='dpanel'>
+		<a href='../vocab/numbers.htm'>Numbers</a>
+		</div>
+	</div>
+	<div class='dropdown resourcebtn'>
+	<button class='dropbtn' onclick='dropdown(5)'>Resources</button>
+		<div class='dpanel'>
+		<a href='../resources/noun-table.htm'>Nouns</a>
+		<a href='../resources/pronoun-table.htm'>Pronouns</a>
+		</div>
+	</div>
+</div>
+
+<h1>Adjective Endings by Case</h1>
+
+<nav>
+<a href='#regular'>REGULAR</a> &emsp;|&emsp;
+<a href='#soft'>SOFT</a>
+</nav>
+
+<button class='accordion' id='regular'>REGULAR</button>
+<div class='apanel'>
+<table>
+<tr>
+<th class='title'>REGULAR</th>
+<th>masculine</th>
+<th>feminine</th>
+<th>neuter</th>
+<th>plural</th>
+</tr>
+<tr>
+<td>nominative</td>
+<td>-ый, -ий, -ой</td>
+<td>-ая</td>
+<td>-ое</td>
+<td>-ые</td>
+</tr>
+<tr>
+<td>genitive</td>
+<td>-ого</td>
+<td>-ой</td>
+<td>-ого</td>
+<td>-ых</td>
+</tr>
+<tr>
+<td>accusative</td>
+<td>-ый / -ого</td>
+<td>-ую</td>
+<td>-ое</td>
+<td>-ые / -ых</td>
+</tr>
+<tr>
+<td>prepositional</td>
+<td>-ом</td>
+<td>-ой</td>
+<td>-ом</td>
+<td>-ым</td>
+</tr>
+<tr>
+<td>dative</td>
+<td>-ому</td>
+<td>-ой</td>
+<td>-ому</td>
+<td>-ым</td>
+</tr>
+<tr>
+<td>instrumental</td>
+<td>-ым</td>
+<td>-ой</td>
+<td>-ым</td>
+<td>-ыми</td>
+</tr>
+</table>
+</div>
+
+<button class='accordion' id='soft'>SOFT (-ний)</button>
+<div class='apanel'>
+<table>
+<tr>
+<th class='title'>SOFT (-ний)</th>
+<th>masculine</th>
+<th>feminine</th>
+<th>neuter</th>
+<th>plural</th>
+</tr>
+<tr>
+<td>nominative</td>
+<td>-ий</td>
+<td>-яя</td>
+<td>-ее</td>
+<td>-ие</td>
+</tr>
+<tr>
+<td>genitive</td>
+<td>-его</td>
+<td>-ей</td>
+<td>-его</td>
+<td>-их</td>
+</tr>
+<tr>
+<td>accusative</td>
+<td>-ий / -его</td>
+<td>-юю</td>
+<td>-ее</td>
+<td>-ие / -их</td>
+</tr>
+<tr>
+<td>prepositional</td>
+<td>-ем</td>
+<td>-ей</td>
+<td>-ем</td>
+<td>-им</td>
+</tr>
+<tr>
+<td>dative</td>
+<td>-ему</td>
+<td>-ей</td>
+<td>-ему</td>
+<td>-им</td>
+</tr>
+<tr>
+<td>instrumental</td>
+<td>-им</td>
+<td>-ей</td>
+<td>-им</td>
+<td>-ими</td>
+</tr>
+</table>
+</div>
+
+<script src='../home.js'></script>
+
+</body>
+</html>

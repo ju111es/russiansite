@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html style='border: 5px solid var(--background2-2);'>
+<head>
+<title>Русская Звезда</title>
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<style>
+button {
+	color: var(--link);
+	background: none;
+	border: none;
+	font-size: 250%;
+	font-weight: 900;
+	
+	transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+button:hover {color: var(--link-active);}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+#pictext {text-align: left;}
+
+@keyframes spin {
+	from {transform:rotate(0deg)}
+	to {transform:rotate(360deg)}
+}
+
+.sticker {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	animation: spin;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+</style>
+</head>
+<body class='home'>
+
+<div class='flex-container'>
+<div>
+<button onclick="history.back()">&#x2794;</button>
+</div>
+
+<div>
+<h1>About the Creator</h1>
+</div>
+</div>
+
+<p class='fill'>Привет! Меня зовут Джулс. Я напишала, разработала, и запрограммировала этот целый веб-сайт. 
+	Русская Звезда начался в 2023 как школный проект, и я еще работаю над ним по состоянию на октября 2024. Я это создала потому-что 
+	я желаю научить людей о красивом русском языке.
+	<br><br>
+	Я больше всего люблю изучить русскый язык и программировать, но также очень люблю слушать музыку, читать, танцовать с друзями, и изучить
+	другие предметы как математика и химия.</p>
+
+<div class='flex-container'>
+<div style='width:70%;'>
+<p style='margin-bottom:0; padding-bottom: 0;'><i>Hello! My name is Jules and I wrote, designed, and programmed this entire website. Russian Star began in 2023 as a school project and
+	I am still working on it as of October 2024. I created it because I wish to teach people about the beautiful Russian language.
+	<br><br>
+	I love studying Russian and programming most of all, but also really love listening to music, reading, dancing with friends,
+	and studying other subjects such as math and chemistry.</i></p>
+
+<div style='float: right; text-align: right; width: 40%; margin-top: 0; padding-top: 0; padding-right: 1%;'>	
+<h5 style='margin-bottom: 0;'>Please enjoy these pictures of animals and humans beloved to me &#10084;</h5>
+<p style='margin-top: 0; font-size: 90%;'><i>click to see more</i></p>
+
+<p class='fill' id='pictext'>Stormy<br>Likes: naps, barking<br>Dislikes: Maggie, Miles</p>
+</div>
+</div>
+
+<div style='width:30%'><img id='picframe' onclick='nextimage()' src='stormy.jpg' alt='an old white hound dog with brown spots with an orange autumn leaf in his mouth'/></div>
+</div>
+
+<iframe style="border-radius:12px; margin: 0; padding: 0; margin-top:-14%;" src="https://open.spotify.com/embed/track/3XNRuvxKNV2E66ec98XqEs?utm_source=generator" 
+	width="40%" height="200" frameBorder="0" allowfullscreen="" 
+	allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<script src='../home.js'></script>
+<script>
+imgs = ['stormy.jpg', 'maggie.jpg', 'miles.jpg', 'vogue.jpg', 'jasper.jpg', 'dipper.jpg', 'blixa.jpg', 'prom.jpg', 'graduation.jpg'];
+captions = [
+	'Stormy<br>Likes: naps, barking<br>Dislikes: Maggie, Miles', 'Maggie<br>Likes: attention, carrots<br>Dislikes: attention, ', 
+	'Miles (John)<br>Likes: cuddles for Miles<br>Dislikes: cuddles for others', 'Vogue<br>Likes:<br>Dislikes:', 
+	'Jasper<br>Likes: catnip<br>Dislikes: Vogue', 'Dipper (The Boy)<br>Likes: superworms, bass guitar<br>Dislikes: ',
+	'Blixa<br>Likes: everything<br>Dislikes: ..?', 'Me & my boyfriend after prom 2024 <3', 'Me at my high school graduation party! With beautiful Vogue :D'
+];
+alts = [
+	'an old white hound dog with brown spots with an orange autumn leaf in his mouth', 'a small, scruffy grey dog in a little Boston Bruins jersey',
+	'a large, fluffy, toasted marshmallow dog lying on a couch while being petted on the tummy', 'a Bernese Mountain Dog laying in, and covered in, the snow',
+	'an orange cat delivering lethal close-range side-eye to the camera', 'a brown bearded dragon standing on top of a pair of New Rocks (very cool leather boots)',
+	'a fluffy tabby cat sucking on one of her back paws in someone\'s lap while making air biscuits with her front paws', 
+	'a teenage girl in a black 80s prom dress, fishnets, and heels with their arms around a teenage boy in a black suit. the girl is smiling the boy is... not so good at pictures. the girl has a tattoo of album art done by Nick Cave of The Birthday Party on their left bicep. (that\'s me!)',
+	'a teenage goth girl in a cap and gown decorated with spikes sitting on the ground smiling at the camera while petting the Bernese Mountain Dog (sweet Vogue) laying beside them'
+];
+picframe = document.getElementById('picframe');	
+pictext = document.getElementById('pictext');
+pic = 'stormy.jpg';
+function nextimage() {
+	ind = imgs.indexOf(pic);
+	if (ind + 1 > imgs.length - 1) {
+		ind = -1;
+	};
+	pic = imgs[ind + 1];
+	caption = captions[ind + 1];
+	alt = alts[ind + 1];
+	picframe.src = pic;
+	pictext.innerHTML = caption;
+	picframe.alt = alt;
+};	
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<! DOCTYPE html>
+
+<html>
+
+<head>
+<title>Русская Звезда</title>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<link rel='stylesheet' href='../home.css'>
+<style>
+.letters1 span, .letters2 span  {font-size:130%; border-radius:10px; padding:1%;}
+.letters1 span {background-color:var(--highlight); border:1px solid var(--background);}
+.letters2 {background-color: var(--highlight);}
+.letters2 span {background-color:var(--background); border:1px solid var(--highlight);}
+table {width:100%;}
+td {width:50%; font-size:120%;}
+</style>
+</head>
+
+<body class='lesson'>
+
+<div class='navbar'>
+	<a href='../index.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(1)'>Basics</button>
+		<div class='dpanel'>
+		<a href='../basics/alphabet.htm'>Alphabet</a>
+		<a href='../basics/pronouns.htm'>Pronouns</a>
+		<a href='../basics/nominative.htm'>Nouns</a>
+		<a href='../basics/adjectives.htm'>Adjectives</a>
+		<a href='../basics/consonantmutation.htm'>Consonant Mutation</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(2)'>Cases</button>
+		<div class='dpanel'>
+		<a href='../cases/genitive.htm'>Genitive</a>
+		<a href='../cases/accusative.htm'>Accusative</a>
+		<a href='../cases/prepositional.htm'>Prepositional</a>
+		<a href='../cases/dative.htm'>Dative</a>
+		<a href='../cases/instrumental.htm'>Instrumental</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(3)'>Verbs</button>
+		<div class='dpanel'>
+		<a href='../verbs/present.htm'>Present Tense</a>
+		<a href='../verbs/past.htm'>Past Tense</a>
+		<a href='../verbs/future.htm'>Future Tense</a>
+		<a href='../verbs/motion.htm'>Verbs of Motion</a>
+		<a href='../verbs/imperative.htm'>Imperative Mood</a>
+		<a href='../verbs/subjunctive.htm'>Subjunctive Mood</a>
+		<a href='../verbs/participles.htm'>Participles</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(4)'>Vocabulary</button>
+		<div class='dpanel'>
+		<a href='../vocab/numbers.htm'>Numbers</a>
+		</div>
+	</div>
+	<div class='dropdown resourcebtn'>
+	<button class='dropbtn' onclick='dropdown(5)'>Resources</button>
+		<div class='dpanel'>
+		<a href='../resources/noun-table.htm'>Nouns</a>
+		<a href='../resources/pronoun-table.htm'>Pronouns</a>
+		<a href='../resources/adjective-table.htm'>Adjectives</a>
+		</div>
+	</div>
+</div>
+
+<h1>Spelling Rules</h1>
+
+<p>Russian has a few rules and conventions for which vowels can be used with certain consonants.</p>
+
+<table>
+<tr>
+<td class='letters1' style='background-color:var(--background);'><span>ы</span> cannot follow the consonants<br><br>
+	<span>г</span> <span>к</span> <span>х</span> <span>ж</span> <span>ч</span> <span>ш</span> <span>щ</span><br><br>
+	Instead, use <span>и</span><br><br></td>
+<td class='letters2'><span>я</span> cannot follow the consonants<br><br>
+	<span>г</span> <span>к</span> <span>х</span> <span>ж</span> <span>ч</span> <span>ш</span> <span>щ</span> <span>ц</span><br><br>
+	Instead, use <span>а</span><br><br></td>
+</tr>
+<td class='letters2'><span>ю</span> cannot follow the consonants<br><br>
+	<span>г</span> <span>к</span> <span>х</span> <span>ж</span> <span>ч</span> <span>ш</span> <span>щ</span> <span>ц</span><br><br>
+	Instead, use <span>у</span><br><br></td>
+	<td class='letters1' style='background-color:var(--background);'><i>unstressed</i> <span>о</span> cannot follow the consonants<br><br>
+	<span>ж</span> <span>ч</span> <span>ш</span> <span>щ</span><br><br>
+	Instead, use <span>е</span><br><br></td>
+</table>
+
+<script src='../home.js'></script>
+
+
+</body>
+
+</html>
+
+

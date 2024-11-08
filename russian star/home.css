@@ -1,0 +1,455 @@
+:root {
+/* colors */
+	--background: #ffd4e2;
+	--lightbackground: #ffe8f0;
+	
+	--link: #ff91b5;
+	--link-active: #ff6195;
+	
+	--text: #778899;
+	--darktext: #56626e;
+	
+	--highlight: rgba(255,255,255);
+	--highlight-trans: rgba(255,255,255,0.7);
+	
+	/*white: 255, 255, 255*/
+	--background2-1: rgba(230, 245, 255);
+	--background2-1-trans: rgba(230, 245, 255, 0.7);
+	--background2-2: rgba(205, 235, 254);
+	--background2-3: rgba(175, 225, 253);
+	--background2-4: rgba(150, 200, 252);
+	
+	--tooltip1: rgba(205, 235, 254, 0.8); /* bg2-2 */
+	--tooltip2: rgba(255, 255, 255, 0.8); /* white */
+	--tooltip3: rgba(255, 232, 240, 0.8); /* lightbg */
+	
+/* fonts */
+	--heading: 'ps2p';
+	--basictext: 'pixelify';
+	--paragraph: 'cousine reg';
+
+/* symbols */
+	--star1: '\2606';
+	--star2: '\2605';
+}
+
+@font-face {
+	font-family: 'ps2p';
+	src: url(fonts/PressStart2P-Regular.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'pixelify';
+	src: url(fonts/PixelifySans.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'cousine reg';
+	src: url(fonts/Cousine-Regular.woff2) format('woff2');
+}
+
+/***MAIN*****************************************/
+
+
+section {float: left;}
+aside {float: right;}
+h1, h2, h3, h4 {font-family: var(--heading), sans-serif;}
+h3 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+h4 {
+	font-size: 80%;
+	font-weight: normal;
+}
+
+h5 {
+	font-family: var(--basictext), sans-serif;
+	font-size: 120%;
+	font-weight: normal;
+}
+
+p, ul, li {
+	font-family: var(--paragraph), sans-serif;
+	letter-spacing: .05rem;
+	word-spacing: .1rem;
+	line-height: 175%;
+}
+a, a:visited {color: var(--link);}
+a:hover {color: var(--link-active);}
+.underline span:not(.tooltip):not(.tooltiptext), #underline span:not(.tooltip):not(.tooltiptext) {
+	text-decoration: underline;
+	color: var(--text);
+}
+.change span:not(.tooltip):not(.tooltiptext) {
+	color: var(--link);
+	text-decoration: none;
+}
+.example.change span:not(.tooltip):not(.tooltiptext) {
+	color: var(--link-active);
+	text-decoration: none;
+}
+
+
+.fill {
+	background-color: var(--highlight);
+	border: 2px solid var(--background); 
+	border-radius: 10px;
+	padding: 1%;
+}
+
+.fill .example td, .fill .example th, .fill .opposite th {border: 2px solid var(--highlight);}
+
+.grid-container {
+	display: grid;
+	gap: 5px;
+	padding: 5px;
+}
+.grid-container div:not(.apanel) {padding: 10px;}
+
+.flex-container {
+	display: flex;
+	gap: 5px;
+	padding: 5px;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	display: none;
+	text-align: left;
+	padding: 5px;
+	border-radius: 6px;
+	position:absolute;
+	top: 125%;
+	left: 0;
+	z-index: 1;
+	white-space: nowrap;
+	font-size: 15px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.tooltip, .tooltip .tooltiptext {
+	color: var(--text);
+	font-family: var(--paragraph), sans-serif;
+}
+
+.tooltip .tooltiptext::after {
+	content: " ";
+  position: absolute;
+  bottom: 100%; /* At the bottom of the tooltip */
+  left: 25%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+} /* arrows */
+
+/* w3 schools uses div for tooltip but i find a span better because text can be styled and it doesn't indent weird */
+
+.tooltip:hover .tooltiptext {
+	display: block;
+}
+
+.tooltiptext.wrap {
+	width: 200px;
+	white-space: wrap;
+}
+ /* from w3 schools */
+ 
+
+/***HOME*****************************************/
+
+.home {
+	background-color: var(--background); 
+	color: var(--text); 
+	overflow-x: hidden;
+}
+.home a {
+	font-family: var(--basictext), sans-serif;
+	font-size: 100%;
+}
+
+/***LESSON*****************************************/
+
+.lesson {
+	background-color: var(--background); 
+	color: var(--text); 
+	font-family: sans-serif;
+	overflow-x: hidden;
+}
+.lesson h1 {margin-top: 5%;}
+.lesson th, .lesson td {
+	border: 2px solid var(--background); 
+	border-radius: 10px;
+	padding: 10px; 
+	font-weight: normal; 
+	text-align: left;
+}
+	
+.lesson th {
+	background-color: var(--background);
+	font: 20px var(--basictext), sans-serif;
+}
+
+.lesson td {
+	background-color: var(--highlight);
+	font-family: var(--paragraph), sans-serif;
+}
+		
+.opposite th {background-color: var(--highlight);}
+.opposite td {background-color: var(--background);}
+
+.example {width:60%;}
+
+.example th, .example td {
+	text-align: center;
+	font-family: var(--paragraph), sans-serif;
+}
+
+.example th {
+	font-size: 110%;
+	background-color: var(--highlight);
+}
+
+.example td {
+	font-size: 110%;
+	background-color: var(--background2-2);
+	padding: .75%;
+}
+
+.stem, .verbs span:not(.tooltip):not(.tooltiptext):nth-child(odd) {color: var(--background2-4);}
+.endings span:not(.tooltip):not(.tooltiptext):not(.stem), .verbs span:not(.tooltip):not(.tooltiptext):nth-child(even) {color: var(--link-active);}
+
+/* styling tooltips according to where they occur: */
+.lesson td .tooltip .tooltiptext {background-color: var(--tooltip1);}
+	.lesson td .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip1) transparent;}
+.lesson .tooltip .tooltiptext, .lesson .example td .tooltip .tooltiptext {background-color: var(--tooltip2);}
+	.lesson .tooltip .tooltiptext::after, .lesson .example td .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip2) transparent;}
+.lesson .example th .tooltip .tooltiptext, .lesson .verbs .tooltip .tooltiptext {background-color: var(--tooltip3);}
+	 .lesson .example th .tooltip .tooltiptext, .lesson .verbs .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip3) transparent;}
+.resource .tooltip .tooltiptext {background-color: var(--tooltip1);}
+	.resource .tooltip .tooltiptext::after {border-color: transparent transparent var(--tooltip1) transparent;}
+
+/***RESOURCE*****************************************/
+
+.resource {background-color: var(--highlight);}
+
+.resource h1 {
+	margin-top: 5%;
+	color: var(--text);
+}
+
+.resource nav {
+	display: block;
+	background-color: var(--background);
+	font-size: 100%;
+	color: var(--text);
+	padding: 1% 0 1% 0;
+	text-align: center;
+	font-family: var(--basictext), sans-serif;
+}
+
+.resource table:not(.blank) {
+	width: 100%;
+	padding-bottom: 3%;
+}
+
+.resource th, .resource td {
+	font-family: var(--paragraph), sans-serif; 
+	font-size: 110%;
+	font-weight: normal;
+	border: none;
+	color: var(--text);
+	text-align: left;
+	padding: 1%;
+}
+
+.resource th {
+	background-color: var(--highlight);
+}
+
+.resource td {
+	background-color: var(--background);
+	border: none;
+	padding-left:1%;
+}
+
+.resource .title {
+	background-color: var(--background2-2);
+	width: 16%;
+}
+
+.resource .blank td {
+	background: none;
+}
+
+/***ACCORDION*****************************************/
+
+.accordion {
+	color: var(--text);
+	font-family: var(--basictext), sans-serif;
+	cursor: pointer; 
+	outline: none; 
+	transition: 0.4s;
+	font-size: 140%;
+	width: 100%; 
+	text-align: left; 
+	border: none;   
+	padding: 12% 15%;
+}
+
+.accordion.lessons {background-color: var(--background2-2);}
+
+.accordion.lessons:hover {background-color: var(--background2-3);}
+
+.accordion.resources {background-color: var(--background2-1);}
+
+.accordion.resources:hover {
+	background-color: var(--background2-2);
+}
+
+.apanel {
+	max-height: 0;
+	overflow: hidden; 
+	transition: max-height 0.2s ease-out;
+	border: none;
+	width: 100%;
+	font-size: 120%;
+	text-align: left;
+	color: var(--text);
+}
+
+.apanel a {
+	display: block;
+	float: none;
+	border: none;
+	text-decoration: none;
+	width: 100%;
+	overflow: hidden;
+	color: var(--text);
+	padding: 5% 10% 5% 15%;
+} 
+
+.apanel a:hover {color: var(--text);}
+
+.apanel.lessons {background-color: var(--background2-1-trans);}
+
+.apanel.lessons a:hover {background-color: var(--background2-1);}
+
+.apanel.resources {background-color: var(--highlight-trans);}
+
+.apanel.resources a:hover {background-color: var(--highlight);}
+
+.accordion:after {content: var(--star1); float: right;}
+.active:after {content: var(--star2);}
+
+.case .accordion {
+	background-color: var(--background);
+	padding: 1rem;
+	padding-left: 2rem;
+}
+
+.case .accordion:hover {background-color: var(--lightbackground);}
+
+.case .apanel {font-size: 100%;}
+
+.resource .accordion {
+	background-color: var(--highlight);
+	padding: 1rem;
+}
+
+.resource .accordion:hover {background-color: var(--background2-1);}
+
+/***NAVBAR*****************************************/
+
+.navbar {
+	overflow: hidden;
+	background-color: var(--lightbackground);
+	font-family: var(--basictext), sans-serif;
+	position: fixed; 
+	top: 0;
+	margin: -.5%;
+	width: 101%;
+	text-align: center;
+	display: flex;
+	z-index: 1;
+}
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: var(--text);
+	text-align: center;
+	text-decoration: none;
+	width: 15%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	border-right: 1px solid var(--text);
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+	width: 17%;
+	font-family: var(--basictext), sans-serif;
+}
+
+.dropdown .dropbtn {
+	cursor: pointer;
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: var(--text);
+	font-family: inherit;
+	margin: 0;
+	width: 100%;
+	background-color: var(--lightbackground);
+	border-right: 1px solid var(--text);
+}
+
+.resourcebtn .dropbtn {background-color: var(--highlight);}
+
+.dropbtn {
+	display: block;
+	height:100%;
+}
+
+.navbar a:hover, .dropdown:hover, .dropbtn:hover {
+	background-color: var(--background);
+}
+
+.dpanel {
+	display: none;
+	position: fixed;
+	background-color: var(--lightbackground);
+	z-index: 1;
+	width: 17%;
+	border: none;
+	border-right: 1px solid var(--lightbackground);
+}
+
+.dpanel a {
+	float: none;
+	color: var(--text);
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	border: none;
+}
+
+.dpanel a:hover {
+	color: var(--text);
+	background-color: var(--highlight);
+}
+
+.show {
+	display: block;
+}
+	
+/* this is pretty much directly from w3 schools */

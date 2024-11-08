@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Русская Звезда</title>
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<style>
+div {float: left;}
+.flex-container {width: 100%}
+.flex-container div:not(.apanel) {width:14%;}
+
+.apanel table {width: 100%; padding:0; font-size:70%;}
+.apanel .65 {font-size:6%;}
+.accordion {font-family: var(--paragraph), sans-serif; padding:10%;}
+
+</style>
+</head>
+
+<body class='lesson'>
+
+<div class='navbar'>
+	<a href='../index.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(1)'>Basics</button>
+		<div class='dpanel'>
+		<a href='../basics/alphabet.htm'>Alphabet</a>
+		<a href='../basics/spellingrules.htm'>Spelling Rules</a>
+		<a href='../basics/pronouns.htm'>Pronouns</a>
+		<a href='../basics/nominative.htm'>Nouns</a>
+		<a href='../basics/adjectives.htm'>Adjectives</a>
+		<a href='../basics/consonantmutation.htm'>Consonant Mutation</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(2)'>Cases</button>
+		<div class='dpanel'>
+		<a href='../cases/genitive.htm'>Genitive</a>
+		<a href='../cases/accusative.htm'>Accusative</a>
+		<a href='../cases/prepositional.htm'>Prepositional</a>
+		<a href='../cases/dative.htm'>Dative</a>
+		<a href='../cases/instrumental.htm'>Instrumental</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(3)'>Verbs</button>
+		<div class='dpanel'>
+		<a href='../verbs/past.htm'>Past Tense</a>
+		<a href='../verbs/future.htm'>Future Tense</a>
+		<a href='../verbs/motion.htm'>Verbs of Motion</a>
+		<a href='../verbs/imperative.htm'>Imperative Mood</a>
+		<a href='../verbs/subjunctive.htm'>Subjunctive Mood</a>
+		<a href='../verbs/participles.htm'>Participles</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(4)'>Vocabulary</button>
+		<div class='dpanel'>
+		<a href='../vocab/numbers.htm'>Numbers</a>
+		</div>
+	</div>
+	<div class='dropdown resourcebtn'>
+	<button class='dropbtn' onclick='dropdown(5)'>Resources</button>
+		<div class='dpanel'>
+		<a href='../resources/noun-table.htm'>Nouns</a>
+		<a href='../resources/pronoun-table.htm'>Pronouns</a>
+		<a href='../resources/adjective-table.htm'>Adjectives</a>
+		</div>
+	</div>
+</div>
+
+<h1>Verbs in Russian</h1>
+
+<p class='underline'>Russian has many different infinitive verb forms, but they all fall into 
+	two <span>conjugation groups</span>, the first conjugation and the second conjugation. <span>-ить</span> verbs are always of
+	the <span>second conjugation</span>; <span>-ать, -еть, and -ять</span> verbs are usually of the <span>first conjugation</span>, 
+	and <span>all other verbs</span> are of the <span>first</span>.</p>
+	
+<p>Verbs can be broken down as such:</p>
+<table class='verbs'><tr><td><span>stem</span> + <span>ending</span> + ть</td></tr></table> <!-- ;P -->
+<p><i>A few verbs have infinitives ending in -чь or -ти, but almost all of them end in -ть.</i></p>
+
+<h2>Conjugation Groups</h2>
+<p>When conjugating verbs, always drop the -ть and add the appropriate ending.</p><br>
+<p>Verbs are conjugated according to their group:...</p>
+
+<div class='flex-container' style='margin-bottom:2%;'>
+<div style='width:60%;'>
+<table class='verbs'>
+<tr>
+<th colspan='4'>1st conjugation</th>
+
+</tr>
+<tr>
+<th>Я</th>
+<td><span>stem</span> + <span>ending</span> + ю</td>
+<th>Мы</th>
+<td><span>stem</span> + <span>ending</span> + ем</td>
+</tr>
+<tr>
+<th>Ты</th>
+<td><span>stem</span> + <span>ending</span> + ешь</td>
+<th>Вы</th>
+<td><span>stem</span> + <span>ending</span> + ете</td>
+</tr>
+<tr>
+<th>Он(/а/о)</th>
+<td><span>stem</span> + <span>ending</span> + ет</td>
+<th>Они</th>
+<td><span>stem</span> + <span>ending</span> + ют</td>
+</tr>
+</table>
+</div>
+
+<div style='width:50%;'>
+<table class='verbs'>
+<tr>
+<th colspan='4'>2nd conjugation</th>
+</tr>
+<tr>
+<th>Я</th>
+<td><span>stem</span> + ю</td>
+<th>Мы</th>
+<td><span>stem</span> + им</td>
+</tr>
+<tr>
+<th>Ты</th>
+<td><span>stem</span> + ишь</td>
+<th>Вы</th>
+<td><span>stem</span> + ите</td>
+</tr>
+<tr>
+<th>Он(/а/о)</th>
+<td><span>stem</span> + ит</td>
+<th>Они</th>
+<td><span>stem</span> + ят</td>
+</tr>
+</table>
+</div>
+
+</div>
+
+<h2>Endings</h2>
+<p>...While endings (in the first conjugation) change according to their infinitive form:</p>
+
+<table class='endings' style='width:100%;'>
+<tr class='opposite'>
+<td>Some endings don't change:</td>
+<td>Some endings disappear:</td>
+<td>Some mutate into a vowel or consonant:</td>
+<td>And some switch vowels:</td>
+<td>In some endings, н is appended to the end:</td>
+</tr>
+<tr>
+<td><span>а</span>ть &rarr; <span>а</span></td>
+<td><span>а</span>ть &rarr; <span></span></td>
+<td><span>ава</span>ть &rarr; <span>а</span></td>
+<td><span>ы</span>ть &rarr; <span>о</span></td>
+<td><span>де</span>ть &rarr; <span>ден</span></td>
+</tr>
+<tr>
+<td><span>я</span>ть &rarr; <span>я</span></td>
+<td><span>о</span>ть &rarr; <span></span></td>
+<td><span>ова</span>ть &rarr; <span>у</span></td>
+<th></th>
+<td><span>ста</span>ть &rarr; <span>стан</span></td>
+</tr>
+<tr>
+<td><span>е</span>ть &rarr; <span>е</span></td>
+<td><span>ере</span>ть &rarr; <span>р</span></td>
+</tr>
+<tr class='opposite'>
+<td>-<span>ня</span>ть verbs are their own thing:</td>
+<td colspan='3'>Finally, -чь and -ти verbs don't follow a precise pattern:</td>
+</tr>
+<tr>
+<td><span>иня</span>ть &rarr; <span>им</span></td>
+<td><span></span>чь &rarr; <span>г</span></td>
+<td><span>с</span>ти &rarr; <span>т</span>, <span>б</span>, or <span>д</span></td>
+<td><span>с</span>ти &rarr; <span>с</span></td>
+</tr>
+<tr>
+<td><span class='stem'>[vowel]</span><span>ня</span>ть &rarr; <span class='stem'>[vowel]</span><span>йм</span></td>
+<td><span></span>чь &rarr; <span>к</span></td>
+<td><span>с</span>ть &rarr; <span>т</span>, <span>б</span>, or <span>д</span></td>
+<td><span>з</span>ти &rarr; <span>з</span></td>
+</tr>
+<tr>
+<td><span class='stem'>[consonant]</span><span>ня</span>ть &rarr; <span class='stem'>[consonant]</span><span>ним</span></td>
+</tr>
+</table>
+	
+<p>Verbs in the second conjugation always drop their ending.</p>
+
+<div style='background-color:var(--highlight); margin:1%;'>
+<h3>Notes</h3>
+<p class='endings'>
+	star2  -<span>а</span>ть verbs drop their ending after consonant mutation, and keep it otherwise.<br><br>
+	star2  Use у in place of ю when conjugating verbs with н appended to their ending, as well as 
+		-<span>ну</span>ть, -<span>ня</span>ть, -<span>ере</span>ть, and all -<span>с</span>ть, -<span>з</span>ть, and -ти verbs.<br><br>
+	star2  When conjugating -чь verbs, remember that their endings undergo consonant mutation on all but first person
+		singular (я) and third person plural (они) conjugations (so, before e).<br><br>
+	star2  Only a few -<span>де</span>ть verbs follow the above pattern. Consider the meaning when conjugating these verbs- prefixed versions
+		of <span>де</span>ть <i>to put</i> follow the pattern; others are regular <span>е</span>ть verbs. For example, 
+		<span class='stem'>на</span><span>д<b>е</b></span>ть <i>to put on</i> &rarr; <span class='stem'>на</span><span>д<b>е</b>н</span><br><br>
+	star2  Unfortunately, <b>there are always exceptions to the rules</b>. 
+		<i>See <a href='irregular-verbs-reference.htm'>irregular verbs</a>!!</i>
+</p>
+</div>
+
+<h2>Examples</h2>
+<div class='flex-container verbs'>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>зн</span><span>а</span>ть<span class='tooltiptext'><i>impf</i> to know</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>зн</span><span><b>а</b></span>ю</td>
+		<td><span>зн</span><span><b>а</b></span>ем</td>
+		</tr>
+		<tr>
+		<td><span>зн</span><span><b>а</b></span>ешь</td>
+		<td><span>зн</span><span><b>а</b></span>ете</td>
+		</tr>
+		<tr>
+		<td><span>зн</span><span><b>а</b></span>ет</td>
+		<td><span>зн</span><span><b>а</b></span>ют</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>гул</span><span><b>я</b></span>ть<span class='tooltiptext'><i>impf</i> to stroll</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>гул</span><span><b>я</b></span>ю</td>
+		<td><span>гул</span><span><b>я</b></span>ем</td>
+		</tr>
+		<tr>
+		<td><span>гул</span><span><b>я</b></span>ешь</td>
+		<td><span>гул</span><span><b>я</b></span>ете</td>
+		</tr>
+		<tr>
+		<td><span>гул</span><span><b>я</b></span>ет</td>
+		<td><span>гул</span><span><b>я</b></span>ют</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>бол</span><span><b>е</b></span>ть<span class='tooltiptext'><i>impf</i> to be/fall ill</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>бол</span><span><b>е</b></span>ю</td>
+		<td><span>бол</span><span><b>е</b></span>ем</td>
+		</tr>
+		<tr>
+		<td><span>бол</span><span><b>е</b></span>ешь</td>
+		<td><span>бол</span><span><b>е</b></span>ете</td>
+		</tr>
+		<tr>
+		<td><span>бол</span><span><b>е</b></span>ет</td>
+		<td><span>бол</span><span><b>е</b></span>ют</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>иск</span><span><b>а</b></span>ть<span class='tooltiptext'><i>impf</i> to search (for)</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>и</span><span>щ</span><b>у</b></td>
+		<td><span><b>и</b></span><span>щ</span>ем</td>
+		</tr>
+		<tr>
+		<td><span><b>и</b></span><span>щ</span>ешь</td>
+		<td><span><b>и</b></span><span>щ</span>ете</td>
+		</tr>
+		<tr>
+		<td><span><b>и</b></span><span>щ</span>ет</td>
+		<td><span><b>и</b></span><span>щ</span>ут</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>кол</span><span><b>о</b></span>ть<span class='tooltiptext'><i>impf</i> to prick</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>кол</span><b>ю</b></td>
+		<td><span>к<b>о</b>л</span>ем</td>
+		</tr>
+		<tr>
+		<td><span>к<b>о</b>л</span>ешь</td>
+		<td><span>к<b>о</b>л</span>ете</td>
+		</tr>
+		<tr>
+		<td><span>к<b>о</b>л</span>ет</td>
+		<td><span>к<b>о</b>л</span>ют</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>д</span><span>ав<b>а</b></span>ть<span class='tooltiptext'><i>impf</i> to give</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>д</span><span>а</span><b>ю</b></td>
+		<td><span>д</span><span>а</span><b>е</b>м</td>
+		</tr>
+		<tr>
+		<td><span>д</span><span>а</span><b>е</b>шь</td>
+		<td><span>д</span><span>а</span><b>е</b>те</td>
+		</tr>
+		<tr>
+		<td><span>д</span><span>а</span><b>е</b>т</td>
+		<td><span>д</span><span>а</span><b>ю</b>т</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>цел</span><span>ов<b>а</b></span>ть<span class='tooltiptext'><i>impf</i> to kiss</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>ц<b>е</b>л</span><span>у</span>ю</td>
+		<td><span>цел</span><span><b>у</b></span>ем</td>
+		</tr>
+		<tr>
+		<td><span>цел</span><span><b>у</b></span>ешь</td>
+		<td><span>цел</span><span><b>у</b></span>ете</td>
+		</tr>
+		<tr>
+		<td><span>цел</span><span><b>у</b></span>ет</td>
+		<td><span>цел</span><span><b>у</b></span>ют</td>
+		</tr>
+		</table>
+	</div>
+</div>
+</div>
+<div class='flex-container verbs'>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>откр</span><span>ы</span>ть<span class='tooltiptext'><i>pf</i> to open</span></span></button>
+	<div class='apanel' style='font-size: 105%;'>
+		<table>
+		<tr>
+		<td><span>откр</span><span>о</span><b>ю</b></td>
+		<td><span>откр</span><span><b>о</b></span>ем</td>
+		</tr>
+		<tr>
+		<td><span>откр</span><span><b>о</b></span>ешь</td>
+		<td><span>откр</span><span><b>о</b></span>ете</td>
+		</tr>
+		<tr>
+		<td><span>откр</span><span><b>о</b></span>ет</td>
+		<td><span>откр</span><span><b>о</b></span>ют</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>на</span><span>д<b>е</b></span>ть<span class='tooltiptext'><i>pf</i> to put on</span></span></button>
+	<div class='apanel'  style='font-size: 105%;'>
+		<table>
+		<tr>
+		<td><span>на</span><span>д<b>е</b>н</span>у</td>
+		<td><span>на</span><span>д<b>е</b>н</span>ем</td>
+		</tr>
+		<tr>
+		<td><span>на</span><span>д<b>е</b>н</span>ешь</td>
+		<td><span>на</span><span>д<b>е</b>н</span>ете</td>
+		</tr>
+		<tr>
+		<td><span>на</span><span>д<b>е</b>н</span>ет</td>
+		<td><span>на</span><span>д<b>е</b>н</span>ут</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>в</span><span>ста</span>ть<span class='tooltiptext'><i>pf</i> to stand up</span></span></button>
+	<div class='apanel' style='font-size: 105%;'>
+		<table>
+		<tr>
+		<td><span>в</span><span>ст<b>а</b>н</span>у</td>
+		<td><span>в</span><span>ст<b>а</b>н</span>ем</td>
+		</tr>
+		<tr>
+		<td><span>в</span><span>ст<b>а</b>н</span>ешь</td>
+		<td><span>в</span><span>ст<b>а</b>н</span>ете</td>
+		</tr>
+		<tr>
+		<td><span>в</span><span>ст<b>а</b>н</span>ет</td>
+		<td><span>в</span><span>ст<b>а</b>н</span>ут</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>при</span><span>н<b>я</b></span>ть<span class='tooltiptext'><i>pf</i> to accept/take</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>пр<b>и</b></span><span>м</span>у</td>
+		<td><span>пр<b>и</b></span><span>м</span>ем</td>
+		</tr>
+		<tr>
+		<td><span>пр<b>и</b></span><span>м</span>ешь</td>
+		<td><span>пр<b>и</b></span><span>м</span>ете</td>
+		</tr>
+		<tr>
+		<td><span>пр<b>и</b></span><span>м</span>ет</td>
+		<td><span>пр<b>и</b></span><span>м</span>ут</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>по</span><span>н<b>я</b></span>ть<span class='tooltiptext'><i>pf</i> to understand</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>п<b>о</b></span><span>йм</span>у</td>
+		<td><span>по</span><span>йм</span><b>ё</b>м</td>
+		</tr>
+		<tr>
+		<td><span>по</span><span>йм</span><b>ё</b>шь</td>
+		<td><span>по</span><span>йм</span><b>ё</b>те</td>
+		</tr>
+		<tr>
+		<td><span>по</span><span>йм</span><b>ё</b>т</td>
+		<td><span>по</span><span>йм</span>ут</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>под</span><span>н<b>я</b></span>ть<span class='tooltiptext'><i>pf</i> to increase</span></span></button>
+	<div class='apanel' style='font-size:92.5%;'>
+		<table>
+		<tr>
+		<td><span>под</span><span>ним</span><b>у</b></td>
+		<td><span>под</span><span>н<b>и</b>м</span>ем</td>
+		</tr>
+		<tr>
+		<td><span>под</span><span>н<b>и</b>м</span>ешь</td>
+		<td><span>под</span><span>н<b>и</b>м</span>ете</td>
+		</tr>
+		<tr>
+		<td><span>под</span><span>н<b>и</b>м</span>ет</td>
+		<td><span>под</span><span>н<b>и</b>м</span>ут</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>т</span><span><b>е</b>ре</span>ть<span class='tooltiptext'><i>impf</i> to rub</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>т</span><span>р</span>у</td>
+		<td><span>т</span><span>р</span>ём</td>
+		</tr>
+		<tr>
+		<td><span>т</span><span>р</span>ёшь</td>
+		<td><span>т</span><span>р</span><b>ё</b>те</td>
+		</tr>
+		<tr>
+		<td><span>т</span><span>р</span>ёт</td>
+		<td><span>т</span><span>р</span>ут</td>
+		</tr>
+		</table>
+	</div>
+</div>
+</div>
+<div class='flex-container verbs'>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>мо</span>чь<span class='tooltiptext'><i>impf</i> to be able (to)</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>мо</span><span>г</span><b>у</b></td>
+		<td><span>м<b>о</b></span><span>ж</span>ем</td>
+		</tr>
+		<tr>
+		<td><span>м<b>о</b></span><span>ж</span>ешь</td>
+		<td><span>м<b>о</b></span><span>ж</span>ете</td>
+		</tr>
+		<tr>
+		<td><span>м<b>о</b></span><span>ж</span>ет</td>
+		<td><span>м<b>о</b></span><span>г</span>ут</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>пе</span>чь<span class='tooltiptext'><i>impf</i> to bake</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>пе</span><span>к</span><b>у</b></td>
+		<td><span>пе</span><span>ч</span><b>ё</b>м</td>
+		</tr>
+		<tr>
+		<td><span>пе</span><span>ч</span><b>ё</b>шь</td>
+		<td><span>пе</span><span>ч</span><b>ё</b>те</td>
+		</tr>
+		<tr>
+		<td><span>пе</span><span>ч</span><b>ё</b>т</td>
+		<td><span>пе</span><span>к</span><b>у</b>т</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>не</span><span>с</span>т<b>и</b><span class='tooltiptext'><i>impf</i> to carry</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>не</span><span>с</span><b>у</b></td>
+		<td><span>не</span><span>с</span><b>ё</b>м</td>
+		</tr>
+		<tr>
+		<td><span>не</span><span>с</span><b>ё</b>шь</td>
+		<td><span>не</span><span>с</span><b>ё</b>те</td>
+		</tr>
+		<tr>
+		<td><span>не</span><span>с</span><b>ё</b>т</td>
+		<td><span>не</span><span>с</span><b>у</b>т</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>ве</span><span>з</span>т<b>и</b><span class='tooltiptext'><i>impf</i> to carry/convey</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>ве</span><span>з</span><b>у</b></td>
+		<td><span>ве</span><span>з</span><b>ё</b>м</td>
+		</tr>
+		<tr>
+		<td><span>ве</span><span>з</span><b>ё</b>шь</td>
+		<td><span>ве</span><span>з</span><b>ё</b>те</td>
+		</tr>
+		<tr>
+		<td><span>ве</span><span>з</span><b>ё</b>т</td>
+		<td><span>ве</span><span>з</span><b>у</b>т</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>ме</span><span>с</span>т<b>и</b><span class='tooltiptext'><i>impf</i> to sweep</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>ме</span><span>т</span><b>у</b></td>
+		<td><span>ме</span><span>т</span><b>ё</b>м</td>
+		</tr>
+		<tr>
+		<td><span>ме</span><span>т</span><b>ё</b>шь</td>
+		<td><span>ме</span><span>т</span><b>ё</b>те</td>
+		</tr>
+		<tr>
+		<td><span>ме</span><span>т</span><b>ё</b>т</td>
+		<td><span>ме</span><span>т</span><b>у</b>т</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>кла</span><span>с</span>ть<span class='tooltiptext'><i>impf</i> to place</span></span></button>
+	<div class='apanel'>
+		<table>
+		<tr>
+		<td><span>кла</span><span>д</span><b>у</b></td>
+		<td><span>кла</span><span>д</span><b>ё</b>м</td>
+		</tr>
+		<tr>
+		<td><span>кла</span><span>д</span><b>ё</b>шь</td>
+		<td><span>кла</span><span>д</span><b>ё</b>те</td>
+		</tr>
+		<tr>
+		<td><span>кла</span><span>д</span><b>ё</b>т</td>
+		<td><span>кла</span><span>д</span><b>у</b>т</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<div>
+<button class='accordion resource'><span class='tooltip'><span>говор</span><b>и</b>ть<span class='tooltiptext'><i>impf</i> to speak</span></span></button>
+	<div class='apanel' style='font-size:105%;'>
+		<table>
+		<tr>
+		<td><span>говор</span><b>ю</b></td>
+		<td><span>говор</span><b>и</b>м</td>
+		</tr>
+		<tr>
+		<td><span>говор</span><b>и</b>шь</td>
+		<td><span>говор</span><b>и</b>те</td>
+		</tr>
+		<tr>
+		<td><span>говор</span><b>и</b>т</td>
+		<td><span>говор</span><b>я</b>т</td>
+		</tr>
+		</table>
+	</div>
+</div>
+</div>
+
+<p><i>Learn about perfective vs. imperfective (pf vs. impf) verbs in the <a href='past.htm'>next lesson</a>!</i></p>
+
+<script src='../home.js'></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Русская Звезда</title>
+<link rel='stylesheet' href='../home.css'>
+<link rel='icon' type='image/x-icon' href='../flag.ico'>
+<style> 
+	th {width: 25%;} 
+	.example th {width: auto;}
+	.pronouns table th:first-of-type {width:30%;}
+</style>
+</head>
+
+<body class='lesson case'>
+<h1>The Instrumental Case</h1>
+
+<div class='navbar'>
+	<a href='../index.htm'>Home</a>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(1)'>Basics</button>
+		<div class='dpanel'>
+		<a href='../basics/alphabet.htm'>Alphabet</a>
+		<a href='../basics/spellingrules.htm'>Spelling Rules</a>
+		<a href='../basics/pronouns.htm'>Pronouns</a>
+		<a href='../basics/nominative.htm'>Nouns</a>
+		<a href='../basics/adjectives.htm'>Adjectives</a>
+		<a href='../basics/consonantmutation.htm'>Consonant Mutation</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(2)'>Cases</button>
+		<div class='dpanel'>
+		<a href='../cases/genitive.htm'>Genitive</a>
+		<a href='../cases/accusative.htm'>Accusative</a>
+		<a href='../cases/prepositional.htm'>Prepositional</a>
+		<a href='../cases/dative.htm'>Dative</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(3)'>Verbs</button>
+		<div class='dpanel'>
+		<a href='../verbs/present.htm'>Present Tense</a>
+		<a href='../verbs/past.htm'>Past Tense</a>
+		<a href='../verbs/future.htm'>Future Tense</a>
+		<a href='../verbs/motion.htm'>Verbs of Motion</a>
+		<a href='../verbs/imperative.htm'>Imperative Mood</a>
+		<a href='../verbs/subjunctive.htm'>Subjunctive Mood</a>
+		<a href='../verbs/participles.htm'>Participles</a>
+		</div>
+	</div>
+	<div class='dropdown'>
+	<button class='dropbtn' onclick='dropdown(4)'>Vocabulary</button>
+		<div class='dpanel'>
+		<a href='../vocab/numbers.htm'>Numbers</a>
+		</div>
+	</div>
+	<div class='dropdown resourcebtn'>
+	<button class='dropbtn' onclick='dropdown(5)'>Resources</button>
+		<div class='dpanel'>
+		<a href='../resources/noun-table.htm'>Nouns</a>
+		<a href='../resources/pronoun-table.htm'>Pronouns</a>
+		<a href='../resources/adjective-table.htm'>Adjectives</a>
+		</div>
+	</div>
+</div>
+
+<p class='underline'>The instrumental case is mainly used to mean 
+	<span>by means of</span> or <span>with</span>- think of something that is
+	<span>instrumental</span> to an object or action.</p>
+	
+<table class='opposite change'>
+<tr>
+<th><i>Add</i> ом to a hard consonant</th>
+<th>Replace а with ой</th>
+<th>Replace о with ом</th>
+<th>Replace ь (masculine) with ем</th>
+</tr>
+<tr>
+<td><span class='tooltip'>вопр<b>о</b>с &rarr; вопр<b>о</b>с<span>ом</span><span class='tooltiptext'>question <i>nominative</i> &rarr; question <i>instrumental</i></span></span></td>
+<td><span class='tooltip'>звезд<span><b>а</b></span> &rarr; звезд<span><b>о</b>й</span><span class='tooltiptext'>star <i>nom.</i> &rarr; star <i>ins.</i></span></span></td>
+<td><span class='tooltip'><b>у</b>тр<span>о</span> &rarr; <b>у</b>тр<span>ом</span><span class='tooltiptext'>morning <i>nom.</i> &rarr; morning <i>ins.</i></span></span></td>
+<td><span class='tooltip'>рубл<span>ь</span> &rarr; рубл<span><b>е</b>м</span><span class='tooltiptext'>ruble <i>nom.</i> &rarr; ruble <i>ins.</i></span></span></td>
+</tr>
+<tr>
+<th>Replace й with ем</th>
+<th>Replace я with ей</th>
+<th>Replace е with ем</th>
+<th>Replace ь (feminine) with ью</th>
+</tr>
+<tr>
+<td><span class='tooltip'>бо<span>й</span> &rarr; б<b>о</b><span>ем</span><span class='tooltiptext'>war <i>nom.</i> &rarr; war <i>ins.</i></span></span></td>
+<td><span class='tooltip'><b>а</b>рми<span>я</span> &rarr; <b>а</b>рми<span>ей</span><span class='tooltiptext'>army <i>nom.</i> &rarr; army <i>ins.</i></span></span></td>
+<td><span class='tooltip'>печ<b>е</b>нь<span>е</span> &rarr; печ<b>е</b>нь<span>ем</span><span class='tooltiptext'>cookie <i>nom.</i> &rarr; cookie <i>ins.</i></span></span></td>
+<td><span class='tooltip'>кров<span>ь</span> &rarr; кр<b>о</b>в<span>ью</span><span class='tooltiptext'>blood <i>nom.</i> &rarr; blood <i>ins.</i></span></span></td>
+</tr>
+</table>
+
+<p>The plural form also changes in the prepositional case:</p>
+
+<table class='opposite change'>
+<tr>
+<th>hard consonant, а, о &rarr; ами</th>
+<td style='width:5%;'></td>
+<th>й, ь, я, е &rarr; ями</th>
+</tr>
+<tr>
+<td><span class='tooltip'>вопр<b>о</b>с &rarr; вопр<b>о</b>с<span>ами</span><span class='tooltiptext'>question <i>nom.</i> &rarr; questions <i>ins.</i></span></span></td>
+<td></td>
+<td><span class='tooltip'>бо<span>й</span> &rarr; б<b>о</b><span>ями</span><span class='tooltiptext'>war <i>nom.</i> &rarr; wars <i>ins.</i></span></span></td>
+<td><span class='tooltip'>рубл<span>ь</span> &rarr; рубл<span><b>я</b>ми</span><span class='tooltiptext'>ruble <i>nom.</i> &rarr; rubles <i>ins.</i></span></span></td>
+<td><span class='tooltip'><b>а</b>рми<span>я</span> &rarr; <b>а</b>рми<span>ями</span><span class='tooltiptext'>army <i>nom.</i> &rarr; armies <i>ins.</i></span></span></td>
+</tr>
+<tr>
+<td><span class='tooltip'>звезд<span><b>а</b></span> &rarr; звезд<span><b>а</b>ми</span><span class='tooltiptext'>star <i>nom.</i> &rarr; stars <i>ins.</i></span></span></td>
+<td></td>
+<td><span class='tooltip'>печ<b>е</b>нь<span>е</span> &rarr; печ<b>е</b>нь<span>ями</span><span class='tooltiptext'>cookie <i>nom.</i> &rarr; cookies <i>ins.</i></span></span></td>
+<td><span class='tooltip'>кров<span>ь</span> &rarr; кр<b>о</b>в<span>ями</span><span class='tooltiptext'>blood <i>nom.</i> &rarr; blood <i>ins.</i></span></span></td>
+</tr>
+<tr>
+<td><span class='tooltip'><b>у</b>тр<span>о</span> &rarr; <b>у</b>тр<span>ами</span><span class='tooltiptext'>morning <i>nom.</i> &rarr; mornings <i>ins.</i></span></span></td>
+</tr>
+</table>
+
+<h2>Uses</h2>
+
+<h3>By means of</h3>
+<p class='underline'>The instrumental case is used where in English we would use the words
+	<span><i>with, using, by means of</i></span>:</p>
+<table class='example change' style='width:60%;'>
+<tr>
+<td><span class='tooltip'>я напис<b>а</b>ла письм<b>о</b> каранд<b>а</b>ш<span>ом</span><span class='tooltiptext'>I am writing a letter with a pencil</span></span></td>
+<td><span class='tooltip'>ем<b>у</b> предпочит<b>а</b>ет есть макар<b>о</b>ны л<b>о</b>жк<span>ой</span><span class='tooltiptext'>he prefers to eat pasta with a spoon</span></span></td>
+</tr> 
+</table>
+
+<h3>With</h3>
+<p class='underline'>The instrumental case is also used with the prepostion 
+	<span>с(о)</span> <i>with</i>:</p>
+<table class='example change' style='width:60%;'>
+<tr>
+<td><span class='tooltip'>к<b>о</b>фе с молок<span><b>о</b>м</span><span class='tooltiptext'>coffee with milk</span></span></td>
+<td><span class='tooltip'>е<b>е</b> разгов<b>а</b>ривает со <span>сво<b>е</b>й</span> м<b>а</b>т<span>ью</span><span class='tooltiptext'>she is chatting with her mother</span></span></td>
+</tr> 
+</table>
+
+<h3>Seasons & times of day</h3>
+<p class='underline'>To communicate <i>in/during</i> a <span>season or time of day</span>, 
+	use the instrumental case:</p>
+<table class='example change' style='width:60%;'>
+<tr>
+<td><span class='tooltip'>мы ед<b>и</b>м з<b>а</b>втрак <b>у</b>тр<span>ом</span><span class='tooltiptext'>we eat breakfast in the morning</span></span></td>
+<td><span class='tooltip'><b>о</b>сен<span>ью</span> п<b>а</b>дают л<b>и</b>стья<span class='tooltiptext'>leaves fall in autumn</span></span></td>
+</tr> 
+</table>
+
+<h3>Other prepositions</h3>
+<p class='underline'>Finally, the instrumental case is used with a few pronouns which one
+	might expect to be used with the prepositional case:</p>
+<table class='example change' style='width:100%;'>
+<tr>
+<th>п<b>е</b>ред <i>in front of, before</i></th>
+<th>за <i>behind</i></th>
+<th>над <i>over, above</i></th>
+<th>под <i>under, below</i></th>
+<th>м<b>е</b>жду <i>between</i></th>
+</tr>
+<tr>
+<td><span class='tooltip'>зн<b>а</b>к п<b>е</b>ред шк<b>о</b>л<span>ой</span><span class='tooltiptext'>sign in front of school</span></span></td>
+<td><span class='tooltip'>п<b>о</b>ле за дер<b>е</b>вн<span>ей</span><span class='tooltiptext'>field behind village</span></span></td>
+<td><span class='tooltip'>лун<b>а</b> над г<b>о</b>род<span>ом</span><span class='tooltiptext'>moon above city</span></span></td>
+<td><span class='tooltip'>к<b>о</b>шка под стол<span><b>о</b>м</span><span class='tooltiptext'>cat under table</span></span></td>
+<td><span class='tooltip'>д<b>о</b>м м<b>е</b>жду дор<b>о</b>г<span>ами</span><span class='tooltiptext'>house between roads</span></span></td>
+</tr>
+</table>
+
+<p>The instrumental case is also used with п<b>е</b>ред in the sense of time; however, п<b>о</b>сле <i>after</i> is used with the genitive case.</p>
+<table class='example change'>
+<tr>
+<td><span class='tooltip'>Не <b>е</b>шь дес<b>е</b>рт п<b>е</b>ред <b>у</b>жин<span>ом</span>!<span class='tooltiptext'>Don't eat dessert before dinner!</span></span></td>
+<td><span class='tooltip'>Н<b>а</b>до съесть дес<b>е</b>рт п<b>о</b>сле <b>у</b>жин<span>а</span>.<span class='tooltiptext'>It is necessary to eat dessert after dinner.</span></span></td>
+</tr>
+</table>
+
+<button class='accordion'>Pronouns</button>
+<div class='apanel'>
+<table style='width:40%;'>
+<tr>
+<th><i>Personal</i></th>
+<th>1st person</th>
+<th>2nd person</th>
+<th>3rd person</th>
+<th>reflexive</th>
+</tr>
+<tr>
+<th>singular</th>
+<td>мной</td>
+<td>тоб<b>о</b>й</td>
+<td>(н)им/(н)ей</td>
+<td rowspan='2'>себ<b>ой</b><br>&darr;</td>
+</tr>
+<tr>
+<th>plural</th>
+<td>н<b>а</b>ми</td>
+<td>в<b>а</b>ми</td>
+<td>(н)<b>и</b>ми</td>
+</tr>
+</table>
+
+<table style='width:70%;'>
+<tr>
+	<th><i>Possessive</i></th>
+	<th>1st person singular</th>
+	<th>2nd person singular</th>
+	<th>3rd person</th>
+	<th>1st person plural</th>
+	<th>2nd person plural</th>
+	<th>reflexive</th>
+</tr>
+<tr>
+	<th>masculine</th>
+	<td>мо<b>и</b>м</td>
+	<td>тво<b>и</b>м</td>
+	<td rowspan='4'>&uarr;<br>ег<b>о</b>/е<b>е</b>/их<br>&darr;</td>
+	<td>н<b>а</b>ши</td>
+	<td>в<b>а</b>шим</td>
+	<td>сво<b>и</b>м</td>
+</tr>
+<tr>
+	<th>feminine</th>
+	<td>мо<b>е</b>й</td>
+	<td>тво<b>е</b>й</td>
+	<td>н<b>а</b>шем</td>
+	<td>в<b>а</b>шей</td>
+	<td>сво<b>е</b>й</td>
+</tr>
+<tr>
+	<th>neuter</th>
+	<td>мо<b>и</b>м</td>
+	<td>тво<b>и</b>м</td>
+	<td>н<b>а</b>ши</td>
+	<td>в<b>а</b>шим</td>
+	<td>сво<b>и</b>м</td>
+</tr>
+<tr>
+	<th>plural</th>
+	<td>мо<b>и</b>ми</td>
+	<td>тво<b>и</b>ми</td>
+	<td>н<b>а</b>шими</td>
+	<td>в<b>а</b>шими</td>
+	<td>сво<b>и</b>ми</td>
+</tr>
+</table>
+
+<table style='width:50%;'>
+<tr>
+	<th><i>Demonstrative & Determinative</i></th>
+	<th>this</th>
+	<th>That</th>
+	<th>All</th>
+</tr>
+<tr>
+	<th>masculine</th>
+	<td><b>э</b>тим</td>
+	<td>тем</td>
+	<td>всем</td>
+</tr>
+<tr>
+	<th>feminine</th>
+	<td><b>э</b>той</td>
+	<td>той</td>
+	<td>всей</td>
+</tr>
+<tr>
+	<th>neuter</th>
+	<td><b>э</b>тим</td>
+	<td>тем</td>
+	<td>всем</td>
+</tr>
+<tr>
+	<th>plural</th>
+	<td><b>э</b>тими</td>
+	<td>теми</td>
+	<td>всеми</td>
+</tr>
+</table>
+
+<table style='width: 50%;'>
+<tr>
+<th><i>Interrogative</i></th>
+<th>who</th>
+<th>what</th>
+<th>which</th>
+</tr>
+<tr>
+<th>masculine</th>
+<td rowspan='4'>&uarr;<br>чем<br>&darr;</td>
+<td rowspan='4'>&uarr;<br>кем<br>&darr;</td>
+<td>как<b>и</b>м</td>
+</tr>
+<tr>
+<th>feminine</th>
+<td>как<b>о</b>й</td>
+</tr>
+<tr>
+<th>neuter</th>
+<td>как<b>и</b>м</td>
+</tr>
+<tr>
+<th>plural</th>
+<td>как<b>и</b>ми</td>
+</tr>
+</table>
+
+</div>
+
+<button class='accordion'>Adjectives</button>
+<div class='apanel'>
+<table>
+<tr>
+<th>masculine</th>
+<th>feminine</th>
+<th>neuter</th>
+<th>plural</th>
+</tr>
+<tr>
+<td>ым</td>
+<td>ой</td>
+<td>ым</td>
+<td>ыми</td>
+</tr>
+<tr class='example change'>
+<td>ч<b>ё</b>рн<span>ым</span></td>
+<td>ч<b>ё</b>рн<span>ой</span></td>
+<td>ч<b>ё</b>рн<span>ым</span></td>
+<td>ч<b>ё</b>рн<span>ыми</span></td>
+</tr>
+</table>
+</div>
+
+<script src='../home.js'></script>
+
+</body>
+</html>
